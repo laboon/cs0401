@@ -6,11 +6,11 @@ Intermediate Java
 **Taught by:** Bill Laboon (bill.laboon@pitt.edu)  
 **Professor's Office Hours:** SENSQ 6305, T/H 5:00-6:00 PM and W 12:00-1:00 PM , or by appointment.  
 
-**TA:** Emilee Betz
-**TA Office Hours:** T/W 10:00 AM - 12:00 PM, SENSQ 6506
+**TA:** Emilee Betz  
+**TA Office Hours:** T/W 10:00 AM - 12:00 PM, SENSQ 6506  
 
-**Class GitHub repo:** https://www.github.com/laboon/cs0401
-**Required Text:** _Starting Out with Java, From Control Structures through Objects, Fifth Edition_, by Tony Gaddis [ISBN-10: 0132855836, Publisher: Addison Wesley]
+**Class GitHub repo:** https://www.github.com/laboon/cs0401  
+**Required Text:** _Starting Out with Java, From Control Structures through Objects, Fifth Edition_, by Tony Gaddis [ISBN-10: 0132855836, Publisher: Addison Wesley]  
 
 ## Grading
 
@@ -25,18 +25,18 @@ The following grading scale will be used.
 
 Score  | Grade
 -----: | ------------------------------
-100.0-94.0 | A (A+ for extraordinary work)
-93.0-91.0  | A-
-90.0-88.0  | B+
-87.0-84.0  | B
-83.0-81.0  | B-
-80.0-78.0  | C+
-77.0-74.0  | C
-73.0-71.0  | C-
-70.0-68.0  | D+
-67.0-64.0  | D
-63.0-61.0  | D-
-60.0-0.0   | F
+100.00-94.00 | A (A+ for extraordinary work)
+93.99-91.00  | A-
+90.99-88.00  | B+
+87.99-84.00  | B
+83.99-81.00 | B-
+80.99-78.00 | C+
+77.99-74.00 | C
+73.99-71.00 | C-
+70.99-68.00 | D+
+67.99-64.00 | D
+63.99-61.00 | D-
+60.99-0.00 | F
 
 Everybody is expected to do their own work.  Any student caught collaborating or cheating on an exam will automatically receive a 0 (zero) for that exam or project, and may be penalized more harshly for egregious offenses (up to automatic failure of the course).  A second time caught collaborating or cheating will result in automatic failure of the course, at a minimum, and may be subject to further measures based on University of Pittsburgh academic policy.
 
