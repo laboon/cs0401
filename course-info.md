@@ -10,7 +10,7 @@ Intermediate Java
 **TA Office Hours:** T/W 10:00 AM - 12:00 PM, SENSQ 6506  
 
 **Class GitHub repo:** https://www.github.com/laboon/cs0401  
-**Required Text:** _Starting Out with Java, From Control Structures through Objects, Fifth Edition_, by Tony Gaddis [ISBN-10: 0132855836, Publisher: Addison Wesley]  
+**Required Text:** _Starting Out with Java, From Control Structures through Objects, Sixth Edition_, by Tony Gaddis [ISBN-10: 0132855836, Publisher: Addison Wesley]  
 
 ## Grading
 
