@@ -8,6 +8,7 @@ CS0401: Intermediate Java
   * Getting Started with Java
 
 * Intro to Java
+  * __Reading: Gaddis Ch 3__
   * Compilation and Execution of Programs
   * Keywords, Identifiers, and Literals
   * Variables and data type
