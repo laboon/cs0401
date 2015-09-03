@@ -12,6 +12,9 @@ Intermediate Java
 **TA:** Ethan Welsh (welshej@gmail.com)
 **TA Office Hours:** T 4:00 PM - 6:00 PM, SENSQ 6506
     
+**TA:** Shelley Goldberg  
+**TA Office Hours:** M/W 11:00 AM - 1:00 PM, SENSQ 6506
+    
 **Class GitHub repo:** https://www.github.com/laboon/cs0401  
 **Required Text:** _Starting Out with Java, From Control Structures through Objects, Sixth Edition_, by Tony Gaddis [ISBN-10: 0132855836, Publisher: Addison Wesley]  
 
