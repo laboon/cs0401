@@ -213,7 +213,7 @@ Copy and paste the Java program `Lab2.java` into a file with the same name to yo
 
 In the file, there are three numbered problems.  After you have fixed each one, save the file and commit the changes with an appropriate message.
 
-The first proble is to edit each of the six variable declaration/assignments so that the program both compiles and gives the correct answer.  Note that the man should be going to St. Ives, so set that variable appropriately.  Also note that there may be more than one thing wrong with a single statement!
+The first problem is to edit each of the six variable declaration/assignments so that the program both compiles and gives the correct answer.  Note that the man should be going to St. Ives, so set that variable appropriately.  Also note that there may be more than one thing wrong with a single statement!
 
 The second is to calculate exactly how many entities (men, wives, sacks, cats, and kittens) are going to St. Ives, and put this value in the variable total.
 
