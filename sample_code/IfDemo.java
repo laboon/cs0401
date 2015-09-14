@@ -30,6 +30,14 @@ public class IfDemo {
 	} else {
 	    // Note I don't need anything here
 	}
+
+	if (true) {
+	    // This would always execute
+	    // System.out.println("Yay!");
+	} else {
+	    // This code would never execute
+	    // System.out.println("Boo!");
+	}
 	
 	if (hasFeathers || hasTwoLegs) {
 	    System.out.println("It could be either a griffin or a bird.");
