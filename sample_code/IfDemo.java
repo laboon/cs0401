@@ -20,6 +20,17 @@ public class IfDemo {
 	boolean hasFeathers = true;
 	boolean hasTwoLegs = true;
 
+	// Note no else statement here!
+	if (hasFeathers) {
+	    System.out.println("It has feathers.");
+	}
+
+	if (hasTwoLegs) {
+	    System.out.println("It has two legs.");
+	} else {
+	    // Note I don't need anything here
+	}
+	
 	if (hasFeathers || hasTwoLegs) {
 	    System.out.println("It could be either a griffin or a bird.");
 	} else {
