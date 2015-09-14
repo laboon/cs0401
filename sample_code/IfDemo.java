@@ -1,8 +1,8 @@
 public class IfDemo {
 
-    // Plato defined "man" as a bipedal animal without feathers.
-    // This code will help us determine whether something is a man
-    // according to Plato.
+    // Plato supposedly defined "man" as a two-legged animal without
+    // feathers. This code will help us determine whether something
+    // is a man according to Plato's definition.
     // It could, of course, also be a bird or a griffin.
     
     // Note that Diogenes of Sinope later came to Plato's Symposium
