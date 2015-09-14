@@ -21,7 +21,7 @@ public class IfDemo {
 	boolean hasTwoLegs = true;
 
 	if (hasFeathers || hasTwoLegs) {
-	    System.out.println("It is either a griffin or a bird.");
+	    System.out.println("It could be either a griffin or a bird.");
 	} else {
 	    System.out.println("It's not a griffin or a bird.");
 	}
