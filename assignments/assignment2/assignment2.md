@@ -6,11 +6,11 @@ LATE DUE DATE: Midnight on Friday, 2 OCT 2015 (-15 percentage points)
 
 NOTE: We will be writing the same program as the other Java sections, but turning it in in a different way.  Please do not turn it in via the submission site!
 
-Instructions for the program itself are located here: http://people.cs.pitt.edu/~ramirez/cs401/assigs/assig1/assig1.htm
+Instructions for the program itself are located here: http://people.cs.pitt.edu/~laboon/cs0401/assignments/assignment1.txt
 
-Sample output is located here: http://people.cs.pitt.edu/~ramirez/cs401/assigs/assig1/a1out.txt
+Sample output is located here: http://people.cs.pitt.edu/~laboon/cs0401/assignments/a1out.txt
 
-Create a _private_ repo and share it with t
+Create a _private_ repo and share it with your TAs by the time the program is due (see above).
 
 If you do not yet have the ability to make a private repo (because your student pack has not yet come in, for example), please hold off on pushing to GitHub.  You may want to work on the project, then copy it into a repo later.
 
