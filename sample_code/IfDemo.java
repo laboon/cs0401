@@ -20,11 +20,24 @@ public class IfDemo {
 	boolean hasFeathers = true;
 	boolean hasTwoLegs = true;
 
-	// Note no else statement here!
-	if (hasFeathers) {
-	    System.out.println("It has feathers.");
-	}
 
+	if (isInTheClassRoom) {
+	    System.out.println("In the classroom!  woot1");
+	    if (nameStartsWithM) {
+		System.out.println("ALSO NAME STARTS WITH M YAY!");
+	    }
+	}
+	
+	// Note no else statement here!
+	// if (hasFeathers) {
+	// if (hasTwoLegs) {
+	// System.out.println("It has feathers and two legs.");
+	// }
+	// } else {
+	// System.out.println("It does not have feathers");
+	// }
+
+	System.exit(0);
 	if (hasTwoLegs) {
 	    System.out.println("It has two legs.");
 	} else {
@@ -57,12 +70,12 @@ public class IfDemo {
 	    System.out.println("it's not a griffin");
 	}
 
-
 	if (!hasFeathers && hasTwoLegs) {
 	    System.out.println("Behold Plato's man!");
 	} else {
 	    System.out.println("It's not a man.");
-	}   
+	}
+
 
     }
 
