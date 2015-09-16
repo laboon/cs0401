@@ -50,9 +50,9 @@ CS0401: Intermediate Java
 
 ## WEEK 5 (Week of 28 Sep)
 
-* References and Reference types
-
 * QUIZ 1
+
+* References and Reference types
 
 ## WEEK 6 (Week of 5 Oct)
 
