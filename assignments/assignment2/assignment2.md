@@ -1,7 +1,8 @@
 ## Assignment 2
 
-ASSIGNED: 16 SEP 2015
-DUE: Beginning of class, 30 SEP 2015
+ASSIGNED: 16 SEP 2015  
+DUE: Beginning of class, Wednesday, 30 SEP 2015  
+LATE DUE DATE: Midnight on Friday, 2 OCT 2015 (-15 percentage points)  
 
 NOTE: We will be writing the same program as the other Java sections, but turning it in in a different way.  Please do not turn it in via the submission site!
 
