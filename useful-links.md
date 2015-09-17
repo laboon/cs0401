@@ -1,5 +1,6 @@
 | Name | URL |
 | ------------- | ------------- |
+| GitHub In 20 Minutes | https://www.youtube.com/watch?v=0fKg7e37bQE |
 | Pitt Academic Calendar | http://www.provost.pitt.edu/documents/Academic%20Calendar%202015-2016_Final.pdf |
 | Java API  | http://docs.oracle.com/javase/7/docs/api/  |
 | CS Dept Peer Tutoring Schedule  | http://www.cs.pitt.edu/undergrad/crc/ |
