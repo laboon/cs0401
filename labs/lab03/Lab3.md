@@ -18,10 +18,10 @@ We will be creating a new repo on your account called "Lab3". There will be two 
 3. Click the green "New" button
 4. Give it the name Lab3
 5. Click on the "Private" radio box.
-  * NOTE: If you don't see this, your Student Developer pack may not have come through.  Let your TA when turning it that this is the case.
+  * NOTE: If you don't see this, your Student Developer pack may not have come through.  Let your TA know when turning it that this is the case.
 6. Click on the option to initialize the repository with a README
 7. In the right-hand column, click on Settings (it has a little "gear" icon next to it)
-8. Click on "Collaboratos" (in the left-hand column)
+8. Click on "Collaborators" (in the left-hand column)
 9. In the textbox labeled "Search by username, full name or email address", type your TA's GitHub username (will be given at beginning of lab)
 9. Click "Add collaborator"
 8. Clone this repo to your local computer as per last week
