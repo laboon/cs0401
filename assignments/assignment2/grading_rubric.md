@@ -14,9 +14,9 @@ Think of it as a checklist for what your program needs to do.  These are all wor
 2. All currency values properly formatted and displayed
 2. Gives proper change to customers
 2. Asks for and correctly calculates Pie Card discounts
-2. Properly andles invalid or unexpected values.  NOTE: You may assume that all values will be of the correct type.  For example, if you expect 1 or 2, the grader may try typing in 7 or -54, but will not type in "pollywollydoodle".
+2. Properly handles invalid or unexpected values.  NOTE: You may assume that all values will be of the correct type.  For example, if you expect 1 or 2, the grader may try typing in 7 or -54, but will not type in "pollywollydoodle".
 
-Note that partial credit will be given for eahch topic.
+Note that partial credit will be given.
 
 However, a program which does not compile or does not execute at all will receive only minimal credit.
 
