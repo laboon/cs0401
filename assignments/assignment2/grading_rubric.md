@@ -6,7 +6,7 @@ Think of it as a checklist for what your program needs to do.  These are all wor
 
 1. Properly loops and quits when there are no more customers
 2. Allows users to buy different kinds of pizza
-2. Allows users to buy pizza by slice and by entire pie
+2. Allows users to buy pizza only by the pie
 2. Allows users to buy pie only by the slice
 2. Properly calculates number of whole pies based on number of slices
 2. Calculates total bill, including subtotal / total
