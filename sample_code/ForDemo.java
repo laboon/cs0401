@@ -11,9 +11,9 @@ public class ForDemo {
 	    k += 5;
 	}
 	
-	// for (;;) {
-	//     System.out.println("BILL RULES!!!!");
-	// }
+	for (;;) {
+	    System.out.println("BILL RULES!!!!");
+	}
 	
     }
 
