@@ -66,7 +66,7 @@ if (j = 1) {
 Do this instead!
 
 ```
-if (j = 1) {
+if (j == 1) {
     System.out.println("j is one!");
 }
 ```
