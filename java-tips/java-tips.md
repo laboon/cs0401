@@ -27,7 +27,7 @@ do {
 System.out.println(value + " is an integer!");
 ```
 
-* Remember your code needs lots of hugs, which you can give it with parentheses.  If your code has precedence issues, feel free to clarify with parentheses.  For example
+* Remember your code needs lots of hugs, which you can give it with parentheses.  If your code has precedence issues, feel free to clarify with parentheses.  `a + b + c / 3` is different from `(a + b + c) / 3`.
 
 * Boolean operators need a _complete_ boolean expression on each side.  For example, the following code does not do what you might think it does.
 
