@@ -23,30 +23,30 @@ public class ScannerDemo {
 	// Read in a line
 	// This should take anything you type!
 
-	// System.out.print("Enter something, anything you want > ");
-	// String someStr = sc.nextLine();
-	// System.out.println("You typed " + someStr + "!");
+	System.out.print("Enter something, anything you want > ");
+	String someStr = sc.nextLine();
+	System.out.println("You typed " + someStr + "!");
 	
 	// Use .next() to read in the next "token" on a line
 	// A token is a group of chars separated by whitespace -
 	// e.g. the string "12 cats love football!" has four
 	// token - "12", "cats", "love", and "football!"
 
-	// System.out.print("Enter at least two tokens > ");
-	// String str1 = sc.next();
-	// String str2 = sc.next();
-	// System.out.println("The first token is " + str1 + "!");
-	// System.out.println("The second token is " + str2 + "!");
+	System.out.print("Enter at least two tokens > ");
+	String str1 = sc.next();
+	String str2 = sc.next();
+	System.out.println("The first token is " + str1 + "!");
+	System.out.println("The second token is " + str2 + "!");
 	
 	// Read in an integer
 	// Note that an exception is thrown and the program
 	// ends if the value is NOT an integer
 	
-	// System.out.print("Enter an integer > ");
-	// int someInt = sc.nextInt();
-	// System.out.println("You typed " + someInt + "!");
-	// // You can now do whatever you want with that variable
-	// System.out.println("Multiplied by two, that's " + (someInt * 2) + "!");
+	System.out.print("Enter an integer > ");
+	int someInt = sc.nextInt();
+	System.out.println("You typed " + someInt + "!");
+	// You can now do whatever you want with that variable
+	System.out.println("Multiplied by two, that's " + (someInt * 2) + "!");
 	
 	// You can send in multiple values as long as they are
 	// separated by whitespace (tabs, spaces, etc.)
@@ -54,11 +54,11 @@ public class ScannerDemo {
 	// If you enter more, they are just "waiting" in the
 	// sc object.
 	
-	// System.out.print("Enter two floats > ");
-	// float f1 = sc.nextFloat();
-	// float f2 = sc.nextFloat();
-	// System.out.println("You typed " + f1 + " and " + f2 + "!");
-	// System.out.println("Added together, that's " + (f1 + f2) + "!");
+	System.out.print("Enter two floats > ");
+	float f1 = sc.nextFloat();
+	float f2 = sc.nextFloat();
+	System.out.println("You typed " + f1 + " and " + f2 + "!");
+	System.out.println("Added together, that's " + (f1 + f2) + "!");
 
 	// Can we tell what the token is ahead of time? Yes!
 
