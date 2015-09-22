@@ -16,14 +16,14 @@ public class FormattingDemo {
 	
 	System.out.println("(int) Three is " + three);
 
-	double threePointOh = 3.0;
+	double threePointOh = 3.000000000;
 	
 	System.out.println("(double) Three is " + threePointOh);
 
 	double threePointOhOneTwoThree = 3.0123;
 
 	System.out.println("(double) Three point oh one two three is " + threePointOhOneTwoThree);
-
+	
 	// printf does!  Note we use a different format here, embedding
 	// how we want a value printed out in the string itself, then
 	// passing the value as another parameter to the method
@@ -42,7 +42,7 @@ public class FormattingDemo {
 	double foo = 10.1;
 	
 	System.out.printf("Here's a floating point number! %f\n", foo);
-	
+
 	// You don't need to pass in a variable, you can pass in a value.
 
 	System.out.printf("Here's another floating point number! %f\n", 99.17);
@@ -65,24 +65,24 @@ public class FormattingDemo {
 	int dogs = 10;
 	int cats = 3;
 	int snakes = 2;
-	System.out.printf("I have %d dogs, %d cats, and %d snakes.\n", dogs, dogs, dogs);
+	System.out.printf("I have %d dogs, %d cats, and %d snakes.\n", dogs, cats, snakes);
 
 	// Use %e for exponential notation
 
-	double bar = 999999999.0;
+	long bar = 999999999;
 
-	System.out.printf("Here is bar in exponential notation! %e\n", bar);
-
+	System.out.printf("Here is bar in exponential notation! %e\n", (float) bar);
+	
 	// You can use a string with %s
 	
 	String iLoveIt = "hot sauce";
 
 	System.out.printf("I love %s!\n", iLoveIt);
-	
+	    
 	// If you need to print a % sign in the string, use %%.
 	int percentSure = 99;
 	
-	System.out.printf("I am %d%% sure that I love %s!\n", percentSure, iLoveIt);
+	System.out.printf("I am %d%% \"sure\" that I love %s!\n", percentSure, iLoveIt);
 
 	// You can add zeros in front of a number to make it a certain
 	// size.  Just add a 0 after the % symbol, along with the
@@ -90,49 +90,74 @@ public class FormattingDemo {
 
 	int numBirds = 4;
 
-	System.out.printf("I have %03d birds.\n", numBirds);
+	System.out.printf("I have %09d birds.\n", numBirds);
+
+	numBirds = 50000;
+
+	System.out.printf("I have %09d birds.\n", numBirds);
+		
+	for (int j = 0; j < 8; j++) {
+	    System.out.printf("Agent %03d has died.\n", j);
+	}
 	
 	// Note that if the size of the printed-out value is larger,
 	// the zeros are ignored.
 
-	numBirds = 5000;
+	numBirds = 50;
 	System.out.printf("I have %03d birds.\n", numBirds);
 
+	numBirds = 500;
+	System.out.printf("I have %03d birds.\n", numBirds);
+
+	numBirds = 5000;
+	System.out.printf("I have %03d birds.\n", numBirds);
+	
 	// You can left-justify by including - after the percent sign.
 	numBirds = 2;
-	System.out.printf("I have %-5d birds.\n", numBirds);
+	System.out.printf("(LEFT) I have %-5d birds.\n", numBirds);
 
 	numBirds = 21;
-	System.out.printf("I have %-5d birds.\n", numBirds);
+	System.out.printf("(LEFT) I have %-5d birds.\n", numBirds);
 
 	numBirds = 210;
-	System.out.printf("I have %-5d birds.\n", numBirds);
+	System.out.printf("(LEFT) I have %-5d birds.\n", numBirds);
 
 	
 	// Or right-justify by including a non-zero int after the percent sign.
 
 	numBirds = 2;
-	System.out.printf("I have %5d birds.\n", numBirds);
+	System.out.printf("(RIGHT) I have %5d birds.\n", numBirds);
 
 	numBirds = 21;
-	System.out.printf("I have %5d birds.\n", numBirds);
+	System.out.printf("(RIGHT) I have %5d birds.\n", numBirds);
 
 	numBirds = 210;
-	System.out.printf("I have %5d birds.\n", numBirds);
+	System.out.printf("(RIGHT) I have %5d birds.\n", numBirds);
 
+	numBirds = 999210;
+	if (numBirds > 99999) {
+	    System.out.printf("(RIGHT) I have -ERR- birds.\n", numBirds);
+	} else {
+	    System.out.printf("(RIGHT) I have %5d birds.\n", numBirds);
+	}
+
+	
 	// If you only want to print a certain number of points past
 	// the decimal, use .
 
 	double pi = Math.PI;
+	double meow = 3.10000;
 	System.out.printf("Pi rounded to three decimal places is %.3f\n", pi);
 	System.out.printf("Pi rounded to four decimal places is %.4f\n", pi);
+	System.out.printf("Meow rounded to eight decimal places is %.8f\n", meow);
 	
 	// Mix and match!
 
 	System.out.printf("Pi rounded to four decimal places is %08.4f\n", pi);
 
-	System.out.printf("Pi rounded to four decimal places is %-9.4f\n", pi);
+	System.out.printf("Pi rounded to three decimal places is %-9.3f", pi);
 
+	System.out.println("END OF LINE HERE!");
     }
     
 }
