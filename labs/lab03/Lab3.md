@@ -44,7 +44,7 @@ Tips:
 1. You will need multiple variables.
 2. What is the most appropriate primitive type for the distance?  Which of the primitive types is the most precise?
 
-## Lab 3b - _n_ Bottles of Root Beer, Where _n_ > 98 && _n_ < 100
+## Lab 3b - _n_ Bottles of Root Beer, Where _n_ > 0 && _n_ < 100
 
 In this section, we will represent the famous song, "99 Bottles of Root Beer".  First, we will ask the user to enter a number from 1 to 99 (inclusive).  If the value entered is _not_ an integer, inform the user that they need to enter an integer.  If the entered integer is not greater than 0 and less than 100, inform the user that the integer needs to be greater than 0 and less than 100.
 
