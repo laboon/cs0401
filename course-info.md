@@ -9,7 +9,7 @@ Intermediate Java
 **TA:** Emilee Betz  
 **TA Office Hours:** T 9:00 AM - 12:00 PM, W 9:00 AM - 10:00 AM SENSQ 6506  
 
-**TA:** Ethan Welsh (welshej@gmail.com)
+**TA:** [Ethan Welsh](https://github.com/EthanWelsh) (welshej@gmail.com)
 **TA Office Hours:** T 4:00 PM - 6:00 PM, SENSQ 6506
     
 **TA:** Shelley Goldberg  
