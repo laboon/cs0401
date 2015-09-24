@@ -19,14 +19,6 @@ public class IfDemo {
 	
 	boolean hasFeathers = true;
 	boolean hasTwoLegs = true;
-
-
-	if (isInTheClassRoom) {
-	    System.out.println("In the classroom!  woot1");
-	    if (nameStartsWithM) {
-		System.out.println("ALSO NAME STARTS WITH M YAY!");
-	    }
-	}
 	
 	// Note no else statement here!
 	// if (hasFeathers) {
