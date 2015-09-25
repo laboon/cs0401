@@ -27,9 +27,9 @@ Although one of many different ethical theories, utilitarianism has the advantag
 (3) - Dream about people eating ice cream
 (4) - Die
 ```
-  1. If any of options 1 - 3 are chosen, ask how many people were impacted, then calculate and display the number of utils caused by this action.  For each person who has ice cream bought for them, they receive 3 utils.  For every person who has ice cream stolen from them, they receive -5 utils.  As dreaming about people eating ice cream has no effect, each person receives 0 utils for dreaming about them eating ice cream.  After the number of people has been entered, display the number of utils caused by this action and loop back to showing the menu.
-  2. If option 4 is selected, the person's life is over.  Display the total number of utils caused by this person in their life.  Finally, display whether or not their life was morally good (a positive number of utils), morally evil (a negative number), or neutral (exactly 0).
-  3. For our purposes, the only morally relevant actions in a person's life are related to ice cream.
+1. If any of options 1 - 3 are chosen, ask how many people were impacted, then calculate and display the number of utils caused by this action.  For each person who has ice cream bought for them, they receive 3 utils.  For every person who has ice cream stolen from them, they receive -5 utils.  As dreaming about people eating ice cream has no effect, each person receives 0 utils for dreaming about them eating ice cream.  After the number of people has been entered, display the number of utils caused by this action and loop back to showing the menu.
+2. If option 4 is selected, the person's life is over.  Display the total number of utils caused by this person in their life.  Finally, display whether or not their life was morally good (a positive number of utils), morally evil (a negative number), or neutral (exactly 0).
+3. For our purposes, the only morally relevant actions in a person's life are related to ice cream.
 5. You may assume that only valid input will be entered (no need for .hasNextInt() or similar checks).
 6. You should use a switch statement when determining the number of utils based on the action.
 7. You should use several different methods -
