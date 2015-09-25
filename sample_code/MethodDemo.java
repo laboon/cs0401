@@ -6,7 +6,7 @@ public class MethodDemo {
     // of the program, there's nothing to return a value to.
     
     public static void main(String[] args) {
-
+	
 	// System.out.println() is just a method!
 	System.out.println("I'm a method!");
 
@@ -34,7 +34,7 @@ public class MethodDemo {
 	// main focus is getting the value, not side effects like
 	// in a procedure.
 
-	int x = laboonify(10);
+	int x = laboonify( 10 ) ;
 	System.out.println("10 laboonified = " + x);
 	
 	// Methods can call other methods
@@ -52,7 +52,7 @@ public class MethodDemo {
 
 	boolean fiveEven = isEven(5);
 	System.out.println("5 is even? This statement is " + fiveEven);
-	
+
 	// Remember arguments are passed by value, not reference!
 	
 	int a = 1;
@@ -61,14 +61,16 @@ public class MethodDemo {
 	System.out.println("A is " + a);
 	a = addOneReturn(a);
 	System.out.println("A is " + a);
-
+	System.exit(0);
+	
 	// Static methods are associated with the class.  You
 	// don't need to explicitly mention the class if you
 	// are in the same class as that method is defined,
 	// but you can if you want to do so.
 
 	MethodDemo.printSomethingFunny();
-
+	printSomethingFunny();
+	
 	// Instance methods are associated with an object
 	// (a class instantiated). Don't use static for these.
 
@@ -125,6 +127,7 @@ public class MethodDemo {
 
     
     public static boolean isEven(int n) {
+	
 	if (n % 2 == 0) {
 	    return true;
 	} else {

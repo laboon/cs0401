@@ -1,4 +1,4 @@
-# Lab 2 - Git Private Repos, Nested Loops, and Floating-Point Issues
+# Lab 3 - Git Private Repos, Nested Loops, and Floating-Point Issues
 
 ## Introduction
 
