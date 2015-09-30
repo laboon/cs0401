@@ -6,7 +6,7 @@ In this lab, we will study the ethical theory of utilitarianism and Maslow's Hie
 
 ## Set-Up
 
-You can use the same private repo as used in Lab3 last week.  We will be making a separate file in this repo, Lab04.java.
+You can use the same private repo as used in Lab3 last week.  We will be making two separate files in this repo, Lab4a.java and Lab4b.java.
 
 ## Lab 4a
 
