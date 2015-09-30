@@ -2,7 +2,7 @@ Name:________________________________
 
 CS0401 - QUIZ 1 / 28 SEP 2015
 
-1. (5 points) What is the output from these two statements?
+1. (5 points) What is the output from these two statements?  
 
   int j = 5;
   System.out.printf("Num is %03d", j);
@@ -13,7 +13,7 @@ Num is 005
 ```
 
 
-2. (2 points each) For each of the following variable assignments, mark YES if it will work as-is, or NO if it will generate an error (compile-time or run-time).
+2. (2 points each) For each of the following variable assignments, mark YES if it will work as-is, or NO if it will generate an error (compile-time or run-time).  
 
 a. int a = (int) 12.5; `YES`
 
