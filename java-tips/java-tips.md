@@ -1,3 +1,5 @@
+* Professor Ramirez also has an entire slide deck full of debugging tips!  See http://people.cs.pitt.edu/~ramirez/cs401/debug.pptx
+
 * Remember that calling `.hasNextInt()` (or any of the other .hasNext methods) does not remove any tokens from the Scanner!  For example, the following code will result in an infinite loop if you enter an invalid value.
 ```
 boolean noValidInput = true;
