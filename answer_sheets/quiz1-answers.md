@@ -4,8 +4,10 @@ CS0401 - QUIZ 1 / 28 SEP 2015
 
 1\. (5 points) What is the output from these two statements?  
 
+```
   int j = 5;
   System.out.printf("Num is %03d", j);
+```
 
 
 ```
@@ -27,9 +29,11 @@ e. byte e = (byte) 30000; `YES`
 
 3\. (8 points) What is the output from these three statements?
 
+```
   int quack = 9;
   System.out.println("I quacked " + quack++ + " times.");
   System.out.println("They quacked " + ++quack + " times.");
+```
 
 ```
 I quacked 9 times.
@@ -39,21 +43,25 @@ They quacked 11 times.
 
 4\. (5 points) What is the final value of the variable foo?
 
+```
 int foo = 10;
 foo -= 3;
 foo++;
 foo = 13 % 3;
+```
 
 ```
 1
 ```
 
 5\. (10 points) Write a for loop which counts by 2's, from 2 to 10, and displays them on the screen, followed by a carriage return ("enter") .  In other words, output should look like:
+```
 2
 4
 6
 8
 10
+```
 
 ```
 for (int j=2; j <= 10; j += 2) {
@@ -97,6 +105,7 @@ _Lots of other possibilities!_
 
 7\. (6 points) Write down what output the following lines of code will produce.
 
+```
 int birds = 2;
 switch (birds) {
 case 1:
@@ -106,7 +115,7 @@ case 2: case 3:
 default:
     System.out.println("Fluffy bird.");
 }
-
+```
 
 ```
 Good bird.
@@ -115,6 +124,7 @@ Fluffy bird.
 
 8\. (6 points) Write down what output the following lines of code will produce.
 
+```
 int numHorses = 10;
 int numMen = 20;
 
@@ -129,6 +139,7 @@ if (numHorses >= 5 || numHorses <= 25) {
 } else {
     System.out.println("Uh oh Humpty Dumpty!");
 }
+```
     
 ```
 Oh no Humpty Dumpty!
@@ -137,8 +148,10 @@ Oh no Humpty Dumpty!
 
 9\. (6 points) Write down what output the following lines of code will produce.
 
+```
 int numCats = 2 * 2 + 4 * 3;
 System.out.println("Num cats is " + numCats);
+```
 
 ```
 Num cats is 16
@@ -147,10 +160,11 @@ Num cats is 16
 
 10\. (6 points) Write down what output the following lines of code will produce.
 
+```
 int foo = 17 % 5;
 int bar = 10 / 3;
 System.out.println("I have " + foo + " foos and " + bar + " bars.");
-
+```
 
 ```
 I have 2 foos and 3 bars.
@@ -159,8 +173,10 @@ I have 2 foos and 3 bars.
 
 11\. (5 points) What will happen if I enter "plumbus" for input in the following code?  You may assume that the rest of the program works correctly (e.g., Scanner has been imported, class and main method set up correctly, etc.) Circle the best answer.
 
+```
 Scanner sc = new Scanner(System.in);
 int fleeb = sc.nextInt();
+```
 
 (a) You will never get to this point; javac will generate a compile-time error.
 
@@ -187,10 +203,12 @@ public static void printLove(String name) {
 
 13\. (5 points) What will be the output of this loop?  Circle the best answer.
 
+```
 int k = 0;
 do {
     System.out.print("Schmeckle");
 } while (k != 2);
+```
 
 (a) "Schmeckle"
 
@@ -207,11 +225,13 @@ a
 
 14\. (5 points) What will be the output of this loop?
 
+```
 long quantum = 400;
 while (quantum < 200) {
     System.out.print("Zeep");
     quantum -= 400;
 }
+```
 
 (a) "Zeep"
 
@@ -228,9 +248,11 @@ b
 
 15\. (5 points) Which of the following lines of code will set the value of variable glipglop to 10, after the first three lines are executed?  Circle the best answer.
 
+```
 int glipglop = 11;
 int beth = 40;
 int jerry = 4;
+```
 
 (a) glipglop = beth % jerry;
 
