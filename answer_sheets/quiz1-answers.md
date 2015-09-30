@@ -207,7 +207,7 @@ public static void printLove(String name) {
 int k = 0;
 do {
     System.out.print("Schmeckle");
-} while (k != 2);
+} while (k == 2);
 ```
 
 (a) "Schmeckle"
