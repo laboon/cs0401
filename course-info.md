@@ -14,6 +14,7 @@ Intermediate Java
     
 **TA:** Shelley Goldberg  
 **TA Office Hours:** M/W 11:00 AM - 1:00 PM, SENSQ 6506
+[Lab Topics Form](https://docs.google.com/forms/d/1FiXmJBGlI6MSZlCxUUGdwOFTJmCw6xskLTIBfhkTatA/viewform?usp=send_form)
 
 **Grader:** Yubo Feng (yuf24@pitt.edu)
 **Grader Office Hours:** No specific office hours; please email for appointment
