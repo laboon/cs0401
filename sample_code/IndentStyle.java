@@ -2,7 +2,7 @@ public class IndentStyle {
 
     // Java style
     
-    public int doStuff0(int a, int b) {
+    public static int doStuff0(int a, int b) {
 	if (a < 10) {
 	    return 1;
 	} else {
@@ -12,7 +12,17 @@ public class IndentStyle {
     
     // K&R Style (from Kernigan and Richie's The C Programming Language)
 
-    public int doStuff1(int a, int b)
+    public static int doStuff1(int a, int b)
+    {
+	if (a < 10)
+	    return 1;
+	else
+	    return a + b;
+    }
+
+    // 1TBS (One True Brace Style)
+
+    public static int doStuff2(int a, int b)
     {
 	if (a < 10) {
 	    return 1;
@@ -20,9 +30,10 @@ public class IndentStyle {
 	    return a + b;
 	}
     }
+
     
     // Allman style (a/k/a BSD style)
-    public int doStuff2(int a, int b)
+    public static int doStuff3(int a, int b)
     {
 	if (a < 10)
 	{
@@ -36,13 +47,19 @@ public class IndentStyle {
     
     // Lisp Style
 
-    public int doStuff3(int a, int b) {
+    public static int doStuff4(int a, int b) {
 	if (a < 10) {
 	    return 1; }
 	else {
 	    return a + b; } }    
     
     public static void main(String[] args) {
+	System.out.println(doStuff0(15, 20));
+	System.out.println(doStuff1(15, 20));
+	System.out.println(doStuff2(15, 20));
+	System.out.println(doStuff3(15, 20));
+	System.out.println(doStuff4(15, 20));
+
 	
     }
     
