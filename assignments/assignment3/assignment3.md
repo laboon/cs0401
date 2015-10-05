@@ -10,7 +10,9 @@ Sample output is located here: http://people.cs.pitt.edu/~laboon/cs0401/assignme
 
 You may either create a _private_ repo, or use the same repo as for Assignment 2.  If you decide to use the same repo, you must put the assignment 3 work in a subdirectory.  In either case, you must share it with your TA and the relevant grader (varies by TA) by the time the program is due (see above).
 
-Ethan
+* TA: Ethan Welsh, ethanwelsh (Grader: Yubo Feng, yuf24)
+* TA: Emilee Betz, emmers (Grader: Zihao Zhang, zzh730)
+* TA: Shelley Goldberg, ShelleyGoldberg  (Grader: Yubo Feng, yuf24)
 
 If you do not yet have the ability to make a private repo (because your student pack has not yet come in, for example), please hold off on pushing to GitHub.  You may want to work on the project, then copy it into a repo later.
 
