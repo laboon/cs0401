@@ -1,6 +1,6 @@
 public class IndentStyle {
 
-    // Java style
+    // Java style - a slight variant on K&R (below)
     
     public static int doStuff0(int a, int b) {
 	if (a < 10) {
