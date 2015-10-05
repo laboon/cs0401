@@ -52,6 +52,19 @@ public class IndentStyle {
 	    return 1; }
 	else {
 	    return a + b; } }    
+
+    // Derp style
+
+    public static
+	int doStuff5(int
+     a, int b)
+	
+{ if (a < 10
+    ) { return 1; } else { return a +
+	b
+	;
+} }
+     
     
     public static void main(String[] args) {
 	System.out.println(doStuff0(15, 20));
@@ -59,6 +72,7 @@ public class IndentStyle {
 	System.out.println(doStuff2(15, 20));
 	System.out.println(doStuff3(15, 20));
 	System.out.println(doStuff4(15, 20));
+	System.out.println(doStuff5(15, 20));
 
 	
     }
