@@ -3,10 +3,15 @@ import java.util.Random;
 
 public class Professor {
 
+    // Same as public String _name;
+    
     String _name;
-
-    public Professor(String name) {
+    
+    private String _firstName;
+    
+    public Professor(String name, String firstName) {
 	_name = name;
+	_firstName = firstName;
     }
     
     public int teach() {

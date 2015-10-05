@@ -6,8 +6,13 @@ public class CompSciClass {
 
 	Student[] _students = new Student[10];
 
-	Professor p = new Professor("Laboon");
-	
+	Professor p = new Professor("Laboon", "Bill");
+
+	System.out.println(p._name);
+
+	// Won't work - private!
+	// System.out.println(p._firstName);
+
 	Random rng = new Random();
 	
 	for (int j = 0; j < 10; j++) {
