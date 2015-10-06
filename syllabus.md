@@ -81,9 +81,9 @@ CS0401: Intermediate Java
 
 ## WEEK 8 (Week of 19 Oct)
 
-* EXAM 1
-
 * Multi-Dimensional arrays and ArrayLists
+
+* EXAM 1
 
 ## WEEK 9 (Week of 26 Oct)
 
