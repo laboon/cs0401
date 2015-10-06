@@ -106,6 +106,8 @@ CS0401: Intermediate Java
   
 ## WEEK 11 (Week of 9 Nov)
 
+* *QUIZ THIS WEEK DURING LAB*
+
 * Interfaces and Graphics Extensions
 
 * Wrapper classes
