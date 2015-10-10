@@ -6,7 +6,7 @@ In this lab, we will simulate our own universe, as well as attempt to understand
 
 ## Setup
 
-You may use the same private repo as used in the lab last week.  We will be
+You may use the same private repo as used in the lab last week.  We will be creating one Java file, Lab06.java.  Remember to add, commit, and push to your repository!
 
 ## Lab 6
 
