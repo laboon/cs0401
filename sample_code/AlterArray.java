@@ -6,6 +6,9 @@ public class AlterArray {
 
     public static void main(String[] args) {
 	int[] a1 = { 1, 2, 3, 4, 5, 6};
+
+	a1[0] = 11;
+	
 	System.out.println("Before Blim Blam..");
 	for (int a : a1) {
 	    System.out.println(a);
