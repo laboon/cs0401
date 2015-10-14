@@ -1,16 +1,16 @@
 public class ArrayAccessDemo {
 
-    public static int sequentialAccess(int[] arr) {
-	for (int j=0; j < arr.length; j++) {
-	    if (j == 5) {
-		return arr[j];
-	    }
-	}
-	return -1;
+    public static void sequentialAccess(int[] arr) {
+	for (int val : arr) {
+	    
     }
 
-    public static int directAccess(int[] arr) {
-	return arr[5];
+    public static void directAccess(int[] arr) {
+	for (int j=0; j < arr.length; j++) {
+	    
+	}
+
+	
     }
     
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class ArrayAccessDemo {
 
 	arr[0] = arr[1];
 	
-	System.out.println("sequential: " + sequentialAccess(arr));
+sequentialAccess(arr));
 	System.out.println("direct: " + directAccess(arr));
     }
     

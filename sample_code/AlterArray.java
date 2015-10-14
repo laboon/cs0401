@@ -4,6 +4,10 @@ public class AlterArray {
 	a2[3] = 17;
     }
 
+    public static int doubleMe(int r) {
+	return r * 2;
+    }
+
     public static void main(String[] args) {
 	int[] a1 = { 1, 2, 3, 4, 5, 6};
 
@@ -13,7 +17,9 @@ public class AlterArray {
 	for (int a : a1) {
 	    System.out.println(a);
 	}
+	
 	blimBlam(a1);
+	
 	System.out.println("After Blim Blam..");
 	for (int a : a1) {
 	    System.out.println(a);
