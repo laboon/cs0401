@@ -66,6 +66,10 @@ public class ArrayResize {
 	int[] secondArray = resize(firstArray);
 	printArray(secondArray);
 
+	System.out.println(">>");
+	firstArray = secondArray;
+	printArray(firstArray);
+
 	System.out.println("----------------------");
 	System.out.println("Resize again:");
 	
@@ -77,11 +81,11 @@ public class ArrayResize {
 
 	int[] fourthArray = resizeWithInvalidValues(firstArray);
 	printArray(fourthArray);
-
+	
 	System.out.println("----------------------");
 	System.out.println("Dynamic resize:");
 	
-	int[] fifthArray = dynamicResize(firstArray, 11);
+	int[] fifthArray = dynamicResize(firstArray, 100);
 	printArray(fifthArray);
 
 	System.out.println("----------------------");
@@ -90,8 +94,7 @@ public class ArrayResize {
 	int[] sixthArray = dynamicResize(fifthArray, 2);
 	printArray(sixthArray);
 
-
-	
+	System.exit(1);
 	
     }
     

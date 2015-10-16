@@ -59,6 +59,9 @@ public class ArrayCapacity {
 	int[] arr = new int[capacity];
 	
 	do {
+	    
+	    System.out.println("Number of items = " + numItems);
+	    System.out.println("Size of array = " + arr.length);
 	    System.out.println("Logical > ");
 	    printLogicalArray(arr, numItems);
 	    System.out.println("Actual > ");
