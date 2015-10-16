@@ -4,10 +4,10 @@
 
 ## Introduction
 
-__ “There is a concatenation of all events in the best of possible worlds; for, in short, had you not been kicked out of a fine castle for the love of Miss Cunegund; had you not been put into the Inquisition; had you not travelled over America on foot; had you not run the baron through the body; and had you not lost all your sheep, which you brought from the good country of El Dorado, you would not have been here to eat preserved citrons and pistachio nuts.” “Excellently observed,” answered Candide; “but let us take care of our garden.”__  
-- Voltaire, __Candide__
+_“There is a concatenation of all events in the best of possible worlds; for, in short, had you not been kicked out of a fine castle for the love of Miss Cunegund; had you not been put into the Inquisition; had you not travelled over America on foot; had you not run the baron through the body; and had you not lost all your sheep, which you brought from the good country of El Dorado, you would not have been here to eat preserved citrons and pistachio nuts.” “Excellently observed,” answered Candide; “but let us take care of our garden.”_  
+- Voltaire, _Candide_
 
-In his story __Candide, or, Optimism__, Voltaire tells the tale of the childlike Candide, and his teacher, Professor Pangloss.  Pangloss believes that this is the best of all possible worlds, and all that happens is eventually for the best.  During their adventures, they meet up with the pessimistic Martin, who believes the world to be filled with fools and everything tends to work out for the worst.
+In his story _Candide, or, Optimism_, Voltaire tells the tale of the childlike Candide, and his teacher, Professor Pangloss.  Pangloss believes that this is the best of all possible worlds, and all that happens is eventually for the best.  During their adventures, they meet up with the pessimistic Martin, who believes the world to be filled with fools and everything tends to work out for the worst.
 
 At the end of the novel, they all work together on their gardens, which we will represent as arrays.  As you can imagine from their philosophies, they use different algorithms for resizing them once they fill up with rutabagas.  We will focus on the algorithms of Pangloss and Martin as they grow their rutabagas and resize their gardens to make room for more rutabagas.
 
@@ -17,7 +17,7 @@ You may use the same private repo as used in the lab last week.  We will be crea
 
 ## Lab 7
 
-Martin and Pangloss each have a garden with five locations for rutabagas to grow.  Each season, anywhere from 0 to 4 rutabagas will grow (number to be picked at random each time).  Rutabagas start growing at location 0, then grow outwards (at each season, the old rutabagas stay in their old position).
+Martin and Pangloss each have a garden with five locations for rutabagas to grow.  Each season, anywhere from 0 to 4 rutabagas will grow (number to be picked at random each time).  Rutabagas start growing at location 0, then grow "upwards" into higher indexes (at each season, the old rutabagas stay in their old position).
 
 For each season, fill in the spots where rutabagas were grown with the number of rutabagas grown that season.  For example, if 0 rutabagas were grown, then 0 locations would have a 0; if 1 rutabaga was grown, then 1 location would have a 1; if 2 rutabagas were grown, then 2 locations would have a 2, etc.  Asterisks indicate locations where no rutabaga has yet grown.
 
@@ -27,15 +27,15 @@ Garden:
 [ ***, ***, ***, ***, ***]
 Season: 1, 2 rutabaga(s)
 [ 2, 2, ***, ***, ***]
-Season: 1, 0 rutabaga(s)
+Season: 2, 0 rutabaga(s)
 [ 2, 2, ***, ***, ***]
-Season: 1, 1 rutabaga(s)
+Season: 3, 1 rutabaga(s)
 [ 2, 2, 1, ***, ***]
 ```
 
 Note that there should never be a 0 visible in the array.
 
-Eventually, there will be more rutabagas than will fit in the garden.  At that point, the garden array will need to be resized (as we discussed in class).  The optimist Professor Pangloss, ever the optimist, always assumes that there will be many more rutabagas the next season, and so he will double the size of his garden.  The pessimist Martin assumes very few rutabagas will appear next season, and so he only increases the size of his garden array by 2.  Martin is so pessimistic that he will only increase the size of his garden by 2 even if there are more than 2 rutabagas that season!
+Eventually, there will be more rutabagas than will fit in the garden.  At that point, the garden array will need to be resized (as we discussed in class).  The optimist Professor Pangloss always assumes that there will be many more rutabagas the next season, and so he will double the size of his garden.  The pessimist Martin assumes very few rutabagas will appear next season, and so he only increases the size of his garden array by 2.  Martin is so pessimistic that he will only increase the size of his garden by 2 even if there are more than 2 rutabagas that season!
 
 You will simulate 40 seasons of rutabaga growing in Pangloss's and Martin's gardens.  During each resizing, indicate the new size of their gardens.  Note that there may be multiple resizings during a season!
 
@@ -46,7 +46,7 @@ Upon completion, you should display:
 
 ## Sample Output
 
-Note: the following output is from 
+Note: the following output is with only 10 seasons, but it should show you what the output should look like.
 
 ```
 (635) $ javac Lab07.java ; java Lab07
@@ -86,7 +86,7 @@ Remember that array resizing is an expensive operation.  However, doubling the s
 
 Are there certain cases when Pangloss's optimism makes more sense, or when Martin's pessimism makes more sense?
 
-Software engineering is often a study of trade-offs; there is seldom one "right answer" to a problem.  The trade-off here is between CPU usage (lots of copying) and overallmemory usage (from having large arrays with many locations allocated but not used).  Unthinking pessimism _or_ optimism can be a recipe for disaster, or at least suboptimal rutabaga storage.
+Software engineering is often a study of trade-offs; there is seldom one "right answer" to a problem.  The trade-off here is between CPU usage (lots of copying) and overall memory usage (from having large arrays with many locations allocated but not used).  Unthinking pessimism _or_ optimism can be a recipe for disaster, or at least suboptimal rutabaga storage.
 
 ## Tips
 
@@ -94,7 +94,7 @@ You may want to try the simulation with a smaller number of iterations, displayi
 
 For counting the number of times a resize occurred, perhaps a local variable is not the easiest way to keep track of the modifications?
 
-Remember that array variables are references to the actual array in memory.
+Remember that array variables are references to the actual array in memory, and what this means when passing in references as an argument to a method.
 
 You may want use this method for displaying the array, as well as for debugging:
 
