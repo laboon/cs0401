@@ -40,6 +40,7 @@ Eventually, there will be more rutabagas than will fit in the garden.  At that p
 You will simulate 40 seasons of rutabaga growing in Pangloss's and Martin's gardens.  During each resizing, indicate the new size of their gardens.  Note that there may be multiple resizings during a season!
 
 Upon completion, you should display:
+
 1. A graphical representation of Pangloss's and Martin's gardens.
 2. The total size of their respective gardens (not the number of rutabagas, but the size that they have allocated for their gardens, i.e., the size of the array).
 3. The number of times each garden was resized.
