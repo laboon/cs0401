@@ -91,7 +91,7 @@ Software engineering is often a study of trade-offs; there is seldom one "right 
 
 ## Tips
 
-You may want to try the simulation with a smaller number of iterations, displaying the arrays at each season, in order to determine that your algorithms are correct.  After this, you can 
+You may want to try the simulation with a smaller number of iterations, displaying the arrays at each season, in order to determine that your algorithms are correct.  After ensuring that your algorithms are correct, you can simply increase the number of iterations to 40.
 
 For counting the number of times a resize occurred, perhaps a local variable is not the easiest way to keep track of the modifications?
 
