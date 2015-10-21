@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class ArrayListDemo {
 
-
     public static void main(String[] args) {
 
 	// Make a dynamically-sized array with any _class_
@@ -15,6 +14,15 @@ public class ArrayListDemo {
 	
 	ArrayList<String> stringList = new ArrayList<String>();
 
+	System.out.println(stringList.size());
+
+	// ArrayList<KittyCat> kittyCatList = new ArrayList<KittyCat>();
+	
+	// Object -> Cat
+	// Object -> String
+	
+	// ArrayList<Cat> catList = new ArrayList<Cat>();
+	
 	// This will not work - int is a primitive
 	// ArrayList b = new ArrayList(<int>);
 
@@ -29,9 +37,9 @@ public class ArrayListDemo {
 
 	System.out.println("The Royal Court");
 	for (int j=0; j < stringList.size(); j++) {
-	    System.out.println(stringList.get(j));
+	    System.out.println(stringList.get(j)); // = array[j]
 	}
-
+	
 	System.out.println("-----------------");
 	// You can use a foreach here too!
 
@@ -47,7 +55,27 @@ public class ArrayListDemo {
 
 	stringList.add("Cobweb");
 	System.out.println("Added Cobweb, size of stringList is now: " + stringList.size());
+	
+	stringList.remove(2);
 
+	stringList.add(0, "Bottom");
+	stringList.add(0, "Bottom");
+	stringList.add(0, "Duke of Athens");
+	
+	// boolean anyBottoms = stringList.remove("Bottom");
+	// System.out.println(anyBottoms);
+
+	// boolean anyBills = stringList.remove("Bill");
+	// System.out.println(anyBills);
+	
+	for (String fairyName : stringList) {
+	    System.out.println(fairyName);
+	}
+	
+	while (stringList.contains("Bottom")) {
+	    stringList.remove("Bottom");
+	}
+	
 	// You can check if there are items by using .isEmpty()
 
 	while (stringList.isEmpty() == false) {
@@ -64,12 +92,12 @@ public class ArrayListDemo {
 	    stringList.add(greek);
 	    System.out.println("Added Greek: " + greek);
 	}
-	
+
 	// You can check if something exists in the ArrayList
 
 	System.out.println("Theseus is a Greek: " + stringList.contains("Theseus"));
-	System.out.println("Henry VIII is a Greek: " + stringList.contains("Henry VIII"));
-	    
+	System.out.println("Henry VIII is a Greek: " + stringList.contains("Henry VIII"));	
+
 	// Or remove everything
 
 	stringList.clear();

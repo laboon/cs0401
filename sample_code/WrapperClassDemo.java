@@ -20,19 +20,20 @@ public class WrapperClassDemo {
 	Integer intObject = new Integer(6000);
 	Long longObject = new Long(999999);
 	Boolean booleanObject = new Boolean(true);
-	Float floatObject = new Float(13.0004);
+	Float floatObject = new Float(13.0004); // <-- This is weird.
 	Double doubleObject = new Double(99.99999);
 	Character charObject = new Character('F');
-
+	
 	// You can extract the primitive value using value methods:
-
+	// Java API
+	
 	int intX = intObject.intValue();
 	long longX = intObject.longValue();
 	byte byteX = intObject.byteValue();
 
 	System.out.println("intX = " + intX + ", longX = " + longX
 			   + ", byteX = " + byteX);
-
+	
 	// Now we can use "primitives" in our ArrayLists!
 	
 	ArrayList<Integer> integerList = new ArrayList<Integer>();
@@ -42,7 +43,7 @@ public class WrapperClassDemo {
 	}
 
 	for (Integer num : integerList) {
-	    System.out.println(num.intValue());
+	    System.out.println(num.intValue() * 2);
 	}
 
 	// We can do all sorts of other things, as well.
@@ -56,7 +57,7 @@ public class WrapperClassDemo {
 			       + " / Hexadecimal (16): " + Integer.toHexString(intNum)
 			       + " / Octal (8): " + Integer.toOctalString(intNum));
 	}
-
+	
 	System.out.println("Read in Strings as ints");
 
 	String someValue = "713";

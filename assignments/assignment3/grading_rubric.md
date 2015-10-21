@@ -1,0 +1,1 @@
+Grading rubric located here: http://people.cs.pitt.edu/~ramirez/cs401/assigs/assig2/a2score.pdf

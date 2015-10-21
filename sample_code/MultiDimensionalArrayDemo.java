@@ -33,7 +33,7 @@ public class MultiDimensionalArrayDemo {
 	// Fill array with "space" character
 	for (int j = 0; j < ticTacToe.length; j++) {
 	    for (int k = 0 ; k < ticTacToe.length; k++) {
-		ticTacToe[j][k] = ' ';
+		ticTacToe[j][k] = '.';
 	    }
 	}
 
@@ -60,7 +60,7 @@ public class MultiDimensionalArrayDemo {
 	int[][] raggedArray = { {1,2}, {3,4,5,6,7,8}, {9,10,11,12}, {13} };
 
 	print2DIntArray(raggedArray);
-
+	
 	// These are perfectly fine because remember, each element in
 	// a reference-based array is a reference to something else.
 	// These can be different-sized arrays, or even replaced by other
@@ -72,14 +72,13 @@ public class MultiDimensionalArrayDemo {
 
 	ragged2[0] = new int[2];
 	ragged2[1] = new int[5];
-	ragged2[2] = new int[3];
+	ragged2[2] = ragged2[1];
 
 	ragged2[0][1] = 5;
 	ragged2[2][2] = 5;
 	ragged2[1][2] = ragged2[2][2];
 
 	print2DIntArray(ragged2);
-
 	// Let's replace ragged2[2] with a new array.
 
 	int[] tango = new int[10];
