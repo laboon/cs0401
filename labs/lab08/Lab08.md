@@ -95,6 +95,7 @@ Although attempting to _visualize_ more dimensions than three is difficult, it i
 3. Going backwards past 0 may cause problems.  Remember that -2 % 10, for example, is equal to -2.  Thus, going back from position 0 may have you trying to access a negative array index.  How can you make sure that it always gets the right number?
 4. Returning an array of values is a powerful tool - previously, we had only ever been able to return a single value from a method.  Remember that you are passing back additional values than just the location when the Scientist moves.
 5. You may want to use a simple static method to translate values to colors.
+6. You may want to review the MultiDimensionalArrayDemo, here: https://github.com/laboon/cs0401/blob/master/sample_code/MultiDimensionalArrayDemo.java
 
 ## Grading Rubric
 
