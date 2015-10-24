@@ -5,7 +5,7 @@
 ## Introduction
 
 _“Life is short and truth lives long: let us speak the truth.”_  
-  Arthur Schopenhauer, _The World as Will and Representation_  
+  - Arthur Schopenhauer, _The World as Will and Representation_  
 
 Arthur Schopenhauer is considered a pessimist.  It stands to reason, since one of the key tenets of his moral philosophy is that life consists of pain, and what we call "pleasure" is simply a cessation of that pain.  He also thought that the universe was fundamentally unknowable; it consists of a blind urge to exist, known as the Will.  The Will has no greater meaning or goal, but endlessly and ceaselessly churns and begets more _existence_.  It exists only in order to exist.
 
