@@ -21,7 +21,7 @@ public class ArrayAccessDemo {
 
 	arr[0] = arr[1];
 	
-sequentialAccess(arr));
+	sequentialAccess(arr));
 	System.out.println("direct: " + directAccess(arr));
     }
     
