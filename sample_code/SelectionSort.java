@@ -78,20 +78,17 @@ public class SelectionSort {
 	int[] zeroLengthArray = new int[0];
 
 
-	// swap(unsortedArray, 0, 1);
-	// printArray(unsortedArray);
-	// System.exit(0);
-	
 	System.out.print("Unsorted (before): ");
 	printArray(unsortedArray);
 	selectionSort(unsortedArray);
 	System.out.print("Sorted (after): ");
 	printArray(unsortedArray);
 
+	
 	System.out.print("Already sorted (before): ");
 	printArray(alreadySortedArray);
 	selectionSort(alreadySortedArray);
-	System.out.print("Already orted (after): ");
+	System.out.print("Already sorted (after): ");
 	printArray(alreadySortedArray);
 
 	System.out.print("Unsorted (before): ");
@@ -106,9 +103,5 @@ public class SelectionSort {
 	System.out.print("Sorted (after): ");
 	printArray(zeroLengthArray);
 
-	
-
-	 
-	
     }
 }
