@@ -20,6 +20,11 @@ class Bread {
     public Bread(Store s) {
 	this.s = s;
     }
+
+    public Bread(Bread b) {
+	this.sourdough = b.sourdough;
+	this.s = b.s;
+    }
     
     public String toString() {
 	return "Pumpernickel: " + pumpernickel + " / Sourdough: " + sourdough;
@@ -29,9 +34,13 @@ class Bread {
 	this.pumpernickel = pumpernickel;
 	this.sourdough = sourdough;
     }
-	
-	
-    
+
+    public Bread shallowCopy() {
+    }
+
+    public Bread deepCopy() {
+    }
+		
 }
 
 
@@ -59,7 +68,8 @@ class ObjectOrientedFun {
 	System.out.println("\nBREAD TRUCK COMING YAY\n");
 	b1.updateBread(17, 19);
 	System.out.println(b1.toString());
-
+	System.out.println(b2.toString());
+	
 	// Now let's make some bread with different stores
 
 	Store s1 = new Store();
@@ -76,7 +86,14 @@ class ObjectOrientedFun {
 	b5.s.address = "999 Nine Road";
 
 	System.out.println("b4 store = " + b4.s.toString());
+
+	Bread b6 = new Bread(b4);
+	b6.sourdough = 209;
 	
+	System.out.println("B4 = " + b4.toString());
+	System.out.println("B6 = " + b6.toString());
+	
+
     }
     
 }
