@@ -67,7 +67,7 @@ You may want to add different kinds of monsters, allow regeneration of Hit Point
 Perhaps there was a better way to deal with the Dragon than simply attacking all of its minions and itself.  Games are often two-dimensional and ignore subtleties in life.  Alas, this lab was no different.  Maybe some day we'll find a way to live together with Dragons.
 
 ## Grading Rubric
-   1.0 Point - Different monsters exist with different characteristics, all with a Hoard
-   0.5 Points - Can attack/berserk/magic/run away
-   0.5 Points - Statistics correctly calculated
+   1.0 Point - Different monsters exist with different characteristics, all with a Hoard  
+   0.5 Point - Can attack/berserk/magic/run away  
+   0.5 Point - Statistics correctly calculated and shown  
 
