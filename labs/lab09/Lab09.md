@@ -1,73 +1,118 @@
 ## Lab 09
 
-### Dungeons and Dragons and Objects
+### Deep Bubbles
 
 ## Introduction
 
-_“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.”_   
-   ― Neil Gaiman, _Coraline_  
+_“Good artists copy, great artists steal.”_   
+   ― Pablo Picasso
 
-The townsfolk of Javania have been living in dread for years, as a powerful dragon has moved into a cave nearby.  Along with its Goblin and Troll minions, it has lain waste to the surrounding area, destroying the livelihoods of many, and plunging the region into a deep economic depression.
-
-Using your arcane knowledge of the obscure branch of Magick known as "object-oriented programming", you can defeat this scourge!
+In class, we discussed selection sort.  We also briefly discussed the difference between _shallow copying_ and _deep copying_.  In this lab, we will implement another sorting algorithm, Bubble Sort, as well as a method to deep-copy a ragged two-dimensional array.  
 
 ## Setup
 
-You may use the same private repo as used in the lab last week.  You may want to put the files this week under a special "Lab09" subdirectory, as we will be creating several Java files.  Remember to add, commit, and push them to your repository!
+You may use the same private repo as used in the lab last week.  You may want to put the files this week under a special "Lab09" subdirectory.  However, this lab can be done with only one Java class.  Remember to add, commit, and push any Java files to your repository!
 
 ## Instructions
 
-You will need to create several classes: Player, Monster, Hoard, Goblin, Troll, and Dragon.  Goblins, Trolls, and Dragons are all subclasses of class Monster.
+A base file, Lab09.java, is included in the repository.  You may use this as your basis for the assignment.
 
-At each iteration, the Player will face a randomly selected Monster, chosen by taking a random integer from 0 to 10.  If the integer is 0, 1, 2, 3, or 4, the Player will encounter a Goblin.  If a 5, 6, 7 or 8, a Troll.  Finally, if a 9 or 10 is selected, the Player will encounter the Dragon.
-
-The Player starts the game with 100 Hit Points and 3 Magic Points.  These should be properties (attributes) of the Player.
-
-During each encounter, the Player has several options:
-1. (R)un away - The player leaves the encounter, but the Monster gets one free attack.
-2. (A)ttack - The player attacks the monster while still maintaining a defense, causing a random number of hit points damage (between 1 and 15).
-3. (B)erserk - The player attacks the monster while ignoring their own defense, causing triple damages (1 to 15, multiplied by 3) to the monster, but causing double damage to be done by the Monster to the Player.
-4. (M)agic - The player casts a Magic Heal Spell.  This reduces the number of Magic Points by one.  The Magic Heal Spell resets the Player's Hit Points to 100.  However, the monster has a free attack. 
-
-Monsters will only ever attack.  A Goblin has 10 Hit Points and causes between 1 and 5 points of damage; a Troll has 30 Hit Points and causes between 1 and 10 points of damage; a Dragon has 100 Hit Points and causes between 1 and 20 points of damage.  The same method name should be called for each of these monsters to attack.
-
-All Monsters have a Hoard of gold (if there's one thing I learned from playing role-playing games, it is that monsters always are holding gold).  This Hoard is a separate class, which consists only of a random number of gold pieces (between 1 and 100).
-
-Encounters will continue until either the Player has 0 or fewer Hit Points, or when the Player defeats the Dragon.  After defeating the Dragon, the game will display statistics: specifically, how many gold pieces were collected (this should be stored in the Player class), and how many Goblins, Trolls, and Dragons were defeated (this information should be stored in their respective classes).  If the Player did not defeat the Dragon, there is no need to display the statistics.
-
-This should all be done in proper object-oriented style; you should have a Player class, a Monster class, a Hoard class, and the three subclasses of Monster (Goblin, Troll, and Dragon).
-
-When subclassing, methods in the subclass override methods in the superclass.  However, you can call them on a superclass reference that actually contains a subclass.  For example, if you have the following:
+You will note that there is an array
 
 ```java
-Monster m = new Dragon();
-m.attack();
+public static int[][] deepCopy(int[][] arr)
 ```
 
-It will call the attack method in the Dragon class, not the one in the Monster class.  This is an example of polymorphism, as discussed in class.  These attacks should cause different amounts of damage (as explained above).  
+That is, it will accept a two-dimensional array (of any size, including ragged ones) and return a new array of the same size and with the same values.  For example, if I pass in an array such as:
 
-## Example Code
+```java
+{ {1, 2, 3}
+  {4, 5, 6, 7, 8, 9, 10},
+  {-1} }
+```
 
-See Monster.java and Goblin.java in the Lab09 directory.  These can be good templates for your Monster and Goblin classes.  Note that you use the `extends` keyword to show that something is a subclass (e.g., Goblin is a subclass of Monster).
+It will return a new array of the same sizes and with the same values.  It should NOT return a reference to the same array, or to any of the subarrays!  The arrays must be entirely separate.
 
-## Sample Output
+Then, your program should make a copy of the array a1 and put it in a different variable, a2.
 
-See sample_output.md for several sample runs of the program.
+You will note that the original array has five sub-arrays.  Each of these sub-arrays should be sorted, with the ones in a1 being sorted by Bubble Sort (described below) and the ones in a2 by Selection Sort.  These should be two separate methods.  Each of these methods should return an `int` representing the number of times a swap occurred when sorting one particular sub-array.
+
+After sorting each sub-array through both bubble and selection sorts, display the now-sorted array and number of swaps necessary.  For example, for the first sub-array for a1 and a2, your output should look like this:
+
+```
+Bubble sort: [ 3, 4, 5, 6, 8, 9 ]
+Swaps = 13
+Selection sort: [ 3, 4, 5, 6, 8, 9 ]
+Swaps = 3
+```
+
+Bubble Sort is a similar kind of sort to Selection Sort, in that it involves swapping values.  Selection Sort spends each iteration looking through the rest of the values to see what belongs in position 0, 1, 2, etc., and swapping them.  Bubble Sort, however, will only look at the two elements right next to each other.  If the "left" value (e.g., position 4) is greater than the "right" value (e.g., position 5), then the sort will swap them.  If not, it leaves them alone.
+
+At the end of an iteration, the Bubble Sort will most likely not be done.  Instead, it will have to start back at the beginning of the array and once again look through all the values to see if any need to be swapped.  The Bubble Sort will keep going through the list until there have been no swaps during an iteration, at which point all of the values are in the correct order.
+
+Looking through the output below, notice how smaller values slowly "bubble" to the beginning of the array, and larger values slowly "sink" to the end.
+
+```
+Iteration 0
+[ 8, 9, 5, 6, 4, 3 ]
+Swapping position 1 (Value: 9) and 2 (Value: 5)
+[ 8, 5, 9, 6, 4, 3 ]
+Swapping position 2 (Value: 9) and 3 (Value: 6)
+[ 8, 5, 6, 9, 4, 3 ]
+Swapping position 3 (Value: 9) and 4 (Value: 4)
+[ 8, 5, 6, 4, 9, 3 ]
+Swapping position 4 (Value: 9) and 5 (Value: 3)
+
+Iteration 1
+[ 8, 5, 6, 4, 3, 9 ]
+Swapping position 0 (Value: 8) and 1 (Value: 5)
+[ 5, 8, 6, 4, 3, 9 ]
+Swapping position 1 (Value: 8) and 2 (Value: 6)
+[ 5, 6, 8, 4, 3, 9 ]
+Swapping position 2 (Value: 8) and 3 (Value: 4)
+[ 5, 6, 4, 8, 3, 9 ]
+Swapping position 3 (Value: 8) and 4 (Value: 3)
+
+Iteration 2
+[ 5, 6, 4, 3, 8, 9 ]
+Swapping position 1 (Value: 6) and 2 (Value: 4)
+[ 5, 4, 6, 3, 8, 9 ]
+Swapping position 2 (Value: 6) and 3 (Value: 3)
+
+Iteration 3
+[ 5, 4, 3, 6, 8, 9 ]
+Swapping position 0 (Value: 5) and 1 (Value: 4)
+[ 4, 5, 3, 6, 8, 9 ]
+Swapping position 1 (Value: 5) and 2 (Value: 3)
+
+Iteration 4
+[ 4, 3, 5, 6, 8, 9 ]
+Swapping position 0 (Value: 4) and 1 (Value: 3)
+
+Iteration 5
+[ 3, 4, 5, 6, 8, 9 ]
+Swaps = 13
+```
+
+Note the final iteration (5) sees no swaps done.  This means that the array has already been sorted - there is nothing left to do.
+
+While Bubble Sort is rarely used due to its (lack of) speed, it is used occasionally in graphics programming since it can tell you very quickly and with a minimum of computing power whether or not a list is already sorted.
+
+## Template Code
+
+See Lab09.java for Selection Sort, swap and printArray helper methods, as well as the original array.  Note that you will have to change some of already-existing code in order to complete this lab!
 
 ## Tips
-1. Remember the difference between static and instance variables.
-2. Methods are overridden when subclassing, but variables are not.  Be sure to set values you want for specific kinds of monsters in their constructors!
-3. We can use a generic Monster reference to call the same method, but by creating different kinds of Monsters (Dragons, Trolls, etc.), we can use the same technique (e.g. attack or berserk) with different kinds of monsters without repeating ourselves too much.
 
-## Extending the Game
-You may want to add different kinds of monsters, allow regeneration of Hit Points or Magic Points, or allow more kinds of attacks.  The world is your oyster!
+1. Remember that you do not have to set the size of the array (or a sub-array) during the declaration of it.
+2. Don't be afraid to modify code that already exists.  Mark down where you are (make a "save point") by committing your changes.  If you "go down the wrong path", you can revert back to that point by "git checkout _filename_".
+3. Loop through the array to get each sub-array.
 
-## To Think About..
-
-Perhaps there was a better way to deal with the Dragon than simply attacking all of its minions and itself.  Games are often two-dimensional and ignore subtleties in life.  Alas, this lab was no different.  Maybe some day we'll find a way to live together with Dragons.
+## To Think About
+Is there any case where Bubble Sort was better than Selection Sort, in regards to number of swaps?  Were there any cases where it was much, much worse?  Why?
 
 ## Grading Rubric
-   1.0 Point - Different monsters exist with different characteristics, all with a Hoard  
-   0.5 Point - Can attack/berserk/magic/run away  
-   0.5 Point - Statistics correctly calculated and shown  
+   1.0 Point - Implemented Bubble Sort
+   0.5 Point - Properly counts and displays numbers of swaps  
+   0.5 Point - Does a proper deep copy of the array
 
