@@ -112,7 +112,7 @@ See Lab09.java for Selection Sort, swap and printArray helper methods, as well a
 Is there any case where Bubble Sort was better than Selection Sort, in regards to number of swaps?  Were there any cases where it was much, much worse?  Why?
 
 ## Grading Rubric
-   1.0 Point - Implemented Bubble Sort
+   1.0 Point - Implemented Bubble Sort  
    0.5 Point - Properly counts and displays numbers of swaps  
-   0.5 Point - Does a proper deep copy of the array
+   0.5 Point - Does a proper deep copy of the array  
 
