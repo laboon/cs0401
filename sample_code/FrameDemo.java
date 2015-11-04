@@ -24,7 +24,6 @@ public class FrameDemo {
 
 	// Window is invisible by default, make it visible
 	window.setVisible(true);
-
 	
 	// Now let's do some interesting things with our window
 	// Add a message for a genuine bona fide electrified six-car MONORAIL
@@ -32,7 +31,6 @@ public class FrameDemo {
 	JLabel msg = new JLabel("Monorail");
 	msg.setFont(new Font("TimesRoman", Font.ITALIC, 48));
 	msg.setForeground(Color.BLACK);
-	msg.setBackground(Color.RED);
 	window.add(msg);
 
 	// Refresh window - otherwise we will not be able to see it

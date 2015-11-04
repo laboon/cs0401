@@ -40,7 +40,6 @@ public class ButtonDemo {
 	
 	_msg.setFont(new Font("TimesRoman", Font.ITALIC, 48));
 	_msg.setForeground(Color.BLACK);
-	_msg.setBackground(Color.RED);
 	_window.add(_msg);
 
 	// Make a button with an ActionListener
@@ -51,7 +50,25 @@ public class ButtonDemo {
 
 	_window.setLayout(new FlowLayout());
 	_window.add(btn);
-	    
+
+	JButton btn2 = new JButton("Less");
+	ActionListener buttonListener2 = new ButtonListener2();
+	btn2.addActionListener(buttonListener2);
+	_window.add(btn2);
+
+	JButton btn3 = new JButton("MONOSCHMAIL");
+	ActionListener buttonListener3 = new ButtonListener();
+	btn3.addActionListener(buttonListener3);
+	_window.add(btn3);
+
+	
+        JLabel msg2 = new JLabel("Is there a chance?");
+	_window.add(msg2);
+
+	JLabel msg3 = new JLabel("Noogie");
+	_window.add(msg3);
+	
+	
 	// Refresh window - otherwise we will not be able to see it
 	// THIS IS A COMMON SOURCE OF BUGS!
 	_window.setVisible(true);
@@ -82,10 +99,24 @@ class ButtonListener implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
 	System.out.println("Pressed More Button!");
-	String text = ButtonDemo.getMsg().getText();;
-	text += "\nMonorail!";
-	ButtonDemo.getMsg().setText(text);
+	String newText = ButtonDemo.getMsg().getText();
+	newText += " Monorail!";
+	ButtonDemo.getMsg().setText(newText);
     }
     
 }
-				 
+
+class ButtonListener2 implements ActionListener {
+
+    // Every time we click the button, it will perform
+    // the following action.
+
+    public void actionPerformed(ActionEvent e) {
+	System.out.println("Pressed Less Button!");
+	String newText = ButtonDemo.getMsg().getText();
+	newText = newText.substring(0, newText.length() - 10);
+	ButtonDemo.getMsg().setText(newText);
+    }
+    
+}
+
