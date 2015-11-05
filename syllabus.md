@@ -132,7 +132,7 @@ CS0401: Intermediate Java
 
 * Interfaces, polymorphic access, and generics
 
-## WEEK 13 (Week of 30 Nov)
+## WEEK 14 (Week of 30 Nov)
 
 * Exceptions
   * Definition
@@ -144,7 +144,7 @@ CS0401: Intermediate Java
   * Implementation
   * Benefits / Drawbacks
 
-## WEEK 14 (Week of 7 Dec)
+## WEEK 15 (Week of 7 Dec)
 
 * Final Exam
 
