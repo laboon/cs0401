@@ -4,7 +4,7 @@ public class StringFun {
 
     public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
-	System.out.print("Enter a word and have FUN > ");
+	System.out.print("Enter a string and have FUN > ");
 	String s = sc.nextLine().trim();
 
 	// .trim()
@@ -40,6 +40,9 @@ public class StringFun {
 
 	// .lastIndexOf
 	System.out.println("Location of last o is (-1 if none): " + s.lastIndexOf('o'));
+
+	// .split
+	System.out.println("There are this many tokens separated by spaces: " + s.split(" ").length);
 	
     }
 }
