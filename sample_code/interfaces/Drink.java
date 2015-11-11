@@ -1,4 +1,4 @@
-public class Drink {
+public class Drink extends Object {
 
     public void drink() {
 	System.out.println("Drinking a GENERIC BEVERAGE");
@@ -24,7 +24,7 @@ public class Drink {
 	Soda soda2  = new Soda();
 	soda1.drink();
 	soda2.drink();
-
+	
 	// Create a Water.  This acts the same as a Soda.
 
 	Drink water1 = new Water();
@@ -32,6 +32,11 @@ public class Drink {
 	water1.drink();
 	water2.drink();
 
+	Coffee c1 = new Coffee();
+	Drink c2 = new Coffee();
+	c1.drink();
+	c2.drink();
+	
 	// Water implements the Squirtable interface.  Squirtable
 	// just adds the .squirt() method.  Recall that implementing an
 	// interface is "promising" that you will implement all of
@@ -45,6 +50,8 @@ public class Drink {
 	// Squirtable s = new Squirtable();
 	Squirtable water3 = new Water();
 	water3.squirt();
+	// Is a water reference
+	water2.squirt();
 	
 	// This won't work - .drink() is not part of the Squirtable
 	// interface!
@@ -76,18 +83,21 @@ public class Drink {
 	coffee1.sip();
 	coffee1.noisySip();
 	coffee1.squirt();
+	
 	// Note that Coffee does not implement a drink() method itself,
 	// so it calls the drink() method of its superclass, Drink.
 	coffee1.drink();
 
+
+	System.out.print("Interfaces:");
+	
 	// Only method that can be called on coffee2
 	coffee2.squirt();
 
 	// Only methods that can be called on coffee3
 	
-	coffee1.sip();
-	coffee1.noisySip();
-
+	coffee3.sip();
+	coffee3.noisySip();
 	
     }
     

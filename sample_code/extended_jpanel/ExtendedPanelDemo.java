@@ -19,11 +19,6 @@ public class ExtendedPanelDemo
     private PermutationPanel _middle;
     private PermutationPanel _bottom;
 
-    // These declarations are similar to those in other handouts
-    private JButton _permutate;
-
-    private String _string = "";
-
     public static void main(String [] args) {
 	new ExtendedPanelDemo();
     }
@@ -39,8 +34,6 @@ public class ExtendedPanelDemo
 	_middle = new PermutationPanel();
 	_bottom = new PermutationPanel();
 
-	_permutate = new JButton("Permute!");
-	
 	// Add the different panels to the frame.
 
 	_frame.add(_entry);
