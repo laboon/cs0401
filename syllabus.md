@@ -146,6 +146,12 @@ CS0401: Intermediate Java
 
 ## WEEK 15 (Week of 7 Dec)
 
-* Final Exam
+* Fun With Java
+  * What's new in Java 8?
+  * Other Java frameworks
+    * Spring Boot
+    * Joda Date
+    
+* MIDTERM 2
 
 
