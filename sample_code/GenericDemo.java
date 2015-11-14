@@ -49,17 +49,24 @@ public class GenericDemo {
 	intAl.add(new Integer(2));
 	intAl.add(new Integer(3));
 
-	// If you try to add something to it that is not an Integer, it will
-	// fail at compile-time!  No more waiting to run something before you
-	// know if it works or not.
+	ArrayList<String> strAl = new ArrayList<String>();
+	strAl.add("Nirp");
+	strAl.add("A");
+	strAl.add("Chirp");
+
+	// If you try to add something to intAl that is not an Integer, or to
+	// strAl which is not a String, it will fail at compile-time!  No more
+	// waiting to run something before knowing if it works or not.
 	
 	// WILL NOT COMPILE
 	// intAl.add(new Float(7.11f));
+	// strAl.add(97);
 
 	// Importantly, when we get something out of intAl, we know it is
 	// an Integer, and Java knows too!  Look, no explicit casting!
 
 	Integer bar = intAl.get(0);
+
 	
 	
     }
