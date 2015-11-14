@@ -147,6 +147,7 @@ CS0401: Intermediate Java
 ## WEEK 15 (Week of 7 Dec)
 
 * Fun With Java
+  * Collections
   * What's new in Java 8?
   * Other Java frameworks
     * Spring Boot
