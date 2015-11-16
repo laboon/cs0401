@@ -1,5 +1,7 @@
 // Show you how instanceof works
 
+import java.util.*;
+
 public class InstanceOfDemo {
 
     public static void main(String[] args) {
@@ -50,6 +52,35 @@ public class InstanceOfDemo {
 	System.out.println("Is _c_ an Animal? " + (c instanceof Animal)); // true
 	System.out.println("Is _c_ a Bird? " + (c instanceof Bird)); // true
 	System.out.println("Is _c_ a Cockatiel? " + (c instanceof Cockatiel)); // true
+
+	// Make an ArrayList with animals a, b, and c
+	ArrayList animals =  new ArrayList();
+	animals.add(a);
+	animals.add(b);
+	animals.add(c);
+
+	// When we take them OUT of the animals ArrayList, they're just
+	// generic Objects.  We need to double-check that they are Birds
+	// or Cockatiels before doing anything!
+
+	int counter = 0;
+	for (Object animal : animals) {
+
+	    System.out.println("Object " + counter++ + ":");
+
+	    // Explicitly cast ONLY if it of the correct class!
+	    // Otherwise, run-time errors could occur if we get
+	    // e.g. an Animal out of there and try to make it a Bird
+	    if (animal instanceof Bird) {
+		((Bird) animal).tweet();
+		if (animal instanceof Cockatiel) {
+		    ((Cockatiel) animal).chirp();
+		}
+	    } else {
+		System.out.println("I don't know what kind of animal this is!");
+	    }
+	    
+	}
 	
     }
     
@@ -67,8 +98,17 @@ class Dog extends Animal {
 
 class Bird extends Animal {
 
+    public void tweet() {
+	System.out.println("Tweet tweet!");
+    }
+    
 }
 
 class Cockatiel extends Bird {
 
+    public void chirp() {
+	System.out.println("Chirp chirp!");
+    }
+    
+    
 }
