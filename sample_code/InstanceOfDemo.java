@@ -68,6 +68,10 @@ public class InstanceOfDemo {
 
 	    System.out.println("Object " + counter++ + ":");
 
+	    // Explicitly cast as Cockatiel
+	    // WILL CAUSE A RUN-TIME FAILURE =(
+	    ((Cockatiel) animal).chirp();
+	    
 	    // Explicitly cast ONLY if it of the correct class!
 	    // Otherwise, run-time errors could occur if we get
 	    // e.g. an Animal out of there and try to make it a Bird

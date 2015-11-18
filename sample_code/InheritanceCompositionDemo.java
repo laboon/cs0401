@@ -46,7 +46,7 @@ class Pond {
     }
 }
 
-class SwimmingPool extend Pond {
+class SwimmingPool extends Pond {
     // automatically has swim()
 }
    
@@ -86,7 +86,7 @@ class Pond2 {
     }
 }
 
-class SwimmingPool {
+class SwimmingPool2 {
     public void swim() {
 	System.out.println("Splash splash splash!");
     }

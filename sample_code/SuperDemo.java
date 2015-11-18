@@ -10,7 +10,7 @@ public class SuperDemo {
 	A a = new A();
 	B b = new B();
 	C c = new C();
-
+	
 	// Call printSomething on each.  Note that each will call the
 	// printSomething method for that particular object's class!
 	// However, by using super, B first calls A and asks it to do
@@ -22,7 +22,7 @@ public class SuperDemo {
 	b.printSomething();
 	System.out.println("\nC");
 	c.printSomething();
-
+	
 	// If you don't use super, you can "purely" override the method.
 	// D extends C, but its printSomething does not use super, so
 	// it entirely overrides C's method.
@@ -30,6 +30,8 @@ public class SuperDemo {
 	D d = new D();
 	System.out.println("\nD");
 	d.printSomething();
+
+	System.exit(0);
 
 	// If you have an A reference to C, it still calls C's methods.
 	// However, it CANNOT call methods which A does not have!  Even
@@ -43,7 +45,7 @@ public class SuperDemo {
 	// A-class reference to a C-class object.
 	a2.printSomething();
 	// Will not compile! 
-	//a2.shake();
+	// a2.shake();
     }
 }
 
@@ -52,7 +54,7 @@ public class SuperDemo {
 class A {
 
     public A() {
-	System.out.println("\nCREATED AN A");
+	System.out.println("\nTHIS IS AN A");
     }
     
     public void printSomething() {
@@ -79,13 +81,14 @@ class C extends B {
     public C() {
 	super();
 	System.out.println("C is a subclass of ^");
+		
     }
 
     
-    public void printSomething() {
-	super.printSomething();
-	System.out.println("Yet another thing!");
-    }
+    // public void printSomething() {
+    // 	super.printSomething();
+    // 	System.out.println("Yet another thing!");
+    // }
 
     public void shake() {
 	System.out.println("Shake shake shake!");
@@ -102,6 +105,7 @@ class D extends C {
 
     
     public void printSomething() {
+	super.printSomething();
 	System.out.println("I do my own thing!");
     }
 

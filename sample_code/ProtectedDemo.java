@@ -2,9 +2,11 @@
 public class ProtectedDemo {
 
     public static void main(String[] args) {
+
+	Employee e = new Employee();
+	
 	Dishwasher d = new Dishwasher();
 	Waiter w = new Waiter();
-	Employee e = new Employee();
 	Manager m = new Manager();
 
 	// As we all know, you can't access private variables.  This won't compile.
@@ -17,10 +19,11 @@ public class ProtectedDemo {
 	
 	// There is another kind of "private" variable modifier, protected
 	
-	// This won't compile - outside of subclasses, protected acts just like private
-	// System.out.println("The salary for a dishwasher is: " + d._salary);
+	System.out.println("The salary for a dishwasher is: " + d._salary);
 
 	System.out.println("Manager has a company car: " + m.getHasCompanyCar());
+
+	
 
     }
 
@@ -31,11 +34,16 @@ public class ProtectedDemo {
 class Employee {
 
     protected int _salary = 0;
+    // private int _salary = 0;
 
     private boolean _hasCompanyCar = true;
 
     public boolean getHasCompanyCar() {
 	return _hasCompanyCar;
+    }
+
+    protected void cat() {
+	System.out.println("Cat cat cat!");
     }
 
 }
@@ -48,6 +56,8 @@ class Manager extends Employee {
 
 	// CAN access - protected means ONLY subclasses can see it
 	_salary = 50000;
+
+	// cat();
     }
     
 }
@@ -73,7 +83,7 @@ class Waiter extends Staff {
 class Dishwasher extends Staff {
 
     public Dishwasher() {
-	_salary = 35000;
+	_salary = 25000;
     }
 
     
