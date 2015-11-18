@@ -124,12 +124,14 @@ CS0401: Intermediate Java
   * Overriding vs overloading
 
 * More Java Inheritance And Related 
-  * _ad hoc_ polymorphism (method overloading)
-  * packages  
+  * More on _ad hoc_ polymorphism (method overloading)
+  * Packages
+  * Generics
 
 ## WEEK 13 (Week of 23 Nov)
 
-* Interfaces, polymorphic access, and generics
+* Developing Object-Oriented Program
+  * Using interfaces, polymorphic access, and generics
 
 * NO CLASS - THANKSGIVING BREAK
 
