@@ -123,7 +123,7 @@ CS0401: Intermediate Java
   * Inheritance vs. composition
   * Overriding vs overloading
 
-* More Java Inheritance And Related 
+* More Java Inheritance 
   * More on _ad hoc_ polymorphism (method overloading)
   * Packages
   * Generics
@@ -131,28 +131,25 @@ CS0401: Intermediate Java
 ## WEEK 13 (Week of 23 Nov)
 
 * Developing Object-Oriented Program
-  * Using interfaces, polymorphic access, and generics
+  * Using interfaces, polymorphic access, and Generics
 
 * NO CLASS - THANKSGIVING BREAK
 
 ## WEEK 14 (Week of 30 Nov)
 
-* True polymorphism
-  * Overriding methods and late binding
-  * Accessing super methods
-  * Accessing data polymorphically
-
 * Exceptions
   * Definition
   * Throwing and Catching
-
-## WEEK 15 (Week of 7 Dec)
 
 * Recursion
   * Recursive equations
   * Recursive vs base case
   * Implementation
   * Benefits / Drawbacks
+
+## WEEK 15 (Week of 7 Dec)
+
+* Cool Java Stuff (TBD)
     
 * MIDTERM 2
 
