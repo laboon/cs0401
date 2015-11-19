@@ -8,7 +8,6 @@ public class GenericDemo {
 	ArrayList al = new ArrayList();
 	al.add("chirpanirp");
 	
-
 	// Remember that an ArrayList accepts Objects, that is, any kind of
 	// Java object can be in one.  Unlike arrays, which can only store
 	// one kind of data and so we know what we're getting.
@@ -49,11 +48,14 @@ public class GenericDemo {
 	intAl.add(new Integer(2));
 	intAl.add(new Integer(3));
 
+	// won't work =(
+	// intAl.add("BILL LABOON!!!!!!!");
+		
 	ArrayList<String> strAl = new ArrayList<String>();
 	strAl.add("Nirp");
 	strAl.add("A");
 	strAl.add("Chirp");
-
+	
 	// If you try to add something to intAl that is not an Integer, or to
 	// strAl which is not a String, it will fail at compile-time!  No more
 	// waiting to run something before knowing if it works or not.
@@ -65,9 +67,12 @@ public class GenericDemo {
 	// Importantly, when we get something out of intAl, we know it is
 	// an Integer, and Java knows too!  Look, no explicit casting!
 
-	Integer bar = intAl.get(0);
-
+	int bizzle = ((int) ((int) ((int) (int) 7 + (int) 4 - (int) 2 + (int) 3)));
+	System.out.println(bizzle);
 	
+	Integer bar = (Integer) intAl.get(0);
+
+	System.out.println(bar);
 	
     }
     

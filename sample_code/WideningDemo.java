@@ -61,7 +61,11 @@ public class WideningDemo {
 	short g = minimum(e, f);
 	System.out.println("Minimum is " + g);
 	
-	
+	// double k1 = 99;
+	// double k2 = 100;
+
+	// double k3 = minimum((float) k1, (float) k2);
+	// System.out.println("Minimum is " + k3);
 	
     }
 
