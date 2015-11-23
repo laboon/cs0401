@@ -72,6 +72,7 @@ public class MainPanel extends JPanel {
     }
 
     private void displayIteration(boolean[][] nextIter) {
+	// boolean isDead = false;
 	for (int j = 0; j < _size; j++) {
 	    for (int k = 0; k < _size;  k++) {
 		_cells[j][k].setAlive(nextIter[j][k]);

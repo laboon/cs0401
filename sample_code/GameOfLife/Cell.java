@@ -4,7 +4,11 @@ import java.awt.event.*;
 
 public class Cell extends JButton {
 
+    private final int MAX_YEARS = 5;
+        
     private boolean _beenAlive = false;
+
+    private int _numYears = 0;
     
     public Cell() {
 	super(" ");
@@ -29,9 +33,22 @@ public class Cell extends JButton {
 	// note that "if (a)" and "if (a == true)"
 	// really say the same thing!
 	if (a) {
-	    _beenAlive = true;
-	    setText("X");
-	    setBackground(Color.RED);
+
+	    if (++_numYears > MAX_YEARS) {
+		System.out.println("DIED OF OLD AGE");
+		setText(" ");
+		if (_beenAlive) {
+		    setBackground(Color.GREEN);
+		} else {
+		    setBackground(Color.GRAY);
+		}
+		_numYears = 0;
+	    } else {
+		_beenAlive = true;
+		setText("X");
+		setBackground(Color.RED);
+	    }
+	    
 	} else {
 	    setText(" ");
 	    if (_beenAlive) {
@@ -42,6 +59,7 @@ public class Cell extends JButton {
 	}
 	setContentAreaFilled(true);
         setOpaque(true);
+
     }
 
     class CellButtonListener implements ActionListener {
