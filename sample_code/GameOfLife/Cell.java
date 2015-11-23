@@ -10,6 +10,14 @@ public class Cell extends JButton {
 	addActionListener(new CellButtonListener());
     }
 
+    public Cell(boolean alive) {
+	super(" ");
+	setFont(new Font("Courier", Font.PLAIN, 12));
+	addActionListener(new CellButtonListener());
+	setAlive(alive);
+    }
+
+    
     public boolean getAlive() {
 	String text = getText();
 	return (text.equals("X"));

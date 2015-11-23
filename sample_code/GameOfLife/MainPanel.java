@@ -1,5 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
+import java.util.*;
+
 
 public class MainPanel extends JPanel {
 
@@ -69,9 +71,10 @@ public class MainPanel extends JPanel {
 
     }
 
-    private void displayNextIteration(boolean[][] nextIter) {
+    private void displayIteration(boolean[][] nextIter) {
 	for (int j = 0; j < _size; j++) {
 	    for (int k = 0; k < _size;  k++) {
+		System.out.println("Setting: " + j + " " + k + ": " + nextIter[j][k]);
 		_cells[j][k].setAlive(nextIter[j][k]);
 	    }
 	}
@@ -87,7 +90,7 @@ public class MainPanel extends JPanel {
 	    }
 	}
 
-	displayNextIteration(nextIter);
+	displayIteration(nextIter);
     }
 
     public void backup() {
@@ -144,11 +147,6 @@ public class MainPanel extends JPanel {
 	// debugPrint();
     }
 
-    public void stop() {
-	_running = false;
-	
-    }
-
     public boolean[][] convertToBoolean(Cell[][] cells) {
 	boolean[][] toReturn = new boolean[_size][_size];
 	System.out.println("Backup cells");
@@ -173,10 +171,31 @@ public class MainPanel extends JPanel {
     public void undo() {
 	// System.out.println("main panel undo");
 	
-	displayNextIteration(convertToBoolean(_backupCells));
+	displayIteration(convertToBoolean(_backupCells));
 	setVisible(true);
     }
 
+    public void load(ArrayList<String> lines) {
+	boolean[][] loaded = new boolean[_size][_size];
+
+	for (int j = 0; j < _size; j++) {
+	    String l = lines.get(j);
+	    for (int k = 0; k < _size; k++) {
+		if (l.charAt(k) == '.') {		    
+		    _cells[j][k].setAlive(false);
+		    loaded[j][k] = false;
+		} else {
+		    System.out.println("Living cell @ " + j + " " + k);
+		    _cells[j][k].setAlive(true);
+		    loaded[j][k] = true;
+		}
+	    }
+	}
+	displayIteration(loaded);
+	debugPrint();
+	
+    }
+    
 
     public MainPanel(int size) {
 	super();

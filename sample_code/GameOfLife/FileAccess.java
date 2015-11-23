@@ -14,25 +14,27 @@ public class FileAccess {
 	}
     }
 
-    // public World loadFile(String fileName) {
 
-    // 	ArrayList<String> lines = new ArrayList<String>();
+    
+    public static ArrayList<String> loadFile(String fileName) {
 
-    // 	try {
-    // 	    File f = new File(fileName);
-    // 	    Scanner sc = new Scanner(f);
+    	ArrayList<String> lines = new ArrayList<String>();
 
-    // 	    while (sc.hasNextLine()) {
-    // 		lines.add(sc.nextLine());
-    // 	    }
+    	try {
+    	    File f = new File(fileName);
+    	    Scanner sc = new Scanner(f);
 
-    // 	    sc.close();
-    // 	} catch (FileNotFoundException fnfex) {
-    // 	    return null;
-    // 	}
+    	    while (sc.hasNextLine()) {
+    		lines.add(sc.nextLine());
+    	    }
 
-    // 	return new World(lines);
+    	    sc.close();
+    	} catch (FileNotFoundException fnfex) {
+    	    return null;
+    	}
 
-    // }
+    	return lines;
+
+    }
     
 }
