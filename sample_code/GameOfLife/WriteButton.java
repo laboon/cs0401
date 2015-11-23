@@ -24,8 +24,9 @@ public class WriteButton extends JButton {
 		    if (cells[j][k].getAlive()) {
 			toWrite += "X";
 		    } else {
-			toWrite += " ";
+			toWrite += ".";
 		    }
+		    
 		}
 		toWrite += "\n";
 	    }
