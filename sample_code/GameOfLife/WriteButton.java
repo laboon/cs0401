@@ -31,6 +31,7 @@ public class WriteButton extends JButton {
 		toWrite += "\n";
 	    }
 	    boolean success = FileAccess.saveFile("backup.txt", toWrite);
+	    
 	    if (!success) {
 		JOptionPane.showMessageDialog((Component) e.getSource(), "COULD NOT WRITE FILE backup.txt", "BROUGHT TO YOU BY BILL LABOON", JOptionPane.WARNING_MESSAGE);
 	    }

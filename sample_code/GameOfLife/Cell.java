@@ -4,6 +4,8 @@ import java.awt.event.*;
 
 public class Cell extends JButton {
 
+    private boolean _beenAlive = false;
+    
     public Cell() {
 	super(" ");
 	setFont(new Font("Courier", Font.PLAIN, 12));
@@ -27,11 +29,16 @@ public class Cell extends JButton {
 	// note that "if (a)" and "if (a == true)"
 	// really say the same thing!
 	if (a) {
+	    _beenAlive = true;
 	    setText("X");
 	    setBackground(Color.RED);
 	} else {
 	    setText(" ");
-	    setBackground(Color.GRAY);
+	    if (_beenAlive) {
+		setBackground(Color.GREEN);
+	    } else {
+		setBackground(Color.GRAY);
+	    }
 	}
 	setContentAreaFilled(true);
         setOpaque(true);
@@ -51,7 +58,7 @@ public class Cell extends JButton {
 		setAlive(false);
 	    } else {
 		// This shouldn't happen
-		source.setText(" ");
+		setAlive(false);
 	    }
 	}
     

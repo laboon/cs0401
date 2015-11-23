@@ -209,7 +209,7 @@ public class MainPanel extends JPanel {
 	    }
 	}
 
-	JOptionPane.showMessageDialog(this, "Conway's Game Of Life w/ a " + _size + " x " + _size + " Matrix", "BROUGHT TO YOU BY BILL LABOON", JOptionPane.WARNING_MESSAGE);
+	JOptionPane.showMessageDialog(this, "Conway's Game Of Life w/ a " + _size + " x " + _size + " Matrix", "BROUGHT TO YOU BY BILL LABOON", JOptionPane.ERROR_MESSAGE);
 
 	// String name = JOptionPane.showInputDialog("Please enter name:");
 
