@@ -74,7 +74,6 @@ public class MainPanel extends JPanel {
     private void displayIteration(boolean[][] nextIter) {
 	for (int j = 0; j < _size; j++) {
 	    for (int k = 0; k < _size;  k++) {
-		System.out.println("Setting: " + j + " " + k + ": " + nextIter[j][k]);
 		_cells[j][k].setAlive(nextIter[j][k]);
 	    }
 	}
