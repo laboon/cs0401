@@ -77,7 +77,8 @@ The final output of the program should just be a list of all the exceptions that
 3. If you do not catch the _specific_ kind of exception you cause, the exception will bubble up and cause the program to cease execution.  Be careful when copying and pasting!
 
 ## Grading Rubric
-0 points - Generated no exceptions
-1 point - Generated 7 or fewer kinds of exceptions and caught them, including a NoogieException
-2 points - Generated 8 or more kinds of exceptions and caught them, including a NoogieException and a CoogieException
+
+0 points - Generated no exceptions  
+1 point - Generated 7 or fewer kinds of exceptions and caught them, including a NoogieException  
+2 points - Generated 8 or more kinds of exceptions and caught them, including a NoogieException and a CoogieException  
 
