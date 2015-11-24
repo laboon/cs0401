@@ -52,7 +52,7 @@ try {
 
 You should print out the String representation of the exception for each exception caused.
 
-There will be numerous instances of these try..catch blocks.  Each try..catch block should be indepedent; that is, the first exception should occur
+There will be numerous instances of these try..catch blocks.  Each try..catch block should be indepedent; that is, the first exception should occur, and then caught, then a new try..catch block starts.  The try..catch blocks should not be nested.
 
 You are required to create two of your own kinds of exceptions (these both should be subclasses of class Exception).
 
@@ -75,6 +75,10 @@ The final output of the program should just be a list of all the exceptions that
 1. First figure out what the exception means, then think backwards to what may cause it.  The Java API is helpful in helping you understand what causes an exception to occur.
 2. Remember that when an exception occurs and is thrown, the rest of the block in which that exception occurs does not execute - it goes directly to the `catch` block.
 3. If you do not catch the _specific_ kind of exception you cause, the exception will bubble up and cause the program to cease execution.  Be careful when copying and pasting!
+
+## To Think About..
+
+Most things in Java are objects, even Exceptions!  Look up the class hierarchy of Exception if you don't believe me.  They are not something to be scared of; they are trying to tell you exactly what is wrong.  By creating your own, you'll realize they're just as much a part of the language as returning a particular value from a method.
 
 ## Grading Rubric
 
