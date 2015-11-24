@@ -79,6 +79,11 @@ public class MainPanel extends JPanel {
 	}
 	setVisible(true);
     }
+
+    /**
+     * For each of the cells, calculate what their
+     * state will be for the next iteration.
+     */
     
     private void calculateNextIteration() {
 	
@@ -92,18 +97,29 @@ public class MainPanel extends JPanel {
 	displayIteration(nextIter);
     }
 
+    /**
+     * Make a copy of the current cells and put
+     * the copy in the backup cells.
+     */
+    
     public void backup() {
-	// System.out.println("Backing up cells...");
 	_backupCells = new Cell[_size][_size];
 	for (int j = 0; j < _size; j++) {
 	    for (int k = 0; k < _size; k++) {
 		_backupCells[j][k] = new Cell();
 		_backupCells[j][k].setAlive(_cells[j][k].getAlive());
-		// System.out.println("Set backup " + j + " " + k + " to " + _backupCells[j][k].getAlive());
 	    }
 	}
     }
 
+    /**
+     * This is for debug use.  It will display
+     * the state of cells in a convenient format.
+     * First it will display backup cells and then
+     * the current cells.  Backup cells are what
+     * you revert to when you press Undo.
+     */
+    
     public void debugPrint() {
 	System.out.println("Backup cells");
 
@@ -139,6 +155,43 @@ public class MainPanel extends JPanel {
 					   
 	
     }
+
+    /**
+     * Convert the Main Panel into a String
+     * which can be written to a file.
+     */
+    
+    public String toString() {
+
+	// Loop through all of the cells, and
+	// if they are alive, add an "X" to
+	// the String, if dead, a ".".
+
+	// We don't discuss this in 401, but
+	// there's a better way to do this.
+	// Feel free to look up StringBuilder
+	// if you want to see a more efficient
+	// way to do this.
+	
+	String toWrite = "";
+	
+	for (int j = 0; j < _size; j++) {
+	    for(int k = 0; k < _size; k++) {
+		if (_cells[j][k].getAlive()) {
+		    toWrite += "X";
+		} else {
+		    toWrite += ".";
+		}
+		    
+	    }
+	    toWrite += "\n";
+	}
+	return toWrite;
+    }
+
+    /**
+     * Run one iteration of the Game of Life
+     */
     
     public void run() {
 	backup();
@@ -146,52 +199,95 @@ public class MainPanel extends JPanel {
 	// debugPrint();
     }
 
+    /**
+     * Convert the array of Cell objects into an 
+     * array of booleans.
+     */
+    
     public boolean[][] convertToBoolean(Cell[][] cells) {
+
+	// 2-D array to return.  Remember everything
+	// is false by default for boolean arrays!
+	
 	boolean[][] toReturn = new boolean[_size][_size];
-	System.out.println("Backup cells");
 
 	for (int j = 0; j < _size; j++) {
 	    for (int k = 0; k < _size; k++) {
-
 		if (cells[j][k].getAlive()) {
 		    toReturn[j][k] = true;
-		    System.out.print("X");
 		} else {
-		    toReturn[j][k] = false;
-		    System.out.print(".");
+		    // Nothing to do!  Already
+		    // set to false by default.
+		    // toReturn[j][k] = false;
 		}
 	    }
-	    System.out.println("");
 	}
 	return toReturn;
 	
     }
+
+    /**
+     * Revert back to the previous iteration,
+     * which we have saved in _backupCells.
+     */
     
     public void undo() {
-	// System.out.println("main panel undo");
-	
 	displayIteration(convertToBoolean(_backupCells));
+    }
+
+    /**
+     * Loop through the entire array and reset
+     * each of the Cells in the MainPanel.
+     */
+    
+    public void clear() {
+	for (int j = 0; j < _size; j++) {
+	    for (int k = 0; k < _size; k++) {
+		_cells[j][k].reset();
+	    }
+	}
+	// Need to call setVisible() since
+	// we did not do a displayIteration()
+	// call.
 	setVisible(true);
     }
 
+    /**
+     * Load in a previously saved Game of Life
+     * configuration.
+     */
+    
     public void load(ArrayList<String> lines) {
 	boolean[][] loaded = new boolean[_size][_size];
 
+	
 	for (int j = 0; j < _size; j++) {
 	    String l = lines.get(j);
 	    for (int k = 0; k < _size; k++) {
+
+		// Reset the "been alive" count
+		_cells[j][k].resetBeenAlive();
+
+		// For each line, get each character.
+		// If it's a '.', the cell stays
+		// dead.  Otherwise, the cell is alive.
+		// We could specifically check for
+		// an 'X' for alive and throw an
+		// error if we get an unexpected char.
 		if (l.charAt(k) == '.') {		    
 		    _cells[j][k].setAlive(false);
 		    loaded[j][k] = false;
 		} else {
-		    System.out.println("Living cell @ " + j + " " + k);
 		    _cells[j][k].setAlive(true);
 		    loaded[j][k] = true;
 		}
 	    }
 	}
+
+	// Now that we have set the Cells to what
+	// we expect, display the iteration.
 	displayIteration(loaded);
-	debugPrint();
+	// debugPrint();
 	
     }
     
@@ -209,7 +305,10 @@ public class MainPanel extends JPanel {
 	    }
 	}
 
-	JOptionPane.showMessageDialog(this, "Conway's Game Of Life w/ a " + _size + " x " + _size + " Matrix", "BROUGHT TO YOU BY BILL LABOON", JOptionPane.ERROR_MESSAGE);
+	// Different message option panes - feel free
+	// to play with these.
+	
+	JOptionPane.showMessageDialog(this, "Conway's Game Of Life w/ a " + _size + " x " + _size + " Matrix");
 
 	// String name = JOptionPane.showInputDialog("Please enter name:");
 

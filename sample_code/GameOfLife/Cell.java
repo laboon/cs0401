@@ -19,6 +19,14 @@ public class Cell extends JButton {
 	setAlive(alive);
     }
 
+    public void resetBeenAlive() {
+	_beenAlive = false;
+    }
+
+    public void reset() {
+	resetBeenAlive();
+	setAlive(false);
+    }
     
     public boolean getAlive() {
 	String text = getText();
@@ -52,6 +60,7 @@ public class Cell extends JButton {
 	public void actionPerformed(ActionEvent e) {
 	    Cell source = (Cell) e.getSource();
 	    String currentText = source.getText();
+	    resetBeenAlive();
 	    if (currentText.equals(" ")) {
 		setAlive(true);
 	    } else if (currentText.equals("X")) {
