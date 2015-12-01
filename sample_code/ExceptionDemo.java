@@ -4,10 +4,29 @@ public class ExceptionDemo {
 
 
     public static void main(String[] args) {
-
+	
 	int a = 1;
 	int b = 0;
 	int c = 0;
+
+	try {
+	    c = 7; // a / b; // EXCEPTION OCCURS - LEAVE THE BLOCK
+	    System.out.println("Bill rocks!");
+	    System.out.println("WOOOO");
+	} catch (Exception ex) {
+	    System.out.println("You broke the universe!");
+	    return;
+	} finally {
+	    System.out.println("La la la!");
+	}
+	
+	try {
+	    Thread.sleep(2);
+	} catch (InterruptedException iex) {
+	    System.out.println("Thread, Interrupted.");
+	}
+	System.out.println("...");
+	   
 
 	// If you want to "catch" an exception (not throw
 	// it up to be handled by whoever called this method,
@@ -28,7 +47,7 @@ public class ExceptionDemo {
 	} catch (ArithmeticException aex) {
 	    System.out.println(aex.toString());
 	}
-
+		
 	// Note that having something in a try block does not mean
 	// that an exception will or can occur!  Nothing is stopping
 	// you from doing this.
@@ -75,7 +94,7 @@ public class ExceptionDemo {
 	    System.out.println("You can't access out-of-bounds array indexes!");
 	    System.out.println(obex.toString());
 	}
-
+	
 	// Exceptions are handled from top to bottom - so put most specific errors
 	// on top, then move down to less specific!
 
@@ -115,7 +134,10 @@ public class ExceptionDemo {
 	    c = 12 / 0;
 	} catch (ArithmeticException aex) {
 	    System.out.println("You can't divide 12 / 0!  Watch:");
+	    // // try {
 	    // c = 12 / 0;
+	    // // } catch (Exception ex) {
+	    // // }
 	} 
 	
 	// Sometimes you want to do something at the END of a try block,
@@ -143,7 +165,7 @@ public class ExceptionDemo {
 	    }
 	    
 	}
-	
+
 	// Although tracking down the error may seem simple, it gets difficult for
 	// larger programs where the location where the error is caught may be very
 	// different than where it is thrown.
@@ -160,7 +182,7 @@ public class ExceptionDemo {
 	    System.out.println(ex.toString());
 	    // Note that this does the printing for you - it does not return
 	    // a String, so no need to println() it.
-	    //ex.printStackTrace();
+	    ex.printStackTrace();
 	}
 	
     }
@@ -191,7 +213,7 @@ public class ExceptionDemo {
     }
 
     
-    public static int laboonify5(int lhs, int rhs) {
+    public static int laboonify5(int lhs, int rhs) throws ArithmeticException {
 	lhs += rhs;
 	return (lhs++) / rhs;
     }
