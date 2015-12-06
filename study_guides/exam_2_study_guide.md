@@ -79,6 +79,7 @@ Particular topics to review include the following.  Note that just because it is
   * Throwing and catching
   * finally blocks
   * What is the use of a finally block?
+  * Checked vs unchecked
   * Creating your own exceptions
 
 * Recursion

@@ -7,10 +7,10 @@ public class NonRecursionDemo {
     // Why is it bad?
     // 1. Mathematically inelegant
     // 2. Might be more difficult to understand or harder to code
-    public static int triangle(int num) {
+    public static long triangle(long num) {
 	// This method does the same thing as the recursive method
 	// in RecursionDemo!
-	int val = 0;
+	long val = 0;
 	for (int j=0; j <= num; j++) {
 	    val += j;
 	}
@@ -18,13 +18,13 @@ public class NonRecursionDemo {
     }
 
   
-    public static int fibonacci(int num) {
+    public static long fibonacci(long num) {
 	// This method does the same thing as the recursive method
 	// in RecursionDemo!
-	int back2 = 0;
-	int back1 = 1;
-	int current = 1;
-	for (int j=1; j < num; j++) {
+	long back2 = 0;
+	long back1 = 1;
+	long current = 1;
+	for (long j=1; j < num; j++) {
 	    current = back2 + back1;
 	    back2 = back1;
 	    back1 = current;
@@ -35,10 +35,16 @@ public class NonRecursionDemo {
 
     
     public static void main(String[] args) {
-	int num = -1;
+
+	for (int j=9; j>=0; j--) {
+	    System.out.print(j);
+	}
+	System.out.println();
+	
+	long num = -1;
 	
 	if (args.length >= 1) {
-	    num = Integer.parseInt(args[0]);
+	    num = (long) Integer.parseInt(args[0]);
 	    if (num <= 0) {
 		printErrorAndDie();
 	    }
@@ -46,9 +52,9 @@ public class NonRecursionDemo {
 	    printErrorAndDie();
 	}
 
-	int fib = fibonacci(num);
+	long fib = fibonacci(num);
 
-	int tri = triangle(num);
+	long tri = triangle(num);
 
 	System.out.println("Fib(" + num + ") = " + fib);
 	System.out.println("Tri(" + num + ") = " + tri);

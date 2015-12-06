@@ -59,16 +59,30 @@ public class RecursionDemo {
     // last two elements of the Fibonacci sequence are, by calling the Fibonacci
     // method again.
     
-    public static int fibonacci(int num) {
+    public static long fibonacci(long num) {
 	if (num <= 1) {
+	    // BASE CASE
 	    return num;
 	} else {
+	    // RECURSIVE CASE
+	    // System.out.println("Fib(" + num + ") = " +  fibonacci(num - 1) + " + " + fibonacci(num - 2));
 	    return fibonacci(num - 1) + fibonacci(num - 2);
 	}
     }
 
+    public static void recursivePrint(int n) {
+	if (n == 0) {
+	    System.out.println("0");
+	} else {
+	    System.out.print(n);
+	    recursivePrint(n-1);
+	}
+    }
     
     public static void main(String[] args) {
+
+	recursivePrint(9);
+	
 	int num = -1;
 	
 	if (args.length >= 1) {
@@ -80,12 +94,12 @@ public class RecursionDemo {
 	    printErrorAndDie();
 	}
 
-	int fib = fibonacci(num);
+	long fib = fibonacci(num);
 
-	int tri = triangle(num);
+	// int tri = triangle(num);
 
 	System.out.println("Fib(" + num + ") = " + fib);
-	System.out.println("Tri(" + num + ") = " + tri);
+	// System.out.println("Tri(" + num + ") = " + tri);
     }
 
     // Print error message and end program
