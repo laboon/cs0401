@@ -18,7 +18,7 @@ public class FibonacciDemo {
 	_numCalls++;
 	if (num <= 1) {
 	    // BASE CASE
-	    System.out.println("Fib(" + num + ") = 1");
+	    System.out.println("Fib(" + num + ") = " + num);
 	    return num;
 	} else {
 	    // RECURSIVE CASE
