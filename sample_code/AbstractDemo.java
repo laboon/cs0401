@@ -1,10 +1,12 @@
 public class AbstractDemo {
 
     public static void main(String[] args) {
-	// Can't do this - abstract class
+	// Can't do this - abstract classes cannot be instantiated
 	// Dog d = new Dog();
 
-
+	// However, their subclasses can!
+	// They act just like normal classes
+	
 	System.out.println("Chihuahua:");
 	Chihuahua c = new Chihuahua();
 	c.bark();
@@ -45,6 +47,10 @@ abstract class Dog {
 class Chihuahua extends Dog {
 
     public void bark() {
+	// Nothing exists in super.bark()!  No such method.
+	// This will cause a compiler error that abstract methods
+	// canot be accessed directly
+	//super.bark();
 	System.out.println("Yip yip!");
     }
     
