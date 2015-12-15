@@ -47,11 +47,11 @@ abstract class Dog {
 class Chihuahua extends Dog {
 
     public void bark() {
-	// Nothing exists in super.bark()!  No such method.
-	// This will cause a compiler error that abstract methods
-	// canot be accessed directly
-	//super.bark();
-	System.out.println("Yip yip!");
+    	// Nothing exists in super.bark()!  No such method.
+    	// This will cause a compiler error that abstract methods
+    	// canot be accessed directly
+    	// super.bark();
+    	System.out.println("Yip yip!");
     }
     
 }
