@@ -42,11 +42,11 @@ Score  | Grade
 82.99-80.00 | B-
 79.99-76.00 | C+
 75.99-71.00 | C
-70.99-69.00 | C-
-68.99-66.00 | D+
-65.99-62.00 | D
-61.99-58.00 | D-
-57.99-0.00 | F
+70.99-67.00 | C-
+66.99-64.00 | D+
+63.99-55.00 | D
+54.99-50.00 | D-
+49.99-0.00 | F
 
 Everybody is expected to do their own work.  Any student caught collaborating or cheating on an exam will automatically receive a 0 (zero) for that exam or project, and may be penalized more harshly for egregious offenses (up to automatic failure of the course).  A second time caught collaborating or cheating will result in automatic failure of the course, at a minimum, and may be subject to further measures based on University of Pittsburgh academic policy.
 
