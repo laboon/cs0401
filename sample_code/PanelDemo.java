@@ -4,8 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class PanelDemo
-{
+public class PanelDemo {
     // Remember frame = window
     private JFrame _frame;
 
@@ -17,6 +16,8 @@ public class PanelDemo
     // These declarations are similar to those in other handouts
     private JButton _addButton;
     private JButton _subtractButton;
+    private JButton _quitButton;
+    
     private JLabel _decVal;
     private JLabel _binaryVal;
     private JLabel _hexVal;
@@ -45,18 +46,22 @@ public class PanelDemo
 	// and put them in the top panel
 	
 	ArithmeticListener aListener = new ArithmeticListener();
-
+	QuitListener quitListener = new QuitListener();
+	
 	_addButton = new JButton("++");
 	_subtractButton = new JButton("--");
+	_quitButton = new JButton("QUIT!");
 	
 	_addButton.addActionListener(aListener);
 	_subtractButton.addActionListener(aListener);
-
+	_quitButton.addActionListener(quitListener);
+	
 	_addButton.setHorizontalAlignment(SwingConstants.CENTER);
 	_subtractButton.setHorizontalAlignment(SwingConstants.CENTER);
 	
 	_top.add(_addButton);
 	_top.add(_subtractButton);
+	_top.add(_quitButton);
 
 	// Now add decimal value in middle
 	// Font settings - http://docs.oracle.com/javase/7/docs/api/java/awt/Font.html
@@ -89,8 +94,9 @@ public class PanelDemo
 	// Now create the frame.  Should exit on close.
 	
 	_frame = new JFrame("Binary Counter");
-	_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+	// _frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	_frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+	
 	// Add the different panels to the frame.
 	
 	_frame.add(_top, BorderLayout.NORTH);
@@ -110,10 +116,10 @@ public class PanelDemo
 	_decVal.setText(Integer.toString(_value));
 	_hexVal.setText(Integer.toHexString(_value));
 	_binaryVal.setText(Integer.toBinaryString(_value));
-	// Whoa, why don't I need a setVisible(true) here?
     }
     
     class ArithmeticListener implements ActionListener {
+	
 	public void actionPerformed(ActionEvent e) {
 	    if (e.getSource() == _addButton) {
 		_value++;		    
@@ -123,6 +129,13 @@ public class PanelDemo
 		System.out.println("UNKNOWN BUTTON PRESSED!");
 	    }
 	    updateLabels();
+	}
+    }
+
+    class QuitListener implements ActionListener {
+	
+	public void actionPerformed(ActionEvent e) {
+	    System.exit(0);
 	}
     }
 

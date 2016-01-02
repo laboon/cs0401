@@ -22,8 +22,8 @@ public class GridDemo {
 
 	_frame.setLayout(new GridLayout(3,3));
 
-	for (int j=0; j<9; j++) {
-	    _buttons[j] = new JButton("_");
+	for (int j=0; j<5; j++) {
+	    _buttons[j] = new JButton("" + j);
 	    ActionListener buttonListener = new ButtonListener();
 	    _buttons[j].addActionListener(buttonListener);
 	    _buttons[j].setFont(new Font("Courier", Font.PLAIN, 48));

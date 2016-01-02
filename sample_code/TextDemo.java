@@ -30,6 +30,8 @@ public class TextDemo {
 	_button.addActionListener(printListener);
 	
 	_frame.add(_button);
+
+	_frame.pack();
 	
 	// Refresh window - otherwise we will not be able to see it
 	// THIS IS A COMMON SOURCE OF BUGS!
