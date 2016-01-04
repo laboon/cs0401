@@ -4,19 +4,13 @@ Intermediate Java
 ## Course Information
 
 **Taught by:** Bill Laboon (bill.laboon@pitt.edu)  
-**Professor's Office Hours:** SENSQ 6305, T/H 5:00-6:00 PM and W 12:00-1:00 PM , or by appointment.  
+**Professor's Office Hours:** SENSQ 6305, TBD, or by appointment.  
 
 **TA:** Emilee Betz  
-**TA Office Hours:** T 9:00 AM - 12:00 PM, W 9:00 AM - 10:00 AM SENSQ 6506  
-
-**TA:** [Ethan Welsh](https://github.com/EthanWelsh) (welshej@gmail.com)
-**TA Office Hours:** T 4:00 PM - 6:00 PM, SENSQ 6506
-    
-**TA:** Shelley Goldberg  
-**TA Office Hours:** M/W 11:00 AM - 1:00 PM, SENSQ 6506
+**TA Office Hours:** TBD SENSQ 6506  
 [Lab Topics Form](https://docs.google.com/forms/d/1FiXmJBGlI6MSZlCxUUGdwOFTJmCw6xskLTIBfhkTatA/viewform?usp=send_form)
 
-**Grader:** Yubo Feng (yuf24@pitt.edu)
+**Grader:** TBD
 **Grader Office Hours:** No specific office hours; please email for appointment
 
 **Class GitHub repo:** https://www.github.com/laboon/cs0401  
@@ -24,11 +18,11 @@ Intermediate Java
 
 ## Grading
 
-* Mid-term Exam - 25%
-* Final Exam - 25%
+* Mid-term Exam - 20%
+* Final Exam - 20%
 * Programming Projects: 30%
 * Quizzes: 10%
-* Labs: 10%
+* Labs: 20%
 
 
 The following grading scale will be used.
@@ -64,7 +58,7 @@ in grading.
 
 Students are strongly encouraged to attend all lectures and labs, which may include material not taken from the text.  If a student misses a lecture, they are resposible for the material covered.
 
-Of the labs, four will be graded and worth 2% each.  Attendance for these is *required*.  Attendance for ungraded labs is optional but highly recommended.  In addition, 2% of your overall grade for the lab attendance and participation and will be determined by the Lab TA.
+There are fourteen labs throughout the semester.  Of these, your top ten out of fourteen will count for your lab grade (2% each).  I _highly_ recommend you go to all of the labs, but in case you have to miss one or don't do well on some of them, your grade will not be affected.
 
 Presence for the quizzes, mid-term, and final (cumulative) exam are *required*.
 They will be individually re-scheduled only in the event of an emergency.
