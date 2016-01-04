@@ -215,7 +215,7 @@ In the file, there are three numbered problems.  After you have fixed each one, 
 
 The first problem is to edit each of the six variable declaration/assignments so that the program both compiles and gives the correct answer.  Note that the man should be going to St. Ives, so set that variable appropriately.  Also note that there may be more than one thing wrong with a single statement!
 
-The second is to calculate exactly how many entities (men, wives, sacks, cats, and kittens) are going to St. Ives, and put this value in the variable total.
+The second is to calculate exactly how many entities (men, wives, sacks, cats, and kittens) are going to St. Ives, and put this value in the variable _total_.
 
 The third and final problem is to print out "Number going to St. Ives is ", followed by the number you calculated and put in the variable _total_.
 
