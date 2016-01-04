@@ -60,12 +60,7 @@ Students are strongly encouraged to attend all lectures and labs, which may incl
 
 There are fourteen labs throughout the semester.  Of these, your top ten out of fourteen will count for your lab grade (2% each).  I _highly_ recommend you go to all of the labs, but in case you have to miss one or don't do well on some of them, your grade will not be affected.
 
-Presence for the quizzes, mid-term, and final (cumulative) exam are *required*.
-They will be individually re-scheduled only in the event of an emergency.
-If you are facing an emergency, please contact the instructor *immediately* (if
-it is safe to do so, of course).  Failure to show up for an exam
-without clearing it first with the instructor will result in a 0
-(zero) for that exam.  
+Presence for the quizzes and exams are *required*. They will be individually re-scheduled only in the event of an emergency. If you are facing an emergency, please contact the instructor *immediately* (if it is safe to do so, of course).  Failure to show up for a quiz or  exam without clearing it first with the instructor will result in a 0 (zero) for that exam.  
 
 ## Programming Environment
 
