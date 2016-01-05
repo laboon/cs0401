@@ -11,6 +11,10 @@ Intermediate Java
 
 **TA:** John Felen (jtf28@pitt.edu)
 **TA Office Hours:** SENSQ 6506, Friday 4:00-6:00
+
+**TA:** Sam Kopansky
+**TA Office Hours:** SENSQ 6506, Wednesday 3:00-4:00 and Friday 1:00-2:00
+
 [Lab Topics Form](https://docs.google.com/forms/d/1FiXmJBGlI6MSZlCxUUGdwOFTJmCw6xskLTIBfhkTatA/viewform?usp=send_form)
 
 **Grader:** TBD

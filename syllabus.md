@@ -1,21 +1,26 @@
-# Syllabus - Fall 2015
+# Syllabus - Spring 2016
 CS0401: Intermediate Java
 
-## WEEK 1 (Week of 31 Aug)
+## Lecture 1:
+
+Reading: _Gaddis, Ch 1_
 
 * Introduction
   * Course Goals
   * Getting Started with Java
 
+## Lecture 2:
+
+Reading: _Gaddis, Ch 2_
+
 * Intro to Java
-  * __Reading: Gaddis Ch 3__
   * Compilation and Execution of Programs
   * Keywords, Identifiers, and Literals
   * Variables and data type
 
-## WEEK 2 (Week of 7 Sep)
+## Lecture 3:
 
-* NO CLASS
+Reading: _Gaddis, Ch 2_
 
 * Variables, data, and expressions
   * Primitive vs Reference Types
@@ -23,13 +28,19 @@ CS0401: Intermediate Java
   * Precedence
   * Associativity
 
-## WEEK 3 (Week of 14 Sep)
+## Lecture 4:
+
+Reading: _Gaddis, Ch 2, Sec 3.1, Sec 3.5_
 
 * Input and Control types
   * Using the `Scanner` class
   * Control statements
   * Boolean expressions
   * Truth tables
+
+## Lecture 5:
+
+Reading: _Gaddis, Ch 3_
 
 * Conditionals and Errors
   * `if` and `while` statements
@@ -38,83 +49,128 @@ CS0401: Intermediate Java
     * Variations
   * Syntax, Run-Time, Logic errors
 
-## WEEK 4 (Week of 21 Sep)
+## Lecture 6:
+
+Reading: _Gaddis, Ch 4_
 
 * The `for` statement and output formatting
 
-* Java Methods
+## Lecture 7:
+
+Reading: _Gaddis, Sec 3.9, 3.10, Ch 5_
+
+* Switch Statements and Java Methods
   * Method calls and functional abstraction
   * Static methods
   * Passing arguments by value
   * Local variables and scope
 
-## WEEK 5 (Week of 28 Sep)
+## Lecture 8:
 
-* QUIZ 1
+Reading: _Gaddis, Ch 5, Sec 6.1_
 
 * References and Reference types
+  * Will finish method discussion, as well
 
-## WEEK 6 (Week of 5 Oct)
+## Lecture 9:
+
+Reading: _Gaddis, Ch 6_
+
+* Finish reference discussion
 
 * Java classes and objects
   * Data abstraction and encapsulation
   * Data hiding
   * Private variables
 
+## Lecture 10
+
+Reading: _Gaddis, Ch 6_
+
 * Java class, continued
   * Constructors
   * Accessors
   * Mutators
 
-## WEEK 7 (Week of 12 Oct)
+## Lecture 11
 
-* Arrays and Files
+Reading: _Gaddis, Ch 4_
+
+* File I/O
   * Accessing simple text files
+
+## Lecture 12
+
+Reading: _Gaddis, Ch 7_
+
+* Single-Dimensional Arrays 
   * Array syntax
   * Direct and sequential access
 
-* Arrays, Continued
+## Lecture 13
+
+Reading: _Gaddis, Ch 7_
+
+* More on Single-Dimensional Array
   * Arrays as objects
   * Parameters
   * Modifying an array
-  * Searching
 
-## WEEK 8 (Week of 19 Oct)
+## Lecture 14
+
+* Exam 1
+  * Covers everything up to this point in the semester
+
+## Lecture 15
 
 * Multi-Dimensional arrays and ArrayLists
 
-* EXAM 1
+## Lecture 16
 
-## WEEK 9 (Week of 26 Oct)
+Reading: _Gaddis, Sec 7.11_
 
 * Searching and Sorting
   * Definition and concepts
   * Selection Sort
   * Binary search 
 
+## Lecture 17
+
+Reading: _Gaddis, Ch 8_
+
 * The Object-Oriented Paradigm
 
-## WEEK 10 (Week of 2 Nov)
+## Lecture 18
+
+Reading: _Gaddis, Ch 12_
 
 * Graphics in Java
   * Event-driven programming
   * Buttons and display
 
+## Lecture 19
+
+Reading: _Gaddis, Ch 12_
+
 * Graphics in Java, continued
   * Layout management and managers
   * JPanels
-  
-## WEEK 11 (Week of 9 Nov)
 
-* *QUIZ THIS WEEK DURING LAB*
+## Lecture 20
 
 * Interfaces and Graphics Extensions
+
+## Lecture 21
+
+Reading: _Gaddis, Ch 9_
 
 * Wrapper classes
   * Parsing simple input
   * The `Character` class
 
-## WEEK 12 (Week of 16 Nov)
+## Lecture 22
+
+Reading: _Gaddis, Ch 10_
 
 * Intro to Java Inheritance
   * Superclasses and subclasses
@@ -123,23 +179,40 @@ CS0401: Intermediate Java
   * Inheritance vs. composition
   * Overriding vs overloading
 
+## Lecture 23
+
+Reading: _Gaddis, Ch 10, Sec 6.6_
+
 * More Java Inheritance 
   * More on _ad hoc_ polymorphism (method overloading)
   * Packages
   * Generics
 
-## WEEK 13 (Week of 23 Nov)
+## Lecture 24
+
+Reading: _Gaddis, Sec 14.5, 14.6_
 
 * Developing Object-Oriented Program
+  * Subclassing (true) polymorphism
+  * Abstract classes and methods
+
+## Lecture 25
+
+Reading: _Gaddis, Sec 10.9_
+
   * Using interfaces, polymorphic access, and Generics
 
-* NO CLASS - THANKSGIVING BREAK
+## Lecture 26
 
-## WEEK 14 (Week of 30 Nov)
+Reading: _Gaddis, Ch 11_
 
 * Exceptions
   * Definition
   * Throwing and Catching
+
+## Lecture 27
+
+Reading: _Gaddis, Ch 16_
 
 * Recursion
   * Recursive equations
@@ -147,10 +220,8 @@ CS0401: Intermediate Java
   * Implementation
   * Benefits / Drawbacks
 
-## WEEK 15 (Week of 7 Dec)
+## Lecture 28
 
-* Cool Java Stuff (TBD)
-    
-* MIDTERM 2
+* SECOND MIDTERM
 
 
