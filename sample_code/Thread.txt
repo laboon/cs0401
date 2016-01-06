@@ -1,0 +1,11 @@
+
+Thread 1 - (waiting for button press)
+
+Thread 2 - (waiting for text to update)
+
+Thread 3 - (calculating values)
+
+// Thread 4 - (reading data from network)
+//    * THREAD DIES
+
+Thread 5 - (displaying things)

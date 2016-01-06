@@ -55,7 +55,7 @@ For submissions which are too similar to be chance, _all_ parties will be consid
 
 Information on the course will be posted regularly on the class github repo.  Announcements will be posted in the file announcements.md.  While the professor will endeavour to post all relevant information on this site, there may be additional information discussed in class which is not posted.
 
-There will be four or five Java program submissions during the course.  These need to be turned at the beginning of the class on the due date.  Late projects must be submitted on the late due date by 11:59 PM and will be penalized 15 percentage points (e.g., if your program would have received a 90, but it was turned in late, it will receive 90 - 15, or 75).
+There will be four or five Java program submissions during the course.  These need to be turned at the beginning of the class on the due date.  If a late date option is available for a project, the project must be submitted on the late due date by 11:59 PM and will be penalized 15 percentage points (e.g., if your program would have received a 90, but it was turned in late, it will receive 90 - 15, or 75).
 
 It is recommended you keep all of your graded assignments until final
 grades are posted and accepted, in order to resolve any discrepancies
