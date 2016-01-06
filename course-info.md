@@ -9,15 +9,15 @@ Intermediate Java
 **TA:** Emilee Betz  
 **TA Office Hours:** SENSQ 6506, Thursday 12:15-2:00  
 
-**TA:** John Felen (jtf28@pitt.edu)
+**TA:** John Felen (jtf28@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Friday 4:00-6:00
 
-**TA:** Sam Kopansky
+**TA:** Sam Kopansky  
 **TA Office Hours:** SENSQ 6506, Wednesday 3:00-4:00 and Friday 1:00-2:00
 
 [Lab Topics Form](https://docs.google.com/forms/d/1FiXmJBGlI6MSZlCxUUGdwOFTJmCw6xskLTIBfhkTatA/viewform?usp=send_form)
 
-**Grader:** TBD
+**Grader:** Xioazhong Zhang  
 **Grader Office Hours:** No specific office hours; please email for appointment
 
 **Class GitHub repo:** https://www.github.com/laboon/cs0401  
@@ -25,8 +25,8 @@ Intermediate Java
 
 ## Grading
 
-* Mid-term Exam - 20%
-* Final Exam - 20%
+* Mid-term Exam #1 - 20%
+* Mid-term Exam #2 - 20%
 * Programming Projects: 30%
 * Quizzes: 10%
 * Labs: 20%
@@ -37,14 +37,14 @@ The following grading scale will be used.
 Score  | Grade
 -----: | ------------------------------
 100.00-93.00 | A (A+ for extraordinary work, or >100)
-92.99-90.00  | A-
-89.99-87.00  | B+
-86.99-83.00  | B
-82.99-80.00 | B-
-79.99-76.00 | C+
-75.99-71.00 | C
-70.99-67.00 | C-
-66.99-64.00 | D+
+92.99-91.00  | A-
+90.99-89.00  | B+
+88.99-83.00  | B
+82.99-81.00 | B-
+80.99-79.00 | C+
+78.99-72.00 | C
+73.99-70.00 | C-
+69.99-64.00 | D+
 63.99-55.00 | D
 54.99-50.00 | D-
 49.99-0.00 | F
@@ -55,7 +55,7 @@ For submissions which are too similar to be chance, _all_ parties will be consid
 
 Information on the course will be posted regularly on the class github repo.  Announcements will be posted in the file announcements.md.  While the professor will endeavour to post all relevant information on this site, there may be additional information discussed in class which is not posted.
 
-There will be four or five Java program submissions during the course.  These need to be turned by 11:59 on the due date.  Late projects must be submitted on the late due date by 11:59 PM and will be penalized 15 percentage points (e.g., if your program would have received a 90, but it was turned in late, it will receive 90 - 15, or 75).
+There will be four or five Java program submissions during the course.  These need to be turned at the beginning of the class on the due date.  Late projects must be submitted on the late due date by 11:59 PM and will be penalized 15 percentage points (e.g., if your program would have received a 90, but it was turned in late, it will receive 90 - 15, or 75).
 
 It is recommended you keep all of your graded assignments until final
 grades are posted and accepted, in order to resolve any discrepancies
@@ -65,17 +65,27 @@ in grading.
 
 Students are strongly encouraged to attend all lectures and labs, which may include material not taken from the text.  If a student misses a lecture, they are resposible for the material covered.
 
-There are fourteen labs throughout the semester.  Of these, your top ten out of fourteen will count for your lab grade (2% each).  I _highly_ recommend you go to all of the labs, but in case you have to miss one or don't do well on some of them, your grade will not be affected.
+There are thirteen labs throughout the semester.  Of these, your top ten out of thirteen will count for your lab grade (2% each).  I _highly_ recommend you go to all of the labs, but in case you have to miss one or don't do well on some of them, your grade will not be affected.
 
 Presence for the quizzes and exams are *required*. They will be individually re-scheduled only in the event of an emergency. If you are facing an emergency, please contact the instructor *immediately* (if it is safe to do so, of course).  Failure to show up for a quiz or  exam without clearing it first with the instructor will result in a 0 (zero) for that exam.  
 
 ## Programming Environment
 
-All programs should be written in Java, using the Java 2 SDK (JDK), version 1.8.  The choice of editor, IDE, etc. are up to you.
+All programs should be written in Java, using the Java 2 SDK (JDK), version 1.8.  The choice of editor, operating system, etc. are up to you.
 
 ## Quizzes
 
 Two quizzes, each worth 5% of the grade, will be given.  These will be during labs and announced at least one class or lab ahead of time.  They will cover material found in the previous classes and labs.
+
+## Mid-Terms
+
+Two mid-terms, each worth 20% of the grade, will be given.  These will be given during class.
+
+## Extra Credit
+
+There is an opportunity for _up to_ two percentage points of extra credit (e.g., if you got a 91 in the class, you can get up to a 93 for the final grade) for using the Knowledge Tree Portal - http://adapt2.sis.pitt.edu/kt/content/Show.  More details will be announced during the second lecture of class.
+
+No other extra credit opportunities will be available!
 
 ## Disability Services Statement
 
