@@ -7,7 +7,7 @@ Intermediate Java
 **Professor's Office Hours:** SENSQ 6305, Wednesday 1:00-2:30, Thursday 2:30-3:50, or by appointment.  
 
 **TA:** Emilee Betz  
-**TA Office Hours:** TBD SENSQ 6506  
+**TA Office Hours:** SENSQ 6506, Thursday 12:15-2:00  
 
 **TA:** John Felen (jtf28@pitt.edu)
 **TA Office Hours:** SENSQ 6506, Friday 4:00-6:00
