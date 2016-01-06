@@ -6,6 +6,9 @@ Intermediate Java
 **Taught by:** Bill Laboon (bill.laboon@pitt.edu)  
 **Professor's Office Hours:** SENSQ 6305, Wednesday 1:00-2:30, Thursday 2:30-3:50, or by appointment.  
 
+**TA:** Akila Brian Amaratunga (aba53@pitt.edu)
+**TA Office Hours:** SENSQ 6506, Tuesday 4:00-6:00 
+
 **TA:** Emilee Betz  
 **TA Office Hours:** SENSQ 6506, Thursday 12:15-2:00  
 
