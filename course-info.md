@@ -85,6 +85,8 @@ Two mid-terms, each worth 20% of the grade, will be given.  These will be given 
 
 There is an opportunity for _up to_ two percentage points of extra credit (e.g., if you got a 91 in the class, you can get up to a 93 for the final grade) for using the Knowledge Tree Portal - http://adapt2.sis.pitt.edu/kt/content/Show.  More details will be announced during the second lecture of class.
 
+Log In Information: Your username is your pitt username (e.g., wjl23).  Your password is your 7-digit PeopleSoft number.
+
 No other extra credit opportunities will be available!
 
 ## Disability Services Statement
