@@ -3,7 +3,7 @@ Assignment 1
 Topics: Review of expressions, conditions, loops and I/O
 
 ASSIGNMENT DATE: 13 JAN 2016 (MW class), 14 JAN 2016 (TH class)  
-DUE DATE: 1 FEB 2016 (MW class), 2 FEB 2016 (TH class)
+DUE DATE: 1 FEB 2016 (MW class), 2 FEB 2016 (TH class)  
 LATE DUE DATE: 3 FEB 2016 (MW class), 4 FEB (TH class)  
 
 You have opened a bookstore, and have decided to write your own point-of-sale system to sell books.  You sell several items:
