@@ -1,5 +1,5 @@
-CS 0401 Intermediate Programming  
-Assignment 1
+### CS 0401 Intermediate Programming  
+Assignment 1  
 Topics: Review of expressions, conditions, loops and I/O
 
 ASSIGNMENT DATE: 13 JAN 2016 (MW class), 14 JAN 2016 (TH class)  
@@ -34,6 +34,7 @@ You will write a Java program that runs a point-of-sale service for your booksto
 Sample output will be put in the file sample_output.txt (in this directory) and grading will be based on the rubric listed at official_rubric.md (also in this directory).
 
 Tips:
+
 1. You will need to use variables of different types!  You may experience some minor floating-point issues; this is why many official Java apps will use a special Currency data type, but we will not deal with that at this point.
 2. You will use nested loops - loops within loops.  Don't be afraid of these, but remember that if you are using a `for` loop, you will need to use a different index variable name.
 3. Code should be "good".  By this admittedly somewhat subjective metric, I mean:
@@ -67,7 +68,7 @@ a;
 
 The latter will compile, but this is harder to read and not good coding style.
 
-## Submission
+### Submission
 
 Create a private repo and share it with me and the graders, by the time the program is due (see above).
 
@@ -77,4 +78,10 @@ Please include all source files (i.e., .java files) necessary for your program t
 
 You will need to turn in a submission sheet with your assignment (see submission_sheet.md). Please fill out all the required sections. This should be printed out and turned in in class - do not add it to the GitHub repo.
 
-Extra credit is at the discretion of the grader, but will not be more than five points. Some ideas for extra credit are listed at the end of the assignment.
+Extra credit is up to the discretion of the grader, but will not be more than five points.  Be sure to mention what the extra credit is on the submission sheet! Some ideas for extra credit, in order from "least impressive" to "most impressive" (and thus more points) are:
+
+1. Add a "Bookworm Card" which will allow you to get an additional 25% off of all books.
+2. Add the ability to personalize a book for an additional $1.00.  This would mean having the user enter a message (as a String), and listing that book separately for the receipt.
+3. Add the ability to have an inventory - an internal listing of what books are available (for example, 5 copies of _Infinite Jest_ and 3 copies of _The Broom of the System_, allowing the user to select individual books, but not allowing users to purchase a book if there are no copies available).
+4. Make that inventory persistent by writing to a file.
+5. Other ideas?  Check with Prof. Laboon first to see if they are good candidates for extra credit.
