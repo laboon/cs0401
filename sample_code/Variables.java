@@ -10,7 +10,8 @@ public class Variables {
 	// b = 127;
 	// and you are doing the exact same thing!
 
-	byte b = (byte) 129;
+	int noogie = 500000;
+	byte b = (byte) noogie;
 	System.out.println(b);
 	
         short s = 32767;
@@ -22,7 +23,7 @@ public class Variables {
 	char c = 'a';
 	
 	String str;
-	str = "foo";
+	str = "foo BILLIS THE BEST!!!!! narklfdso";
 
 	// // Long is very big!
 	System.out.println("max long value is " + l);
@@ -43,19 +44,21 @@ public class Variables {
 
 	// // You can define multiple variables on the same line
 	// All of these variables must of the same type!
-	
+
 	int cat = 1, dog = 2, bird = 3;
-       	
+	
 	// // But you have to define variables of different types
 	// // as separate statements. Note the semicolons!
 
+	// Cookies mean number of cookies
 	byte cookie = 4;
 	String meow = "foo";
 	double bar = 1.0;
 
 	
 	// // Newlines don't mean anything in Java!
-	String boo = "boo" + "oooooo" + "ooooooo"
+	String boo = "boo"
+	    + "oooooo" + "ooooooo"
 	    + "!!!!!!!!!";
 	System.out.println(boo);
 
@@ -64,7 +67,8 @@ public class Variables {
 	System.out.println("Modulo");
 	System.out.println(7 % 2);
 	System.out.println(7.0 % 2);
-	double goodQuestion = (double) (7 / 3);
+
+	double goodQuestion = 7 / 3;
 	System.out.println(goodQuestion);
 	
 	// // // Precedence - see http://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html for complete list
@@ -76,6 +80,9 @@ public class Variables {
 	
 	testing = 4 * (3 - 2);
 	System.out.println("4 * (3 - 2) = " + testing);
+
+	
+	
 	// // Integer arithmetic and floating point are different!
 	int quack1 = 10, quack2 = 3;
 	int result1 = quack1 / quack2;
@@ -108,9 +115,11 @@ public class Variables {
 	System.out.println("p++ = " + p++);
 	System.out.println("line after p++, p = " + p);
 
+	
 	System.exit(0);
 	
 	// // Overflow!
+
 	b = 127;
 	b++;
 	System.out.println("127 + 1 is " + b);
