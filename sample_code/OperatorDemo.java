@@ -10,7 +10,6 @@ public class OperatorDemo {
 
 	boolean trueVal = true;
 	boolean falseVal = false;
-
 	
 	// We can compare values with relational (< > <= >=) and equality (== !=)
 	// operators.
@@ -37,19 +36,18 @@ public class OperatorDemo {
 	boolean oppositeVal = !(7 < 10);
 
 	System.out.println("!(7 < 10) --> " + oppositeVal);
-	
+
 	boolean orVal = trueVal || falseVal;
 	boolean andVal = trueVal && falseVal;
 
 	System.out.println("trueVal || falseVal --> " + orVal);
 	System.out.println("trueVal && falseVal --> " + andVal);
-	
+
 	boolean xorTrueVal = true ^ false;
 	boolean xorFalseVal = true ^ true;
 
 	System.out.println("true ^ false --> " + xorTrueVal);
 	System.out.println("true ^ true  --> " + xorFalseVal);
-
 	
 	// As mentioned, ^ is a little weird.  Logical operators can short-circuit.
 	// Bitwise operators cannot.  Short-circuiting means that Java will take a
@@ -58,6 +56,7 @@ public class OperatorDemo {
 
 	boolean shortCircuited = 1 < 3 || 3 < 2;
 
+	boolean shortCircuited2 = 7 > 9 && 3 < 7;
 	// Java will never even look at 3 < 2, because true || *whatever* will
 	// always be true.
 	
@@ -85,11 +84,13 @@ public class OperatorDemo {
 	System.out.println("(int) 1 == (int) 1 --> " + (intVal == floatVal));
 	System.out.println("(int) 1 == (float) 1.0 --> " + (intVal == floatVal));
 	System.out.println("(int) 1 == (double) 1.0 --> " + (intVal == doubleVal));
-
+	
 	System.out.println("div1 == div2 --> " + (div1 == div2));
+
 	System.out.println("div1 == " + div1);
 	System.out.println("div2 == " + div2);
 
+	
 	// Problems from slides begin here!
 
 	// Set up variables.
@@ -103,7 +104,9 @@ public class OperatorDemo {
 	// parentheses.
 
 	// boolean answer = i < j || (j < k && x <= y);
-	
+	// i < j || false
+	// true || false
+
 	boolean answer = i < j || j < k && x <= y;
 	
 	System.out.println(answer);
@@ -118,10 +121,15 @@ public class OperatorDemo {
 	// Note that x and y are both double-precision floating point
 	// values.  
 	answer = (x / 3) == y;
-	// System.out.println("x = " + x);
-	// System.out.println("x / 3 = " + (x / 3));
-	// System.out.println("y = " + y);
+	System.out.println("x = " + x);
+	System.out.println("x / 3 = " + (x / 3));
+	System.out.println("y = " + y);
 	System.out.println("(x / 3) == y --> " + answer);
+	if (((x / 3) - y) < 0.01) {
+	    System.out.println("Ehh, close enough.");
+	} else {
+	    System.out.println("Not close enough.");
+	}
 
 	// DANGER DANGER DANGER!  Comparing floating point
 	// values for equality can be dangerous.
@@ -134,7 +142,8 @@ public class OperatorDemo {
 
 	System.out.println(answer);
 
-	
+	System.out.println(!(!(!(!(x != (7 - 4 % 6) && x < 10
+				   || y > 3 && x == 5 || y == 6)))));
 	
     }
     

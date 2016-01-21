@@ -13,7 +13,7 @@ public class FormattingDemo {
 	// how things are printed out
 	
 	int three = 3;
-	
+
 	System.out.println("(int) Three is " + three);
 
 	double threePointOh = 3.000000000;
@@ -23,7 +23,7 @@ public class FormattingDemo {
 	double threePointOhOneTwoThree = 3.0123;
 
 	System.out.println("(double) Three point oh one two three is " + threePointOhOneTwoThree);
-	
+
 	// printf does!  Note we use a different format here, embedding
 	// how we want a value printed out in the string itself, then
 	// passing the value as another parameter to the method
@@ -42,11 +42,11 @@ public class FormattingDemo {
 	double foo = 10.1;
 	
 	System.out.printf("Here's a floating point number! %f\n", foo);
-
+	
 	// You don't need to pass in a variable, you can pass in a value.
 
 	System.out.printf("Here's another floating point number! %f\n", 99.17);
-	
+
 	// Use %d for integer (decimal - base 10)
 	// Remember casting!  You can't do this.  You need to cast first.
 
@@ -57,28 +57,32 @@ public class FormattingDemo {
 	// Use comma flag for large numbers and integers! Note this does not work with
 	// floating point.
 
-	int bigNum = 1000000;
+	int bigNum = 1000000000;
+	int smallNum = 6;
 	
 	System.out.printf("Bignum with commas is %,d.\n", bigNum);
-
+	System.out.printf("Smallnum with commas is %,d.\n", smallNum);
+	
 	// You can have more than one variable in a string
 	int dogs = 10;
 	int cats = 3;
 	int snakes = 2;
 	System.out.printf("I have %d dogs, %d cats, and %d snakes.\n", dogs, cats, snakes);
+	
+	System.out.printf("I have %f dogs, %d cats, and %d snakes.\n", (float) dogs, cats, snakes);
 
+	
 	// Use %e for exponential notation
 
-	long bar = 999999999;
+	long bar = 99999999999L;
 
 	System.out.printf("Here is bar in exponential notation! %e\n", (float) bar);
-	
 	// You can use a string with %s
 	
 	String iLoveIt = "hot sauce";
 
 	System.out.printf("I love %s!\n", iLoveIt);
-	    
+	
 	// If you need to print a % sign in the string, use %%.
 	int percentSure = 99;
 	
@@ -91,11 +95,14 @@ public class FormattingDemo {
 	int numBirds = 4;
 
 	System.out.printf("I have %09d birds.\n", numBirds);
+	System.out.printf("I have %02d birds.\n", numBirds);
 
 	numBirds = 50000;
 
 	System.out.printf("I have %09d birds.\n", numBirds);
-		
+
+	System.out.printf("I have %02d birds.\n", numBirds);
+			
 	for (int j = 0; j < 8; j++) {
 	    System.out.printf("Agent %03d has died.\n", j);
 	}
@@ -134,6 +141,7 @@ public class FormattingDemo {
 	numBirds = 210;
 	System.out.printf("(RIGHT) I have %5d birds.\n", numBirds);
 
+	
 	numBirds = 999210;
 	if (numBirds > 99999) {
 	    System.out.printf("(RIGHT) I have -ERR- birds.\n", numBirds);
@@ -150,7 +158,7 @@ public class FormattingDemo {
 	System.out.printf("Pi rounded to three decimal places is %.3f\n", pi);
 	System.out.printf("Pi rounded to four decimal places is %.4f\n", pi);
 	System.out.printf("Meow rounded to eight decimal places is %.8f\n", meow);
-	
+
 	// Mix and match!
 
 	System.out.printf("Pi rounded to four decimal places is %08.4f\n", pi);
