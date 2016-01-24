@@ -38,7 +38,7 @@ We are going to add one file to this repo.  Remember to:
 
 Zeno of Elea's _Dichotomy Paradox_ states that motion is impossible.  Let us assume that Paris is trying to run to Helen, who is standing still 10 meters away.  Paris must first go halfway to her (5 meters).  Then he must go halfway again (2.5 meters).  Then halfway again (1.25 meters).  Then halfway again... all the way to infinity.  Since nobody can move an infinite distance in a finite amount of time, Paris will never get to Helen (and presumably the Trojan War would never start).
 
-However, if we lived in the world of Java, this may not be the case.  Using an appropriate loop, keep halving the distance (starting from 10 meters) until Paris and Helen are in the same spot (defined as the distance being equal to 0.0).  For output, print the number of steps it took to disprove Zeno.
+However, if we lived in the world of Java, this may not be the case.  Using an appropriate loop, keep halving the distance (starting from 10 meters) until Paris and Helen are in the same spot (defined as the distance being equal to 0.0).  For output, print the distance between Paris and Helen at each step, *and* the number of steps it took to disprove Zeno.  That is, print out the number of steps Paris took (each one half the distance) until Java thought that Paris's distance to Helen was 0.0 exactly.
 
 You can do this with the simplest of all loops, a `while` loop.  A `while` loop will continue to execute the same group of statements (a block) or a single statement while a condition is true.  For example,
 
