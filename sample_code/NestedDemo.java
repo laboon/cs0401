@@ -1,5 +1,5 @@
 public class NestedDemo {
-
+    
     public static void main(String[] args) {
 
 	int a = 5;
@@ -17,10 +17,13 @@ public class NestedDemo {
 	boolean ta = false;
 	boolean livesInDorms = true;
 
-	if (student)
-	    System.out.println("Student!");
-	else
+	if (student) {
+	    if (ta) {
+		System.out.println("TA! And student!");
+	    }
+	} else {
 	    System.out.println("Not A Student!");
+	}
 	
 	System.out.println("Laboon's Pizza Shop!!!");
 	
@@ -40,6 +43,11 @@ public class NestedDemo {
 		    }
 		}
 	    } else {
+		if (5 < 3) {
+		    System.out.println("blar2!");
+		} else {
+		    System.out.println("blar!");
+		}
 		System.out.println("Congrats for not living in a dorm! 90% discount!");
 	    }
 	}
