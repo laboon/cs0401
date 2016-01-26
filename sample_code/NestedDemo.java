@@ -51,6 +51,6 @@ public class NestedDemo {
 		System.out.println("Congrats for not living in a dorm! 90% discount!");
 	    }
 	}
-	
+
     }
 }
