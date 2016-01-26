@@ -35,7 +35,7 @@ public class ForDemo {
 	    System.out.println("j is " + j + " and k is " + k);
 	    k += 5;
 	}
-	System.exit(0);
+
 	// This is an infinite loop!  Why?  We don't set any variables;
 	// the exiting condition will never be false; we don't do anything
 	// to increment variables.
