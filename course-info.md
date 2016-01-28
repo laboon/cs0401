@@ -22,6 +22,7 @@ and Thursday 3-5 in Sennott 6506.
 
 **TA:** John Felen (jtf28@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Friday 4:00-6:00
+**GitHub:** jtf28
 
 **TA:** Sam Kopansky  
 **TA Office Hours:** SENSQ 6506, Wednesday 3:00-4:00 and Friday 1:00-2:00
