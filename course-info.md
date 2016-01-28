@@ -6,6 +6,14 @@ Intermediate Java
 **Taught by:** Bill Laboon (bill.laboon@pitt.edu)  
 **Professor's Office Hours:** SENSQ 6305, Wednesday 1:00-2:30, Thursday 2:30-3:50, or by appointment.  
 
+This is Ben Pratt, my email is bap74@pitt.edu
+, my office hours are Wednesday 11-1
+and Thursday 3-5 in Sennott 6506.
+
+**TA:** Ben Pratt (bap74@pitt.edu)  
+**TA Office Hours:** SENSQ 6506, Wednesday 11-1, Thursday 3-5
+
+
 **TA:** Akila Brian Amaratunga (aba53@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Tuesday 4:00-6:00
 
@@ -87,6 +95,8 @@ Two mid-terms, each worth 20% of the grade, will be given.  These will be given 
 ## Extra Credit
 
 There is an opportunity for _up to_ two percentage points of extra credit (e.g., if you got a 91 in the class, you can get up to a 93 for the final grade) for using the Knowledge Tree Portal - http://adapt2.sis.pitt.edu/kt/content/Show.  More details will be announced during the second lecture of class.
+
+Log In Information: Your username is your pitt username (e.g., wjl23).  Your password is your 7-digit PeopleSoft number.  If you have any questions or problems, please email jdg60 at pitt dot edu.
 
 No other extra credit opportunities will be available!
 

@@ -1,0 +1,179 @@
+(2687) $ java Assignment1
+
+More customers in line? (1 = Yes, 2 = No) 1
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 1
+Currently in cart: 0 books.
+How many do you want to buy? > 1
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 1
+Currently in cart: 1 books.
+How many do you want to buy? > 5
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 4
+Currently in cart: 
+Books: 5
+Bookmarks: 0
+Paintings of books: 0
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 2
+Currently in cart: 0 bookmarks.
+How many do you want to buy? > 15
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 3
+Currently in cart: 0 paintings.
+How many do you want to buy? > 2
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 4
+Currently in cart: 
+Books: 5
+Bookmarks: 15
+Paintings of books: 2
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > -1
+Please enter a valid option (1 through 5) > 17
+Please enter a valid option (1 through 5) > 999
+Please enter a valid option (1 through 5) > 5
+--------------------------------------
+You did not get a discount! Better luck next time!
+    5 Book(s):                $25.00
+    2 Bookmark Pack(s):       $10.00
+    3 Single Bookmark(s):     $3.00
+    2 Painting(s):            $200.00
+
+Subtotal:                     $238.00
+Tax:                          $16.66
+
+Total:                        $254.66
+
+--------------------------------------
+
+Enter amount paid (no dollar sign) > 260.00
+
+Your change is: $5.34
+Thanks for shopping!
+More customers in line? (1 = Yes, 2 = No) 1
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 2
+Currently in cart: 0 bookmarks.
+How many do you want to buy? > 3
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 4
+Currently in cart: 
+Books: 0
+Bookmarks: 3
+Paintings of books: 0
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 5
+--------------------------------------
+You did not get a discount! Better luck next time!
+    3 Single Bookmark(s):     $3.00
+
+Subtotal:                     $3.00
+Tax:                          $0.21
+
+Total:                        $3.21
+
+--------------------------------------
+
+Enter amount paid (no dollar sign) > 1.00
+Not enough money, please re-enter.
+Enter amount paid (no dollar sign) > -20.35
+Not enough money, please re-enter.
+Enter amount paid (no dollar sign) > 20
+
+Your change is: $16.79
+Thanks for shopping!
+More customers in line? (1 = Yes, 2 = No) 1
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 3
+Currently in cart: 0 paintings.
+How many do you want to buy? > 2
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 1
+Currently in cart: 0 books.
+How many do you want to buy? > -1
+Enter a valid number of books - 0 or more
+0
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 4
+Currently in cart: 
+Books: 0
+Bookmarks: 0
+Paintings of books: 2
+1 - Buy Books - $5.00 each
+2 - Buy Bookmarks - $1.00 each, $5.00 for a six-pack
+3 - Buy Paintings of Books - $100.00 each
+4 - See current order
+5 - Checkout
+Please enter a valid option (1 through 5) > 5
+--------------------------------------
+You won a 10% discount!
+    2 Painting(s):            $200.00
+Discount! Saved:             -$20.00
+
+Subtotal:                     $180.00
+Tax:                          $12.60
+
+Total:                        $192.60
+
+--------------------------------------
+
+Enter amount paid (no dollar sign) > 200.00
+
+Your change is: $7.40
+Thanks for shopping!
+More customers in line? (1 = Yes, 2 = No) 2
+No more customers! Closing!

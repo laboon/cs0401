@@ -1,7 +1,7 @@
 public class LogicError {
 
     public static void main(String[] args) {
-	int age = 0;
+	int age = 35;
 	
 	if (age >= 35) {
 	    System.out.println("YOU CAN BE PRESIDENT!");

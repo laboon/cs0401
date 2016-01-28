@@ -13,7 +13,7 @@ public class FormattingDemo {
 	// how things are printed out
 	
 	int three = 3;
-	
+
 	System.out.println("(int) Three is " + three);
 
 	double threePointOh = 3.000000000;
@@ -42,7 +42,7 @@ public class FormattingDemo {
 	double foo = 10.1;
 	
 	System.out.printf("Here's a floating point number! %f\n", foo);
-
+	
 	// You don't need to pass in a variable, you can pass in a value.
 
 	System.out.printf("Here's another floating point number! %f\n", 99.17);
@@ -54,36 +54,50 @@ public class FormattingDemo {
 	System.out.printf("Here is foo as an integer! %d\n", (int) foo);
 	System.out.printf("Here is another integer! %d\n", 17);
 
+	// *sad trombone* Doesn't work.
+	// int bazzle = 9;
+	// System.out.printf("Here is another integer! %f\n", bazzle);
+	
+	
 	// Use comma flag for large numbers and integers! Note this does not work with
 	// floating point.
 
-	int bigNum = 1000000;
+	int bigNum = 1000000000;
+	int smallNum = 6;
 	
 	System.out.printf("Bignum with commas is %,d.\n", bigNum);
+	System.out.printf("Smallnum with commas is %,d.\n", smallNum);
 
 	// You can have more than one variable in a string
 	int dogs = 10;
 	int cats = 3;
 	int snakes = 2;
 	System.out.printf("I have %d dogs, %d cats, and %d snakes.\n", dogs, cats, snakes);
+	
+	System.out.printf("I have %f dogs, %d cats, and %d snakes.\n", (float) dogs, cats, snakes);
+
 
 	// Use %e for exponential notation
 
-	long bar = 999999999;
+	long bar = 99999999999L;
 
 	System.out.printf("Here is bar in exponential notation! %e\n", (float) bar);
-	
+
 	// You can use a string with %s
 	
 	String iLoveIt = "hot sauce";
 
 	System.out.printf("I love %s!\n", iLoveIt);
-	    
+
+	// Equivalent to
+
+	System.out.print("I love " + iLoveIt + "!\n");
+	
 	// If you need to print a % sign in the string, use %%.
 	int percentSure = 99;
 	
 	System.out.printf("I am %d%% \"sure\" that I love %s!\n", percentSure, iLoveIt);
-
+	
 	// You can add zeros in front of a number to make it a certain
 	// size.  Just add a 0 after the % symbol, along with the
 	// minimum size to be printed..
@@ -91,15 +105,19 @@ public class FormattingDemo {
 	int numBirds = 4;
 
 	System.out.printf("I have %09d birds.\n", numBirds);
-
+	System.out.printf("I have %02d birds.\n", numBirds);
+	
 	numBirds = 50000;
 
 	System.out.printf("I have %09d birds.\n", numBirds);
-		
+
+	System.out.printf("I have %02d birds.\n", numBirds);
+	
 	for (int j = 0; j < 8; j++) {
 	    System.out.printf("Agent %03d has died.\n", j);
 	}
-	
+
+
 	// Note that if the size of the printed-out value is larger,
 	// the zeros are ignored.
 
@@ -134,13 +152,15 @@ public class FormattingDemo {
 	numBirds = 210;
 	System.out.printf("(RIGHT) I have %5d birds.\n", numBirds);
 
+	// UGLY!
+	System.out.printf("(RIGHT) I have %5d birds.\n", 999999);
+	
 	numBirds = 999210;
 	if (numBirds > 99999) {
 	    System.out.printf("(RIGHT) I have -ERR- birds.\n", numBirds);
 	} else {
 	    System.out.printf("(RIGHT) I have %5d birds.\n", numBirds);
 	}
-
 	
 	// If you only want to print a certain number of points past
 	// the decimal, use .
@@ -150,7 +170,7 @@ public class FormattingDemo {
 	System.out.printf("Pi rounded to three decimal places is %.3f\n", pi);
 	System.out.printf("Pi rounded to four decimal places is %.4f\n", pi);
 	System.out.printf("Meow rounded to eight decimal places is %.8f\n", meow);
-	
+
 	// Mix and match!
 
 	System.out.printf("Pi rounded to four decimal places is %08.4f\n", pi);
