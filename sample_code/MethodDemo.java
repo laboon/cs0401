@@ -1,5 +1,9 @@
 public class MethodDemo {
 
+    public static void cat() {
+	System.out.println("meow");
+    }
+    
     // Now we see that our magic incantation is just a particular
     // method with the special name of "main".  It doesn't
     // return anything (void) because it's the "top level"
