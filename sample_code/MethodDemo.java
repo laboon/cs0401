@@ -6,6 +6,19 @@ public class MethodDemo {
     // of the program, there's nothing to return a value to.
     
     public static void main(String[] args) {
+
+	boolean f = false;
+
+	while(f) {
+	    System.out.println("foo");
+	}
+	    
+	
+	do {
+	    System.out.println("bar");
+	} while (false);
+
+	System.exit(0);
 	
 	// System.out.println() is just a method!
 	System.out.println("I'm a method!");
@@ -14,7 +27,7 @@ public class MethodDemo {
 	// return type)
 
 	printSomethingFunny();
-
+	
 	// .. and enclose them in other statements/blocks such
 	// as loops.
 
@@ -29,19 +42,19 @@ public class MethodDemo {
 	for (int j = 0; j < 5; j++) {
 	    printANumber(j);
 	}
-
+	
 	// Functions are like procedures but return a value.  The
 	// main focus is getting the value, not side effects like
 	// in a procedure.
 
 	int x = laboonify( 10 ) ;
 	System.out.println("10 laboonified = " + x);
-	
+
 	// Methods can call other methods
 	
 	x = superLaboonify(10);
 	System.out.println("10 superLaboonified = " + x);
-
+	
 	// Methods can act as both procedure and function
 	
 	x = visibleLaboonify(10);
@@ -52,7 +65,7 @@ public class MethodDemo {
 
 	boolean fiveEven = isEven(5);
 	System.out.println("5 is even? This statement is " + fiveEven);
-
+	
 	// Remember arguments are passed by value, not reference!
 	
 	int a = 1;
@@ -61,7 +74,6 @@ public class MethodDemo {
 	System.out.println("A is " + a);
 	a = addOneReturn(a);
 	System.out.println("A is " + a);
-	System.exit(0);
 	
 	// Static methods are associated with the class.  You
 	// don't need to explicitly mention the class if you
@@ -83,7 +95,10 @@ public class MethodDemo {
     // Simple static method (procedure)
     
     public static void printSomethingFunny() {
+	System.out.println("LIMAX MAXIMUS SLUGS!");
 	System.out.println("BANANA SLUGS!");
+	System.out.println("MORE SLUGS!");
+	System.out.println("MORE SLUGS YAY!");
     }
 
     // Simple static method (procedure) with one parameter
@@ -108,7 +123,7 @@ public class MethodDemo {
 	return temp;
     }
     
-    
+
     // Mixed procedure and function in a method
     public static int visibleLaboonify(int n) {
 	System.out.println("You passed in " + n);
