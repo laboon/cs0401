@@ -18,8 +18,9 @@ and Thursday 3-5 in Sennott 6506.
 **TA Office Hours:** SENSQ 6506, Tuesday 4:00-6:00
 **Github Username:** tunga153
 
-**TA:** Emilee Betz  
+**TA:** Emilee Betz (emb144@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Thursday 12:15-2:00  
+**GitHub:** emmers (emileebetz@gmail.com)
 
 **TA:** John Felen (jtf28@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Friday 4:00-6:00
