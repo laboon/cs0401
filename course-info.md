@@ -16,6 +16,7 @@ and Thursday 3-5 in Sennott 6506.
 
 **TA:** Akila Brian Amaratunga (aba53@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Tuesday 4:00-6:00
+**Github Username:** tunga153
 
 **TA:** Emilee Betz  
 **TA Office Hours:** SENSQ 6506, Thursday 12:15-2:00  
@@ -121,4 +122,3 @@ University community and of their chosen field of study in carrying
 out academic assignments. A&S students are therefore expected to
 familiarize themselves with the published rules and regulations go to
 http://www.fcas.pitt.edu/academicintegrity.html
-
