@@ -5,17 +5,12 @@ Intermediate Java
 
 **Taught by:** Bill Laboon (bill.laboon@pitt.edu)  
 **Professor's Office Hours:** SENSQ 6305, Wednesday 1:00-2:30, Thursday 2:30-3:50, or by appointment.  
-
-This is Ben Pratt, my email is bap74@pitt.edu
-, my office hours are Wednesday 11-1
-and Thursday 3-5 in Sennott 6506.
-
 **TA:** Ben Pratt (bap74@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Wednesday 11-1, Thursday 3-5
-
+**GitHub:**  
 
 **TA:** Akila Brian Amaratunga (aba53@pitt.edu)  
-**TA Office Hours:** SENSQ 6506, Tuesday 4:00-6:00
+**TA Office Hours:** SENSQ 6506, Tuesday 4:00-6:00  
 **Github Username:** tunga153
 
 **TA:** Emilee Betz (emb144@pitt.edu)  
@@ -23,11 +18,12 @@ and Thursday 3-5 in Sennott 6506.
 **GitHub:** emmers (emileebetz@gmail.com)
 
 **TA:** John Felen (jtf28@pitt.edu)  
-**TA Office Hours:** SENSQ 6506, Friday 4:00-6:00
+**TA Office Hours:** SENSQ 6506, Friday 4:00-6:00  
 **GitHub:** jtf28
 
 **TA:** Sam Kopansky  
 **TA Office Hours:** SENSQ 6506, Wednesday 3:00-4:00 and Friday 1:00-2:00
+**GitHub:**  
 
 [Lab Topics Form](https://docs.google.com/forms/d/1FiXmJBGlI6MSZlCxUUGdwOFTJmCw6xskLTIBfhkTatA/viewform?usp=send_form)
 
