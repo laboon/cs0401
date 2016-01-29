@@ -4,9 +4,11 @@ Intermediate Java
 ## Course Information
 
 **Taught by:** Bill Laboon (bill.laboon@pitt.edu)  
-**Professor's Office Hours:** SENSQ 6305, Wednesday 1:00-2:30, Thursday 2:30-3:50, or by appointment.  
+**Professor's Office Hours:** SENSQ 6305, Wednesday 1:00-2:30, Thursday 2:30-3:50, or by appointment.
+
+
 **TA:** Ben Pratt (bap74@pitt.edu)  
-**TA Office Hours:** SENSQ 6506, Wednesday 11-1, Thursday 3-5
+**TA Office Hours:** SENSQ 6506, Wednesday 11-1, Thursday 3-5  
 **GitHub:**  
 
 **TA:** Akila Brian Amaratunga (aba53@pitt.edu)  
@@ -22,12 +24,12 @@ Intermediate Java
 **GitHub:** jtf28
 
 **TA:** Sam Kopansky  
-**TA Office Hours:** SENSQ 6506, Wednesday 3:00-4:00 and Friday 1:00-2:00
+**TA Office Hours:** SENSQ 6506, Wednesday 3:00-4:00 and Friday 1:00-2:00  
 **GitHub:**  
 
 [Lab Topics Form](https://docs.google.com/forms/d/1FiXmJBGlI6MSZlCxUUGdwOFTJmCw6xskLTIBfhkTatA/viewform?usp=send_form)
 
-**Grader:** Xioazhong Zhang  
+**Grader:** 
 **Grader Office Hours:** No specific office hours; please email for appointment
 
 **Class GitHub repo:** https://www.github.com/laboon/cs0401  
