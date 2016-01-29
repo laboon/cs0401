@@ -126,4 +126,5 @@ You may assume that a valid integer (1 through 5) will be passed in as input.
 
 ## Grading
 
-
+1 point - Lab4a (moral life detector) works properly  
+1 point - Lab4b (hierarchy of needs program) works properly  
