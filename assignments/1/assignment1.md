@@ -7,6 +7,7 @@ DUE DATE: 1 FEB 2016 (MW class), 2 FEB 2016 (TH class)
 LATE DUE DATE: 3 FEB 2016 (MW class), 4 FEB (TH class)  
 
 PLEASE SHARE YOUR REPOSITORY WITH THE FOLLOWING GITHUB USERNAMES:
+
 1. laboon (Prof. Laboon)
 2. jbriand12 (Briand)
 3. nineilpitt (Nils)

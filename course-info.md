@@ -29,7 +29,8 @@ Intermediate Java
 
 [Lab Topics Form](https://docs.google.com/forms/d/1FiXmJBGlI6MSZlCxUUGdwOFTJmCw6xskLTIBfhkTatA/viewform?usp=send_form)
 
-**Grader:** 
+**Graders:**  
+Nils Llerana, Samanvoy Panati, Briand Djoko-Takougue  
 **Grader Office Hours:** No specific office hours; please email for appointment
 
 **Class GitHub repo:** https://www.github.com/laboon/cs0401  
