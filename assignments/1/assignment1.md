@@ -11,7 +11,7 @@ PLEASE SHARE YOUR REPOSITORY WITH THE FOLLOWING GITHUB USERNAMES:
 1. laboon (Prof. Laboon)
 2. jbriand12 (Briand)
 3. nineilpitt (Nils)
-4.  (Samanvoy)
+4. Samanvoy-Panati (Samanvoy)
 
 You have opened a bookstore, and have decided to write your own point-of-sale system to sell books.  You sell several items:
 
