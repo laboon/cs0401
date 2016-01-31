@@ -9,7 +9,7 @@ Intermediate Java
 
 **TA:** Ben Pratt (bap74@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Wednesday 11-1, Thursday 3-5  
-**GitHub:**  
+**GitHub:** bapratt12 
 
 **TA:** Akila Brian Amaratunga (aba53@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Tuesday 4:00-6:00  
