@@ -9,7 +9,7 @@ Intermediate Java
 
 **TA:** Ben Pratt (bap74@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Wednesday 11-1, Thursday 3-5  
-**GitHub:**  
+**GitHub:** bapratt12 
 
 **TA:** Akila Brian Amaratunga (aba53@pitt.edu)  
 **TA Office Hours:** SENSQ 6506, Tuesday 4:00-6:00  
@@ -23,13 +23,14 @@ Intermediate Java
 **TA Office Hours:** SENSQ 6506, Friday 4:00-6:00  
 **GitHub:** jtf28
 
-**TA:** Sam Kopansky  
+**TA:** Sam Kopansky (sak162@pitt.edu)
 **TA Office Hours:** SENSQ 6506, Wednesday 3:00-4:00 and Friday 1:00-2:00  
-**GitHub:**  
+**GitHub:** SamKopansky (skopansky@gmail.com)
 
 [Lab Topics Form](https://docs.google.com/forms/d/1FiXmJBGlI6MSZlCxUUGdwOFTJmCw6xskLTIBfhkTatA/viewform?usp=send_form)
 
-**Grader:** 
+**Graders:**  
+Nils Llerana, Samanvoy Panati, Briand Djoko-Takougue  
 **Grader Office Hours:** No specific office hours; please email for appointment
 
 **Class GitHub repo:** https://www.github.com/laboon/cs0401  

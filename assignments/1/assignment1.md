@@ -6,6 +6,13 @@ ASSIGNMENT DATE: 13 JAN 2016 (MW class), 14 JAN 2016 (TH class)
 DUE DATE: 1 FEB 2016 (MW class), 2 FEB 2016 (TH class)  
 LATE DUE DATE: 3 FEB 2016 (MW class), 4 FEB (TH class)  
 
+PLEASE SHARE YOUR REPOSITORY WITH THE FOLLOWING GITHUB USERNAMES:
+
+1. laboon (Prof. Laboon)
+2. jbriand12 (Briand)
+3. nineilpitt (Nils)
+4. Samanvoy-Panati (Samanvoy)
+
 You have opened a bookstore, and have decided to write your own point-of-sale system to sell books.  You sell several items:
 
 1. Books ($5.00 each)
