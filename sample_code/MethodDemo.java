@@ -11,19 +11,6 @@ public class MethodDemo {
     
     public static void main(String[] args) {
 
-	boolean f = false;
-
-	while(f) {
-	    System.out.println("foo");
-	}
-	    
-	
-	do {
-	    System.out.println("bar");
-	} while (false);
-
-	System.exit(0);
-	
 	// System.out.println() is just a method!
 	System.out.println("I'm a method!");
 
@@ -31,7 +18,7 @@ public class MethodDemo {
 	// return type)
 
 	printSomethingFunny();
-	
+
 	// .. and enclose them in other statements/blocks such
 	// as loops.
 
@@ -45,6 +32,10 @@ public class MethodDemo {
 
 	for (int j = 0; j < 5; j++) {
 	    printANumber(j);
+	    
+	    // NO!
+	    // printANumber("Kitty cat");
+	    // printANumber(j, 17);
 	}
 	
 	// Functions are like procedures but return a value.  The
@@ -54,11 +45,12 @@ public class MethodDemo {
 	int x = laboonify( 10 ) ;
 	System.out.println("10 laboonified = " + x);
 
+	
 	// Methods can call other methods
 	
 	x = superLaboonify(10);
 	System.out.println("10 superLaboonified = " + x);
-	
+
 	// Methods can act as both procedure and function
 	
 	x = visibleLaboonify(10);
@@ -78,7 +70,7 @@ public class MethodDemo {
 	System.out.println("A is " + a);
 	a = addOneReturn(a);
 	System.out.println("A is " + a);
-	
+
 	// Static methods are associated with the class.  You
 	// don't need to explicitly mention the class if you
 	// are in the same class as that method is defined,
@@ -108,6 +100,8 @@ public class MethodDemo {
     // Simple static method (procedure) with one parameter
     
     public static void printANumber(long n) {
+	// Kind of like:
+	// long n = 1;
 	System.out.println(">>>> " + n + " <<<<");
     }
 
