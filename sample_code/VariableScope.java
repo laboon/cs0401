@@ -13,7 +13,7 @@ public class VariableScope { // Start of _class_ block
 	    int y = 10; // will exist until end of while block
 	    x++; // In a loop, I can access variables referenced in higher block
 	    y += 5;
-	    System.out.println("y is now ");
+	    System.out.println("y is now " + y);
 	} // end while block
 
 	System.out.println("After loop, x is now " + x);
@@ -23,6 +23,7 @@ public class VariableScope { // Start of _class_ block
 	// at the end of each iteration!  But p will.
 	
 	for (int j=0; j < 10; j++) { // start of _for_ block
+	    System.out.println("j is " + j + " at beginning of the loop");
 	    int p = 40; // resets each iteration through
 	    p += 2;
 	    j += 2;
@@ -30,6 +31,7 @@ public class VariableScope { // Start of _class_ block
 	} // end of _for_ block
 
 	System.out.println("Can't access j here!");
+	
 	int q = 17;
 	
 	if (x < 4) {
@@ -41,14 +43,17 @@ public class VariableScope { // Start of _class_ block
 	}
 	// q is accessible from here
 	// Neither a nor b is accessible here
-	    
+
 	// function call
+
+	
 	System.out.println("x is " + x);
-	foo(x);	
+	x = foo(x);	
 	System.out.println("After foo call, x is " + x);
 
 	doSomething(x);
 
+	
 	doSomethingCrazy();
 	
 	
@@ -80,12 +85,6 @@ public class VariableScope { // Start of _class_ block
     // main -> calls doSomething... -> doSomethingElse
 
     public static void doSomething(int r) {
-
-	// If I call another method, it can also have an x which is
-	// entirely separate from this x
-
-	doSomethingElse();
-
 	
 	// Variable r now has value (copy!) of x
 	System.out.println("(doSomething) r is " + r);
@@ -93,6 +92,11 @@ public class VariableScope { // Start of _class_ block
 	// to the x in the method this was called from
 	int x = 200;
 	System.out.println("(doSomething) x is " + x);
+	
+	// If I call another method, it can also have an x which is
+	// entirely separate from this x
+
+	doSomethingElse();
 
     }
 
@@ -115,6 +119,8 @@ public class VariableScope { // Start of _class_ block
     }
 
     public static int foo(int y) {
+	int schmeckle = 8;
+	schmeckle--;
 	return y * 2;
     }
     // MAGIC FOR NOW!
@@ -128,9 +134,7 @@ public class VariableScope { // Start of _class_ block
 
     public static void doSomethingElseCrazy() {
 	System.out.println("*political joke*");
-	if (_foo++ < 4) {
-	    doSomethingCrazy();
-	}
+	doSomethingCrazy();
     }
     
 } // end _class_ block
