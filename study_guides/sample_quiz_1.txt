@@ -1,0 +1,156 @@
+Name:________________________________
+
+CS0401 ­ QUIZ 1 / 28 SEP 2015
+
+1. (5 points) What is the output from these two statements?
+
+int j = 5;
+
+System.out.printf("Num is %03d", j);
+
+2. (2 points each) For each of the following variable assignments, mark YES if it will work as­is, or NO if it will generate an error (compile­time or run­time).
+
+a. int a = (int) 12.5;
+
+b. double b = 200;
+
+c. byte c = 25000;
+
+d. double d = (int) 55.32;
+
+e. byte e = (byte) 30000;
+
+3. (8 points) What is the output from these three statements?
+
+int quack = 9;
+System.out.println("I quacked " + quack++ + " times.");
+System.out.println("They quacked " + ++quack + " times.");
+
+4. (5 points) What is the final value of the variable foo?
+
+int foo = 10;
+foo ­= 3;
+foo++;
+foo = 13 % 3;
+
+5. (10 points) Write a for loop which counts by 2's, from 2 to 10, and displays them on the screen, followed by a carriage return ("enter") . In other words, output should look like:
+
+2
+4
+6
+8
+10
+
+6. (10 points) Write a method, hasGoodNumPets, that accepts two arguments: numCats (an integer) and numDogs(a long), and returns a boolean. In the case that a person has two or fewer cats, and three or fewer dogs, return true. Otherwise, return false.
+
+7. (6 points) Write down what output the following lines of code will produce.
+
+int birds = 2;
+switch (birds) {
+case 1:
+   System.out.println("Pretty bird.");
+case 2:
+case 3:
+   System.out.println("Good bird.");
+default:
+   System.out.println("Fluffy bird.");
+}
+
+8. (6 points) Write down what output the following lines of code will produce.
+
+int numHorses = 10;
+int numMen = 20;
+
+if (numHorses >= 5 || numHorses <= 25) {
+   if (numMen != 5) {
+} else if (numMen <= 30 && numHorses > 0 && numHorses < 100) {
+
+} else {
+
+}
+
+} else {
+
+System.out.println("Uh oh Humpty Dumpty!");
+
+}
+
+System.out.println("Oh no Humpty Dumpty!");
+
+System.out.println("Sorry Humpty Dumpty!");
+
+System.out.println("Boo Humpty Dumpty!");
+
+9. (6 points) Write down what output the following lines of code will produce.
+
+int numCats = 2 * 2 + 4 * 3;
+
+System.out.println("Num cats is " + numCats);
+
+10. (6 points) Write down what output the following lines of code will produce.
+
+int foo = 17 % 5;
+int bar = 10 / 3;
+System.out.println("I have " + foo + " foos and " + bar + " bars.");
+
+11. (5 points) What will happen if I enter "plumbus" for input in the following code? You may assume that the rest of the program works correctly (e.g., Scanner has been imported, class and main method set up correctly, etc.) Circle the best answer.
+
+Scanner sc = new Scanner(System.in);
+int fleeb = sc.nextInt();
+
+(a) You will never get to this point; javac will generate a compile­time error.
+
+(b) The variable fleeb will be set to the ASCII value of the first character, p.
+
+(c) The variable fleeb will be set to the default int value, 0.
+
+(d) A run­time error will occur, showing the exception java.util.InputMismatchException.
+
+(e) An infinite loop will occur, because the non­integer value will not be popped off the stack.
+
+12. (8 points) Write a procedure, printLove, which accepts one parameter, a String (you may name this parameter whatever you like). It will then print out the words "I love ", then the passed­in parameter, then an exclamation point. For example, if printLove is called with the argument "Madame Bovary", it will print out "I love Madame Bovary!"
+
+13. (5 points) What will be the output of this loop? Circle the best answer.
+
+int k = 0;
+do {
+   System.out.print("Schmeckle");
+} while (k != 2);
+
+(a) "Schmeckle"
+
+(b) No output
+
+(c) "SchmeckleSchmeckleSchmeckle..." (infinite loop)
+
+(d) "SchmeckleSchmeckle"
+
+14. (5 points) What will be the output of this loop?
+
+long quantum = 400;
+while (quantum < 200) {
+  System.out.print("Zeep");
+  quantum ­= 400;
+}
+
+(a) "Zeep"
+
+(b) No output
+
+(c) "ZeepZeepZeep..." (infinite loop)
+
+(d) "ZeepZeep"
+
+15. (5 points) Which of the following lines of code will set the value of variable glipglop to 10, after the first three lines are executed? Circle the best answer.
+
+int glipglop = 11;
+int beth = 40;
+int jerry = 4;
+
+(a) glipglop = beth % jerry;
+
+(b) glipglop = jerry % beth;
+
+(c) glipglop = jerry || beth;
+
+(d) glipglop = beth || jerry;
