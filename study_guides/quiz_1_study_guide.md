@@ -1,8 +1,8 @@
 ## Study Guide - Quiz 1
-### CS0401, Fall 2015
+### CS0401, Spring 2015
 ### Professor Laboon
 
-* All material covered in class (up to and including 23 Sep)!
+* All material covered in class up to Lecture 8!
 
 * Understand:
   * Basics of Java
