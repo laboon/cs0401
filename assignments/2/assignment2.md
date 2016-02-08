@@ -20,7 +20,7 @@ Points are determined in the following way:
 2. Face cards (Jack, Queen, or King of any suit) are worth 10 points.
 3. An Ace can be worth either 1 points or 11 points, whichever is better for the current hand.
 
-The player can do one of two things (actually, in a real game of Blackjack, there are several other options, but we are playing a simplified version of the game).  The first thing they can do is "stay" - that is, accept their current hand.  The second thing they can do is "hit" - accept another card.  If, at any point, the player
+The player can do one of two things (actually, in a real game of Blackjack, there are several other options, but we are playing a simplified version of the game).  The first thing they can do is "stay" - that is, accept their current hand.  The second thing they can do is "hit" - accept another card.  If, at any point, the player's score goes over 21, the player automatically loses the round.
 
 Once the player stays, the "house" (that is, the dealer) will turn over their cards.  The house player will follow a simple set of rules:
 

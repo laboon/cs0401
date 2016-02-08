@@ -1,4 +1,5 @@
 public class ObjectCreation {
+    
     public static void main(String[] args) {
 
 	// Make 5 new objects - they are 
@@ -21,7 +22,7 @@ public class ObjectCreation {
 	    Object oRef3 = o2;
 	    System.out.println(oRef);
 	}
-
+	
 	// Create three Student objects
 	Student s1 = new Student("Geraldine Ferraro", 9001);
 	Student s2 = new Student("Bob Dole", 2009);
@@ -42,7 +43,6 @@ public class ObjectCreation {
 
 	System.out.println("Now student 1's name is " + s1.getName());
 
-	System.exit(0);
 	
 	s2.setName("Bob Dole II");
 	
@@ -51,6 +51,8 @@ public class ObjectCreation {
 	// go away
 	s2 = null;
 
+	// s2.setName("Bob Dole III");
+	
 	// Will crash with a NullPointerException!
 	
 	// s2.getName();

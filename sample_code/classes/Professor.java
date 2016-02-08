@@ -1,6 +1,5 @@
 import java.util.Random;
 
-
 public class Professor {
 
     // Same as public String _name;
