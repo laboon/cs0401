@@ -151,6 +151,6 @@ int jerry = 4;
 
 (b) glipglop = jerry % beth;
 
-(c) glipglop = jerry || beth;
+(c) glipglop = jerry / beth;
 
-(d) glipglop = beth || jerry;
+(d) glipglop = beth / jerry;
