@@ -41,6 +41,7 @@ public class Student {
     
     public void learn() {
 	breathe();
+	foo();
     	_learning += _prof.teach();
     }
     
