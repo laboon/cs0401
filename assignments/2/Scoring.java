@@ -18,9 +18,6 @@ public class Scoring {
 	// 42 points, 2 ace (e.g. Ks + Kd + As + Ah)
 	System.out.println("Should be 22: " + getScore(42, 2));
 
-	// 21 points, 4 aces (e.g. Ks + As)
-	System.out.println("Should be 21: " + getScore(21, 0));
-
 	// 17 points, 1 ace (e.g. Ks + 5h + As)
 	System.out.println("Should be 17: " + getScore(17, 1));
 
