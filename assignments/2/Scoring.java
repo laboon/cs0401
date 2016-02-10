@@ -31,6 +31,16 @@ public class Scoring {
 	
     }
 
+    /**
+     * This method accepts the number of base points and the number
+     * of aces and calculates a final Blackjack score. 
+     * It assumes that all aces are originally calculated as 11 points
+     * each!
+     * @param points - Total number of points in hand
+     * @param numAces - number of ace cards in hand
+     * @return int - Correct Blackjack score of hand
+     */
+    
     private static int getScore(int points, int numAces) {
 	int score = 0;
 
