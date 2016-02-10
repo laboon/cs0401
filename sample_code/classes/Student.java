@@ -10,7 +10,11 @@ public class Student {
     
     public String _level; // = "";
 
-    // Constructor
+    // Constructors
+
+    public Student() {
+	_prof = new Professor("Noogie", "Coogie");
+    }
     
     public Student(Professor p) {
 
@@ -29,9 +33,14 @@ public class Student {
     	}
     }
 
+    private void breathe() {
+	System.out.println("Breathing...");
+    }
+    
     // Mutator
     
     public void learn() {
+	breathe();
     	_learning += _prof.teach();
     }
     
@@ -39,6 +48,10 @@ public class Student {
     
     public int getLearning() {
 	return _learning;
+    }
+
+    public String toString() {
+	return "Student with learning " + _learning;
     }
     
 }

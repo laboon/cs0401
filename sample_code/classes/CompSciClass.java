@@ -7,9 +7,7 @@ public class CompSciClass {
 	Student[] _students = new Student[10];
 
 	Professor p = new Professor("Laboon", "Bill");
-
-	System.out.println(p._name);
-
+	
 	// Won't work - private!
 	// System.out.println(p._firstName);
 
@@ -18,6 +16,9 @@ public class CompSciClass {
 	for (int j = 0; j < 10; j++) {
 	    _students[j] = new Student(p);
 	}
+
+	Student yup = new Student();
+	yup.learn();
 
 	boolean keepGoing = true;
 	int val = 0;

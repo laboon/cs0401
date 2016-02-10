@@ -46,7 +46,7 @@ At the beginning of each hand, the system should display the name of the user, t
 Name:         Sammy
 Total Hands:     10
 Hands Won:        5
-Money:       $50.00
+Money:        50.00
 ```
 
 All values shall be right-justified.
