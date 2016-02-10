@@ -9,9 +9,6 @@ public class Scoring {
 	// 15 points, no aces (e.g. Ts + 5s)
 	System.out.println("Should be 15: " + getScore(15, 0));
 
-	// 31 points, 2 aces (e.g. Ks + Td + As)
-	System.out.println("Should be 21: " + getScore(31, 2));
-
 	// 31 points, 2 aces (e.g. Ad + Ah + 9d)
 	System.out.println("Should be 21: " + getScore(31, 2));
 
