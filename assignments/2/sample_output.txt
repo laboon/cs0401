@@ -1,0 +1,353 @@
+(3215) $ java Blackjack
+Welcome to Infinite Blackjack!
+
+Enter name > Jazzy 
+Welcome, Jazzy!
+Have fun on your first time playing Infinite Blackjack.
+
+Name:                        Jazzy
+Total Hands:                     0
+Hands Won:                       0
+Money:                      100.00
+
+Play a hand? (Y/N) > tondog
+Play a hand? (Y/N) > -19
+Play a hand? (Y/N) > nirp
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 19
+PLAYER DEAL
+Cards: Qh 6h
+Score: 16
+[H]it or [S]tay? > S
+Player score: 16
+DEALER DEAL
+Cards: 4h 6h
+Score: 10
+Hit!
+Card dealt: 8h
+Score: 18
+Stay!
+Player score: 16
+Dealer score: 18
+Dealer won!
+You lost $19.00!
+
+Name:                        Jazzy
+Total Hands:                     1
+Hands Won:                       0
+Money:                       81.00
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > -19.00
+Please enter a valid value, from 0.01 to 81.00
+
+Enter amount to bet > bowwow
+Please enter a value in valid format (e.g. 4.50).
+
+Enter amount to bet > 8
+PLAYER DEAL
+Cards: 4c Tc
+Score: 14
+[H]it or [S]tay? > H
+Card dealt: 8c
+Score: 22
+Player busted!
+You lost $8.00!
+
+Name:                        Jazzy
+Total Hands:                     2
+Hands Won:                       0
+Money:                       73.00
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 7
+PLAYER DEAL
+Cards: 3h 6s
+Score: 9
+[H]it or [S]tay? > H
+Card dealt: 2c
+Score: 11
+[H]it or [S]tay? > H
+Card dealt: Ks
+Score: 21
+[H]it or [S]tay? > S
+Player score: 21
+DEALER DEAL
+Cards: 5h 7c
+Score: 12
+Hit!
+Card dealt: Qh
+Score: 22
+Player score: 21
+Dealer score: 22
+Dealer busted!
+You won $7.00!
+
+Name:                        Jazzy
+Total Hands:                     3
+Hands Won:                       1
+Money:                       80.00
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 12
+PLAYER DEAL
+Cards: 3s Jd
+Score: 13
+[H]it or [S]tay? > H
+Card dealt: 4s
+Score: 17
+[H]it or [S]tay? > S
+Player score: 17
+DEALER DEAL
+Cards: 3d 4s
+Score: 7
+Hit!
+Card dealt: 3h
+Score: 10
+Hit!
+Card dealt: 7s
+Score: 17
+Stay!
+Player score: 17
+Dealer score: 17
+Push
+
+Name:                        Jazzy
+Total Hands:                     4
+Hands Won:                       1
+Money:                       80.00
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 12
+PLAYER DEAL
+Cards: 4d 6h
+Score: 10
+[H]it or [S]tay? > wimmywamwamwozzle
+[H]it or [S]tay? > H
+Card dealt: 5h
+Score: 15
+[H]it or [S]tay? > H
+Card dealt: Qs
+Score: 25
+Player busted!
+You lost $12.00!
+
+Name:                        Jazzy
+Total Hands:                     5
+Hands Won:                       1
+Money:                       68.00
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 19
+PLAYER DEAL
+Cards: Qc 5s
+Score: 15
+[H]it or [S]tay? > S
+Player score: 15
+DEALER DEAL
+Cards: 4c 3h
+Score: 7
+Hit!
+Card dealt: 7h
+Score: 14
+Hit!
+Card dealt: 9d
+Score: 23
+Player score: 15
+Dealer score: 23
+Dealer busted!
+You won $19.00!
+
+Name:                        Jazzy
+Total Hands:                     6
+Hands Won:                       2
+Money:                       87.00
+
+Play a hand? (Y/N) > N
+Thank you for playing Infinite Blackjack!
+
+[laboon@fq-wireless-pittnet-150-212-3-50 ~/pitt/homework/assignment2]
+(3216) $ java Blackjack
+Welcome to Infinite Blackjack!
+
+Enter name > Jazzy
+Welcome back, Jazzy!
+Everything is just how you left it.
+
+Name:                        Jazzy
+Total Hands:                     6
+Hands Won:                       2
+Money:                       87.00
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 40.01
+PLAYER DEAL
+Cards: 9c 5s
+Score: 14
+[H]it or [S]tay? > H
+Card dealt: Ah
+Score: 15
+[H]it or [S]tay? > S
+Player score: 15
+DEALER DEAL
+Cards: 4d 6d
+Score: 10
+Hit!
+Card dealt: 2c
+Score: 12
+Hit!
+Card dealt: Qd
+Score: 22
+Player score: 15
+Dealer score: 22
+Dealer busted!
+You won $40.01!
+
+Name:                        Jazzy
+Total Hands:                     7
+Hands Won:                       3
+Money:                      127.01
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 12
+PLAYER DEAL
+Cards: Js 9h
+Score: 19
+[H]it or [S]tay? > S
+Player score: 19
+DEALER DEAL
+Cards: 9h 3s
+Score: 12
+Hit!
+Card dealt: 2c
+Score: 14
+Hit!
+Card dealt: 2s
+Score: 16
+Hit!
+Card dealt: 6h
+Score: 22
+Player score: 19
+Dealer score: 22
+Dealer busted!
+You won $12.00!
+
+Name:                        Jazzy
+Total Hands:                     8
+Hands Won:                       4
+Money:                      139.01
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 8
+PLAYER DEAL
+Cards: Tc 7h
+Score: 17
+[H]it or [S]tay? > S
+Player score: 17
+DEALER DEAL
+Cards: 9c 3c
+Score: 12
+Hit!
+Card dealt: Td
+Score: 22
+Player score: 17
+Dealer score: 22
+Dealer busted!
+You won $8.00!
+
+Name:                        Jazzy
+Total Hands:                     9
+Hands Won:                       5
+Money:                      147.01
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 19
+PLAYER DEAL
+Cards: Th Td
+Score: 20
+[H]it or [S]tay? > S
+Player score: 20
+DEALER DEAL
+Cards: 6c 6h
+Score: 12
+Hit!
+Card dealt: 4h
+Score: 16
+Hit!
+Card dealt: 2c
+Score: 18
+Stay!
+Player score: 20
+Dealer score: 18
+Player won!
+You won $19.00!
+
+Name:                        Jazzy
+Total Hands:                    10
+Hands Won:                       6
+Money:                      166.01
+
+Play a hand? (Y/N) > Y
+
+Enter amount to bet > 18
+PLAYER DEAL
+Cards: 9h Td
+Score: 19
+[H]it or [S]tay? > S
+Player score: 19
+DEALER DEAL
+Cards: Jd Jh
+Score: 20
+Stay!
+Player score: 19
+Dealer score: 20
+Dealer won!
+You lost $18.00!
+
+Name:                        Jazzy
+Total Hands:                    11
+Hands Won:                       6
+Money:                      148.01
+
+Play a hand? (Y/N) > n
+Thank you for playing Infinite Blackjack!
+
+[laboon@fq-wireless-pittnet-150-212-3-50 ~/pitt/homework/assignment2]
+(3216) $ java Blackjack
+Welcome to Infinite Blackjack!
+
+Enter name > Method
+Welcome, Method!
+Have fun on your first time playing Infinite Blackjack.
+
+Name:                       Method
+Total Hands:                     0
+Hands Won:                       0
+Money:                      100.00
+
+Play a hand? (Y/N) > y
+
+Enter amount to bet > 100
+PLAYER DEAL
+Cards: 6c 4c
+Score: 10
+[H]it or [S]tay? > H
+Card dealt: 5c
+Score: 15
+[H]it or [S]tay? > H
+Card dealt: 8s
+Score: 23
+Player busted!
+You lost $100.00!
+You have no more money to bet!
+Thank you for playing Infinite Blackjack!
