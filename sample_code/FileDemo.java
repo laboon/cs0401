@@ -58,8 +58,17 @@ public class FileDemo {
 	File f = new File(fileName);
 	Scanner sc = new Scanner(f);
 
+	// Read the entire first line as a String and print it out
+	
 	String title = sc.nextLine();
 
+	System.out.println(title);
+
+	// Now loop through and look for five int values.  These can
+	// be read in using our Scanner object into variables.
+	// The only difference is that we are getting data from a file
+	// and not from the keyboard.
+	
 	int total = 0;
 	
 	for (int j=0; j < 5; j++) {
@@ -68,9 +77,15 @@ public class FileDemo {
 	    total += readNum;
 	}
 
+	// We can use data from the file just like any other data.
+	
 	System.out.println("A really lucky number is the sum of all of them!");	
 	System.out.println("That is: " + total);
 
+	// Be sure to close the file when you are done using it!
+	// Otherwise there may be troubles if multiple processes
+	// try accessing the same file.
+	
 	sc.close();
     }
 
@@ -93,11 +108,20 @@ public class FileDemo {
 	// Generate some random numbers and write them to the file
 
 	Random rng = new Random();
+
+	// Note that we are printing just like we are to the console,
+	// except it is to a file.
 	
 	for (int j=0; j < 5; j++) {
 	    int randNum = rng.nextInt(100);
 	    out.println(randNum);
 	}
+
+	// Be sure to close the file when you are done using it!
+	// Otherwise there may be troubles if multiple processes
+	// try accessing the same file.
+
+	
 	out.close();
     }
 }
