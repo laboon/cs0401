@@ -10,6 +10,15 @@ public class ArrayDemo {
     // This would mean the args array looks like this:
     //
     // args[0] = "ArrayDemo.java"
+    //
+    // If we passed in other arguments, e.g.
+    //
+    // java ArrayDemo.java Tweet 7, the array would look like:
+    // args[0] = "ArrayDemo.java"
+    // args[1] = "Tweet"
+    // args[2] = "7"
+    
+    
     
     public static void main(String[] args) {
 
