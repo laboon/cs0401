@@ -47,6 +47,8 @@ public class ArrayDemo {
 	fc[2] = 3;
 	fc[3] = 19;
 
+	System.out.println("Element 2 is " + fc[2]);
+
 	// You can do this in shorthand with the following syntactic sugar
 	// This is exactly equivalent to the code above!  It creates a four-
 	// element array, fc2, and sets the values.
@@ -64,7 +66,6 @@ public class ArrayDemo {
 	    System.out.println("fc2[" + j + "] is: " + fc2[j]);
 	}
 
-	
 	// By default, all values in an array are the default for their
 	// primitive type.  This is usually the equivalent of 0 or false
 	// for each each type.
@@ -76,7 +77,18 @@ public class ArrayDemo {
 
 	System.out.println("Default char = \"" + chars[0]
 			   + "\" ( Character # " + (int) chars[0] + ")");
+	chars[0] = 'A';
+	chars[1] = ' ';
+	chars[2] = '&';
+	
+	System.out.println("A char = \"" + chars[0]
+			   + "\" ( Character # " + (int) chars[0] + ")");
+	System.out.println("Space char = \"" + chars[1]
+			   + "\" ( Character # " + (int) chars[1] + ")");
+	System.out.println("& char = \"" + chars[2]
+			   + "\" ( Character # " + (int) chars[2] + ")");
 
+	
 	int[] ints = new int[12];
 	
 	System.out.println("Default int = " + ints[3]);
