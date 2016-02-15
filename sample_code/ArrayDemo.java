@@ -62,7 +62,6 @@ public class ArrayDemo {
 	// Default char = null char (character code 0)
 	// Default byte, short, int, long = 0
 	// Default float or double = 0.0
-	//
 
 	char[] chars = new char[5];
 
