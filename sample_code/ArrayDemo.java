@@ -46,7 +46,7 @@ public class ArrayDemo {
 	fc[1] = 4;
 	fc[2] = 3;
 	fc[3] = 19;
-
+	
 	System.out.println("Element 2 is " + fc[2]);
 
 	// You can do this in shorthand with the following syntactic sugar
