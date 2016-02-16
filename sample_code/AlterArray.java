@@ -1,19 +1,35 @@
 public class AlterArray {
 
     public static void blimBlam(int[] a2) {
+	a2[0] = -100;
 	a2[3] = 17;
     }
 
-    public static int doubleMe(int r) {
-	int toReturn =  r * 2;
-	r++; // <- LOST LIKE TEARS IN THE RAIN
-	r *= 9; // <- TOTALLY IRRELEVANT
-	r = 16 % 3; // <- SUPERFLUOUS
-	return r; // ONLY WAY I CAN INTERACT WITH REST OF PROGRAM!
+    public static int[] corbloc() {
+	int[] toReturn = new int[10];
+	int[] meow = new int[19];
+	meow[2] = 6;
+	toReturn[6] = 1;
+	return toReturn;
+    }
+    
+    public static int doubleMe(int qwyjibo) {
+	int toReturn =  qwyjibo * 2;
+	qwyjibo++; // <- LOST LIKE TEARS IN THE RAIN
+	qwyjibo *= 9; // <- TOTALLY IRRELEVANT
+	qwyjibo = 16 % 3; // <- SUPERFLUOUS
+	return qwyjibo; // ONLY WAY I CAN INTERACT WITH REST OF PROGRAM!
     }
 
     public static void main(String[] args) {
 
+	int[] foo = corbloc();
+
+	for (int a : foo) {
+	    System.out.println(a);
+	}
+
+	
 	// Passing in values as primitives can't cause any issues
 	// aside from the return value, because we are sending
 	// a copy of the value to the method - NOT the variable
@@ -27,7 +43,7 @@ public class AlterArray {
 	int doubleR = doubleMe(r);
 
 	System.out.println("After doubleMe, r is : " + r);
-
+	
 	// Arrays are different, because the "value" you are passing in
 	// is really a _reference_ - it's the address of an object
 	// out in memory.  If I give you a copy of my address, there

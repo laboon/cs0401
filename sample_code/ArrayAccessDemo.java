@@ -18,13 +18,16 @@ public class ArrayAccessDemo {
 	System.out.println("Accessing the index 5 of array... ");
 	int[] arr = { 14, 21, 1, 17, 42, 39, 18, 12, 8, 10 };
 
+	printArray(arr);
+
+	
 	// Direct access here -> we do not need to go through
 	// positions 0 through 4 to get here!
 
 	arr[5] = 0;
 
 	printArray(arr);
-	
+
 	// Sequential access -> you need to go through each
 	// previous element to get to a certain place
 	// In this situation, we are looking for the value
@@ -40,6 +43,7 @@ public class ArrayAccessDemo {
 	}
 	
 	printArray(arr);
+	System.exit(0);
 	
 	// Why would you want to do sequential access instead
 	// of direct access?  It seems so much more work.
