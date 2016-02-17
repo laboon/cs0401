@@ -118,9 +118,6 @@ Reading: _Gaddis, Ch 7_
 
 ## Lecture 14
 
-* Exam 1
-  * Covers everything up to this point in the semester
-
 ## Lecture 15
 
 * Multi-Dimensional arrays and ArrayLists
