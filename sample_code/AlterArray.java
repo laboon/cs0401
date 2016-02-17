@@ -18,7 +18,7 @@ public class AlterArray {
 	qwyjibo++; // <- LOST LIKE TEARS IN THE RAIN
 	qwyjibo *= 9; // <- TOTALLY IRRELEVANT
 	qwyjibo = 16 % 3; // <- SUPERFLUOUS
-	return qwyjibo; // ONLY WAY I CAN INTERACT WITH REST OF PROGRAM!
+	return toReturn; // ONLY WAY I CAN INTERACT WITH REST OF PROGRAM!
     }
 
     public static void main(String[] args) {
@@ -28,7 +28,8 @@ public class AlterArray {
 	for (int a : foo) {
 	    System.out.println(a);
 	}
-
+	
+	System.exit(0);
 	
 	// Passing in values as primitives can't cause any issues
 	// aside from the return value, because we are sending
@@ -43,7 +44,7 @@ public class AlterArray {
 	int doubleR = doubleMe(r);
 
 	System.out.println("After doubleMe, r is : " + r);
-	
+
 	// Arrays are different, because the "value" you are passing in
 	// is really a _reference_ - it's the address of an object
 	// out in memory.  If I give you a copy of my address, there

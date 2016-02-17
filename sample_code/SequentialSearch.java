@@ -2,6 +2,8 @@ import java.util.*;
 
 public class SequentialSearch {
 
+    // Helper method to print out arrays
+    
     public static void printArray(int[] arr) {
 	System.out.print("[ ");
 	for (int j=0; j < (arr.length - 1); j++) {
@@ -14,6 +16,7 @@ public class SequentialSearch {
 
     
     public static void main(String[] args) {
+	
 	int[] arr = new int[100];
 
 	Random rng = new Random();
@@ -23,7 +26,8 @@ public class SequentialSearch {
 	}
 
 	printArray(arr);
-
+	
+	// For loop
 	
 	System.out.println("For search:");
 	boolean foundIt = false;
@@ -39,7 +43,6 @@ public class SequentialSearch {
 	if (foundIt == false) {
 	    System.out.println("No 42 found =(");
 	}
-
 
 	System.out.println("While search:");
 	
@@ -58,9 +61,51 @@ public class SequentialSearch {
 	    System.out.println("No 42 found =(");
 	}
 
+	// For each loop
+	
+	System.out.println("For each search:");
 
+	foundIt = false;
+
+	counter = 0;
 	
+	for (int n : arr) {
+	    if (n == 42) {
+		System.out.println("FOUND IT AT " + counter);
+		foundIt = true;
+		break;
+	    }
+	    counter++;
+	}
+
+	if (foundIt == false) {
+	    System.out.println("No 42 found =(");
+	}
+
+	// Do while loop
+
+	System.out.println("Do while loop:");
+
+	foundIt = false;
+
+	counter = 0;
+
+	if (arr.length > 0) {
+	    do {
+		if (arr[counter] == 42) {
+		    System.out.println("FOUND IT AT " + counter);
+		    foundIt = true;
+		    break;
+		}
+		counter++;
+	    } while (!foundIt && counter < arr.length);
+	}
+
+	if (foundIt == false) {
+	    System.out.println("No 42 found =(");
+	}
 	
+	  
     }
     
 }

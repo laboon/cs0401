@@ -27,7 +27,7 @@ public class ArrayAccessDemo {
 	arr[5] = 0;
 
 	printArray(arr);
-
+	
 	// Sequential access -> you need to go through each
 	// previous element to get to a certain place
 	// In this situation, we are looking for the value
