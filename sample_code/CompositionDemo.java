@@ -2,6 +2,10 @@ public class CompositionDemo {
 
 
     public static void main(String[] args) {
+
+	// Note that in this class, I have no idea how
+	// Zoo is constructed.  I just use it.
+	
 	//Create a zoo
 	Zoo zoo = new Zoo("Laboon Zoo", 7, 3, 2);
 	System.out.println(zoo);
@@ -10,6 +14,10 @@ public class CompositionDemo {
 	zoo.addElephants(3);
 	System.out.println(zoo);
 
+	System.out.println("Go clean out the elephant stables!");
+	zoo.work();
+	System.out.println(zoo);
+	
 	System.out.println("Somebody freed all of the animals!");
 	zoo.freeAllTheAnimals();
 	System.out.println(zoo);
@@ -21,9 +29,12 @@ public class CompositionDemo {
 
 class Zoo {
     
-    // The larger Zoo class's data consists of four pieces of
+    // The larger Zoo class's data consists of five pieces of
     // data - the name of the Zoo (a string), and the number of
-    // gorillas, elephants, and giraffes in the zoo (all ints).
+    // gorillas, elephants, and giraffes in the zoo (all ints),
+    // an an array of Strings, indicating employees.
+
+    Employee[] _employees = new Employee[4];
 
     private String _name = "";
     
@@ -40,8 +51,25 @@ class Zoo {
 	_numGorillas = gorillas;
 	_numElephants = elephants;
 	_numGiraffes = giraffes;
+
+	// Set employees
+
+	_employees[0] = new Employee("John Smith");
+	_employees[1] = new Employee("Jane Jones");
+	_employees[2] = new Employee("Janet Lee");
+	_employees[3] = new Employee("Joe Jackson");
+	
     }
 
+    // Make all of the employees work
+    
+    public void work() {
+	for (Employee e: _employees) {
+	    e.work();
+	}
+    }
+	    
+	    
     // Mutators - modify the number of elephants, giraffes, or
     // gorillas
     
@@ -73,4 +101,17 @@ class Zoo {
 	    + _numGiraffes + " giraffes ]";
     }
 
+}
+
+
+class Employee {
+    String _name = "";
+
+    public Employee(String name) {
+	_name = name;
+    }
+
+    public void work() {
+	System.out.println(_name + " is working!");
+    }
 }
