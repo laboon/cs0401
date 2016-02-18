@@ -116,8 +116,6 @@ Reading: _Gaddis, Ch 7_
   * Parameters
   * Modifying an array
 
-## Lecture 14
-
 ## Lecture 15
 
 * Multi-Dimensional arrays and ArrayLists
