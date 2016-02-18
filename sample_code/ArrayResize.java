@@ -94,7 +94,6 @@ public class ArrayResize {
 	int[] sixthArray = dynamicResize(fifthArray, 2);
 	printArray(sixthArray);
 
-	System.exit(1);
 	
     }
     
