@@ -34,7 +34,7 @@ class Zoo {
     // gorillas, elephants, and giraffes in the zoo (all ints),
     // an an array of Strings, indicating employees.
 
-    Employee[] _employees = new Employee[4];
+    private Employee[] _employees = new Employee[4];
 
     private String _name = "";
     

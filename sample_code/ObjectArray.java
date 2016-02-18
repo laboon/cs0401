@@ -16,6 +16,10 @@ public class ObjectArray {
 
 class Monkey {
 
+    public Monkey() {
+	
+    }
+    
     public void makeNoise() {
 	System.out.println("Monkey noise!");
     }

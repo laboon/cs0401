@@ -53,14 +53,18 @@ public class ArrayListDemo {
 	stringList.remove("Peaseblossom");
 	System.out.println("Removed Peaseblossom, size of stringList is now: " + stringList.size());
 
+	
 	stringList.add("Cobweb");
 	System.out.println("Added Cobweb, size of stringList is now: " + stringList.size());
 	
 	stringList.remove(2);
 
+
 	stringList.add(0, "Bottom");
 	stringList.add(0, "Bottom");
 	stringList.add(0, "Duke of Athens");
+
+
 	
 	// boolean anyBottoms = stringList.remove("Bottom");
 	// System.out.println(anyBottoms);
@@ -71,6 +75,7 @@ public class ArrayListDemo {
 	for (String fairyName : stringList) {
 	    System.out.println(fairyName);
 	}
+
 	
 	while (stringList.contains("Bottom")) {
 	    stringList.remove("Bottom");
