@@ -41,7 +41,6 @@ public class Student {
     
     public void learn() {
 	breathe();
-	foo();
     	_learning += _prof.teach();
     }
     
@@ -52,7 +51,7 @@ public class Student {
     }
 
     public String toString() {
-	return "Student with learning " + _learning;
+	return _level + " student with learning " + _learning;
     }
     
 }

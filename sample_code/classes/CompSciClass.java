@@ -32,7 +32,8 @@ public class CompSciClass {
 	    }
 	}
 	for (int j = 0; j < 10; j++) {
-	    System.out.println("Student " + j + " learned " + _students[j].getLearning() + " units of knowledge!");
+	    System.out.print("Student " + j + ": ");
+	    System.out.println(_students[j]);
 	}
     }
 }
