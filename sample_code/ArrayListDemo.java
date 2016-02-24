@@ -39,6 +39,7 @@ public class ArrayListDemo {
 	for (int j=0; j < stringList.size(); j++) {
 	    System.out.println(stringList.get(j)); // = array[j]
 	}
+
 	
 	System.out.println("-----------------");
 	// You can use a foreach here too!
@@ -46,7 +47,7 @@ public class ArrayListDemo {
 	for (String fairyName : stringList) {
 	    System.out.println(fairyName);
 	}
-
+	
 	// The size will change automatically as you add or
 	// remove items
 
@@ -56,10 +57,10 @@ public class ArrayListDemo {
 	
 	stringList.add("Cobweb");
 	System.out.println("Added Cobweb, size of stringList is now: " + stringList.size());
+
 	
 	stringList.remove(2);
-
-
+	
 	stringList.add(0, "Bottom");
 	stringList.add(0, "Bottom");
 	stringList.add(0, "Duke of Athens");
@@ -87,7 +88,7 @@ public class ArrayListDemo {
 	    String temp = stringList.remove(0);
 	    System.out.println("Removed " + temp + "!");
 	}
-
+	
 	// You can change an array to an ArrayList!
 
 	String[] stringArray = {"Theseus", "Hippolyta", "Philostrate", "Egeus"};
@@ -97,17 +98,17 @@ public class ArrayListDemo {
 	    stringList.add(greek);
 	    System.out.println("Added Greek: " + greek);
 	}
-
 	// You can check if something exists in the ArrayList
 
 	System.out.println("Theseus is a Greek: " + stringList.contains("Theseus"));
 	System.out.println("Henry VIII is a Greek: " + stringList.contains("Henry VIII"));	
-
 	// Or remove everything
 
 	stringList.clear();
 	System.out.println("The Greeks Have Perished! Size of stringList: " + stringList.size());
-	
+
+	System.exit(0);
+
 	
     }
     

@@ -30,13 +30,15 @@ public class MultiDimensionalArrayDemo {
 
 	char[][] ticTacToe = new char[3][3];
 
-	// Fill array with "space" character
+	// Fill array with "." character
 	for (int j = 0; j < ticTacToe.length; j++) {
 	    for (int k = 0 ; k < ticTacToe.length; k++) {
 		ticTacToe[j][k] = '.';
 	    }
 	}
-
+	print2DCharArray(ticTacToe);
+	System.out.println("------");
+	
 	// Now make a diagonal of X's
 	
 	for (int j = 0; j < 3; j++) {
@@ -49,9 +51,9 @@ public class MultiDimensionalArrayDemo {
 	// multi-dimensional arrays are really "arrays of arrays"
 
 	int[][] multiArray = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
-
+	
 	print2DIntArray(multiArray);
-
+	
 	// Arrays must contain the same data but do NOT need to be
 	// the same length!  Multi-dimensional arrays that are not
 	// perfect grids are called "ragged arrays".  For example -
@@ -60,7 +62,7 @@ public class MultiDimensionalArrayDemo {
 	int[][] raggedArray = { {1,2}, {3,4,5,6,7,8}, {9,10,11,12}, {13} };
 
 	print2DIntArray(raggedArray);
-	
+
 	// These are perfectly fine because remember, each element in
 	// a reference-based array is a reference to something else.
 	// These can be different-sized arrays, or even replaced by other
@@ -88,6 +90,7 @@ public class MultiDimensionalArrayDemo {
 
 	ragged2[2] = tango;
 	print2DIntArray(ragged2);
+
 	
 	// Into the third dimension..
 	// Nothing is stopping you from making arrays of arrays of arrays.

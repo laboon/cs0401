@@ -84,13 +84,14 @@ public class SelectionSort {
 	System.out.print("Sorted (after): ");
 	printArray(unsortedArray);
 
-	
 	System.out.print("Already sorted (before): ");
 	printArray(alreadySortedArray);
 	selectionSort(alreadySortedArray);
 	System.out.print("Already sorted (after): ");
 	printArray(alreadySortedArray);
 
+	System.exit(0);
+	
 	System.out.print("Unsorted (before): ");
 	printArray(oneElementArray);
 	selectionSort(oneElementArray);
