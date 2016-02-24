@@ -11,14 +11,31 @@ public class Variables {
 	// and you are doing the exact same thing!
 
 	int noogie = 500000;
-	byte b = (byte) noogie;
-	System.out.println(b);
-	
+	byte b = (byte) noogie;	
         short s = 32767;
-	int i = 2147483647; // = Integer.MAX_VALUE
+	int i = 2147487; // = Integer.MAX_VALUE
 	long l = Long.MAX_VALUE;
 	float f = (float) 1.1111111111; // 1.111 is by default double!
 	double d = 1.1111111111;
+
+	double fsdfds = 9999999999999.9;
+
+	float mobvy = i;
+	System.out.println(mobvy);
+	
+	byte fsd = (byte) fsdfds;
+
+	boolean cre = (boolean) 0;
+	System.out.println("Cre is " + cre);
+
+	int itsAnA = 65;
+	char aChar = (char) itsAnA;
+	System.out.println(aChar);
+	System.exit(0);
+	
+	System.out.println(fsd);
+	System.exit(0);
+	
 	boolean bool = true;
 	char c = 'a';
 	

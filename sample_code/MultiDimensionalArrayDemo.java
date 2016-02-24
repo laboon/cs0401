@@ -59,10 +59,10 @@ public class MultiDimensionalArrayDemo {
 	// perfect grids are called "ragged arrays".  For example -
 
 	System.out.println("----------------");
-	int[][] raggedArray = { {1,2}, {3,4,5,6,7,8}, {9,10,11,12}, {13} };
+	int[][] raggedArray = { {1,2}, {3,4,5,6,7,8}, {9,1,2,3,4,5}, {9} };
 
 	print2DIntArray(raggedArray);
-
+	
 	// These are perfectly fine because remember, each element in
 	// a reference-based array is a reference to something else.
 	// These can be different-sized arrays, or even replaced by other
@@ -81,6 +81,9 @@ public class MultiDimensionalArrayDemo {
 	ragged2[1][2] = ragged2[2][2];
 
 	print2DIntArray(ragged2);
+
+	System.exit(0);
+	
 	// Let's replace ragged2[2] with a new array.
 
 	int[] tango = new int[10];
