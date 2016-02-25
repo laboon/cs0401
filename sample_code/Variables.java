@@ -11,6 +11,7 @@ public class Variables {
 	// and you are doing the exact same thing!
 
 	int noogie = 500000;
+	
 	byte b = (byte) noogie;	
         short s = 32767;
 	int i = 2147487; // = Integer.MAX_VALUE
@@ -20,20 +21,15 @@ public class Variables {
 
 	double fsdfds = 9999999999999.9;
 
-	float mobvy = i;
-	System.out.println(mobvy);
-	
-	byte fsd = (byte) fsdfds;
+	double y = ((byte) 88888888.987);
 
-	boolean cre = (boolean) 0;
-	System.out.println("Cre is " + cre);
-
-	int itsAnA = 65;
-	char aChar = (char) itsAnA;
-	System.out.println(aChar);
+	double xNirp = ((byte) 500.99);
+	System.out.println("xNirp is " + xNirp);
 	System.exit(0);
 	
-	System.out.println(fsd);
+	long superLong = 9999999999999L;
+	
+	System.out.println("x is " + y);
 	System.exit(0);
 	
 	boolean bool = true;

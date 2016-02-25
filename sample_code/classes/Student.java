@@ -6,7 +6,7 @@ public class Student {
     
     private int _learning = 0;
 
-    private Professor _prof; // = new Professor("Joe", "Schmoe");
+    public Professor _prof; // = new Professor("Joe", "Schmoe");
     
     public String _level; // = "";
 
@@ -35,6 +35,16 @@ public class Student {
 
     private void breathe() {
 	System.out.println("Breathing...");
+    }
+
+    public static void meow() {
+	System.out.println(_prof);
+	System.out.println("Tweet!");
+    }
+
+    public static void tweet(int a, int  b, String c) {
+	System.out.println("a is " + a + " b is " + b);
+	System.out.println(c);
     }
     
     // Mutator

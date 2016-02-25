@@ -20,6 +20,16 @@ public class CompSciClass {
 	Student yup = new Student();
 	yup.learn();
 
+	Student.meow();
+
+	int looloo = 7;
+	int pkol = 8;
+	String clark = "meow";
+	
+	Student.tweet(looloo, pkol, clark);
+	
+	System.exit(0);
+	
 	boolean keepGoing = true;
 	int val = 0;
 	
