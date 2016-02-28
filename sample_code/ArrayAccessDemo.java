@@ -17,7 +17,7 @@ public class ArrayAccessDemo {
     public static void main(String[] args) {
 	System.out.println("Accessing the index 5 of array... ");
 	int[] arr = { 14, 21, 1, 17, 42, 39, 18, 12, 8, 10 };
-
+	
 	printArray(arr);
 
 	
