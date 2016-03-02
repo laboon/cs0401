@@ -1,0 +1,59 @@
+1. True - variables exist until the end of the block in which they are declared.
+2. False - ArrayLists tend to be slower than regular arrays.
+3. False - They can hold an arbitrary # of dimensions.
+4. False - You can set the input to be the keyboard, a file, or something else.
+5. True - it can hold either primitive values or references to objects.
+6. False - Logic errors are devious because you may not even know you have one!  Run-time errors will crash with an exception (unless you catch them).
+7. OK - Converts 2.111 to a byte, 2, then puts the byte into an int.
+8. Error - Converts 2 into a float, 2.000, and then tries to put a float into an int.
+9. OK - 17 is implicitly cast into a float.
+10. OK - Explicitly cast to a short, 2, and put into the short variable.
+11. OK - Explicitly cast 1 to a double, 1.000, and put the double value into a double variable.
+12. True - F || T 
+13. False - F && T
+14. False - (T || T) && F -> T && F
+15. True - F || T
+16. True - T && T
+17. False - !(T) && T -> F && T
+18. javac - The java compiler
+19. value - A copy of the value in the variable is sent to the method!
+20. block - This block can be a method, for loop block, class, etc.
+21. Dynamically sized, automatically resizes, details abstracted away, easier to use, etc.
+22. c -= 2; OR c = c - 2;
+23.
+    14 
+    56.0
+    -8
+
+24.
+    Entmoot
+    Entmoot
+    Mirkwood = 1
+    Mordor = 0
+    Maiar = 2
+    Merry = 16.0
+    
+25.
+    Life of a Professor
+    false / Coffee #0 w/ 3 Creams
+    false / Coffee #2 w/ 3 Creams
+    false / Coffee #4 w/ 3 Creams
+    false / Coffee #6 w/ 3 Creams
+    Spilled 8 ml of coffee!
+    true / Coffee #8 w/ 3 Creams
+    
+26.
+    Pitt!
+    Posvar Hall
+    
+27.
+   0 0 0 0
+   0 1 2 3
+   0 2 4 6
+   
+28.
+   for (String s : planet) {
+      System.out.println(s);
+   }
+   
+BONUS: Koala (mentioned several times in class!)
