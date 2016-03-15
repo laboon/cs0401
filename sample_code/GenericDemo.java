@@ -44,6 +44,7 @@ public class GenericDemo {
 	// ArrayList (or whatever) can store in <> symbols.  Observe:
 
 	ArrayList<Integer> intAl = new ArrayList<Integer>();
+	
 	ArrayList<Question> qArrList = new ArrayList<Question>();
 	
 	intAl.add(new Integer(1));
@@ -51,7 +52,7 @@ public class GenericDemo {
 	intAl.add(new Integer(3));
 
 	// won't work =(
-	intAl.add("BILL LABOON!!!!!!!");
+	// intAl.add("BILL LABOON!!!!!!!");
 		
 	ArrayList<String> strAl = new ArrayList<String>();
 	strAl.add("Nirp");
