@@ -1,4 +1,4 @@
-## Lab 09
+## Lab 10
 
 ### Deep Bubbles
 
@@ -11,11 +11,11 @@ In class, we discussed selection sort.  We also briefly discussed the difference
 
 ## Setup
 
-You may use the same private repo as used in the lab last week.  You may want to put the files this week under a special "Lab09" subdirectory.  However, this lab can be done with only one Java class.  Remember to add, commit, and push any Java files to your repository!
+You may use the same private repo as used in the lab last week.  You may want to put the files this week under a special "Lab10" subdirectory.  However, this lab can be done with only one Java class.  Remember to add, commit, and push any Java files to your repository!
 
 ## Instructions
 
-A base file, Lab09.java, is included in the repository.  You may use this as your basis for the assignment.
+A base file, Lab10.java, is included in the repository.  You may use this as your basis for the assignment.
 
 You will note that there is an array
 
@@ -100,7 +100,7 @@ While Bubble Sort is rarely used due to its (lack of) speed, it is used occasion
 
 ## Template Code
 
-See Lab09.java for Selection Sort, swap and printArray helper methods, as well as the original array.  Note that you will have to change some of already-existing code in order to complete this lab!
+See Lab10.java for Selection Sort, swap and printArray helper methods, as well as the original array.  Note that you will have to change some of already-existing code in order to complete this lab!
 
 ## Tips
 
