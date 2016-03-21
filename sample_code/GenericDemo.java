@@ -44,6 +44,9 @@ public class GenericDemo {
 	// ArrayList (or whatever) can store in <> symbols.  Observe:
 
 	ArrayList<Integer> intAl = new ArrayList<Integer>();
+	
+	ArrayList<Question> qArrList = new ArrayList<Question>();
+	
 	intAl.add(new Integer(1));
 	intAl.add(new Integer(2));
 	intAl.add(new Integer(3));

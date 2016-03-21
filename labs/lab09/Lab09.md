@@ -106,4 +106,5 @@ Although attempting to _visualize_ more dimensions than three is difficult, it i
 
 ## Grading Rubric
 
-This lab is not graded.
+1. 1 point - Makes the five-dimensional array
+2. 1 point - Scientist moves, paints the places that the Scientist has been
