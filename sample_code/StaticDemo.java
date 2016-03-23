@@ -7,23 +7,37 @@ public class StaticDemo {
 
 	// System.out.println(Student.peopleSoftNumber);
 	// System.out.println(s.peopleSoftNumber);
+	// System.out.println(Student.school);
+	// System.out.println(school);
+
+	Student[] students = new Student[20];
+	
+	for (int j = 0; j < 20; j++) {
+	    students[j] = new Student();
+	    System.out.println(students[j].peopleSoftNumber);
+	}
+
+	
+	
 	
     }
 }
 
 class Student {
 
-    private static String school = "Pitt";
+    public static String school = "Pitt";
 
-    private int peopleSoftNumber = -1;
+    public static int peopleSoftCounter = 0;
+    
+    public int peopleSoftNumber = -1;
 
     public Student(int p) {
 
-	System.out.println(Student.school);
-	System.out.println(school);
-
-	
 	peopleSoftNumber = p;
+    }
+
+    public Student() {
+	peopleSoftNumber = ++peopleSoftCounter;
     }
 
     public void answerQuestion() {

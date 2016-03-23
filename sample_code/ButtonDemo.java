@@ -6,8 +6,8 @@ import javax.swing.*;
 
 public class ButtonDemo {
 
-    private static final int HEIGHT = 600;
-    private static final int WIDTH = 800;
+    private static final int HEIGHT = 800;
+    private static final int WIDTH = 600;
 
     // We are going to access these from outside the class,
     // so be prepared
@@ -50,7 +50,7 @@ public class ButtonDemo {
 
 	_window.setLayout(new FlowLayout());
 	_window.add(btn);
-
+	
 	JButton btn2 = new JButton("Less");
 	ActionListener buttonListener2 = new ButtonListener2();
 	btn2.addActionListener(buttonListener2);
@@ -61,12 +61,9 @@ public class ButtonDemo {
 	btn3.addActionListener(buttonListener3);
 	_window.add(btn3);
 
-	
-        JLabel msg2 = new JLabel("Is there a chance?");
-	_window.add(msg2);
-
-	JLabel msg3 = new JLabel("Noogie");
-	_window.add(msg3);
+	JButton btn4 = new JButton("DUORAIL");
+	btn4.addActionListener(buttonListener);
+	_window.add(btn4);
 	
 	
 	// Refresh window - otherwise we will not be able to see it

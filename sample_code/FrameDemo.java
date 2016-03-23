@@ -24,7 +24,7 @@ public class FrameDemo {
 
 	// Window is invisible by default, make it visible
 	window.setVisible(true);
-	
+
 	// Now let's do some interesting things with our window
 	// Add a message for a genuine bona fide electrified six-car MONORAIL
 
