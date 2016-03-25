@@ -80,6 +80,7 @@ public class ObjectCreation {
 class Student {
 
     String _studentName = "";
+    
     int _id = -1;
 
     // Constructor - how the class is created

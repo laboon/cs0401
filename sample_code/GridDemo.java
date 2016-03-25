@@ -15,15 +15,19 @@ public class GridDemo {
     
     private JFrame _frame = new JFrame("Tic-Tac-Toe");
 
+    public static void printInMethod() {
+	System.out.println("MEOW!");
+    }
+    
     public GridDemo() {
 	_frame.setSize(WIDTH, HEIGHT);
 	// Close program when window is closed
 	_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 	_frame.setLayout(new GridLayout(3,3));
-
-	for (int j=0; j<5; j++) {
-	    _buttons[j] = new JButton("" + j);
+		
+	for (int j=0; j<9; j++) {
+	    _buttons[j] = new JButton("_");
 	    ActionListener buttonListener = new ButtonListener();
 	    _buttons[j].addActionListener(buttonListener);
 	    _buttons[j].setFont(new Font("Courier", Font.PLAIN, 48));
@@ -46,7 +50,9 @@ public class GridDemo {
 	// the following action.
 
 	public void actionPerformed(ActionEvent e) {
+	    GridDemo.printInMethod();
 	    JButton source = (JButton) e.getSource();
+	    System.out.println(source);
 	    String currentText = source.getText();
 	    if (currentText.equals("_")) {
 		source.setText("X");
