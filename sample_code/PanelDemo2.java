@@ -14,18 +14,18 @@ public class PanelDemo2 {
 	new PanelDemo();
     }
 
-    public PanelDemo() {
+    public PanelDemo2() {
 	// Four panels, each with FlowLayout
-	_top = new JPanel();
+	_top = new FluffyPanel();
 	_top.setLayout(new FlowLayout());
 
-	_middle = new JPanel();
+	_middle = new FluffyPanel();
 	_middle.setLayout(new FlowLayout());
 
-	_middle2 = new JPanel();
+	_middle2 = new FluffyPanel();
 	_middle2.setLayout(new FlowLayout());
 
-	_bottom = new JPanel();
+	_bottom = new FluffyPanel();
 	_bottom.setLayout(new FlowLayout());
 
 	// Now let's make two buttons with listeners, to add and subtract
@@ -113,4 +113,8 @@ public class PanelDemo2 {
 	}
     }
 
+    class FluffyPanel extends JPanel {
+
+    }
+    
 }
