@@ -67,4 +67,5 @@ You may want to add different kinds of monsters, allow regeneration of Hit Point
 Perhaps there was a better way to deal with the Dragon than simply attacking all of its minions and itself.  Games are often two-dimensional and ignore subtleties in life.  Alas, this lab was no different.  Perhaps one day, Dragons and Humans can live together in harmony.
 
 ## Grading Rubric
-   This lab is not graded.
+1 point - Proper Goblin, Dragon, Troll classes
+1 point - Game can be played (incl. Magic, Attack, Berserk, Run) and won
