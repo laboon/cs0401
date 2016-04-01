@@ -10,7 +10,7 @@ public class Drink extends Object {
 	
 	Drink d = new Drink();
 	d.drink();
-
+	
 	// Note in both of these cases, Soda and Drink are kinds-of
 	// Drinks.  They use extends to indicate that they are a
 	// _subclass_ of Drink.  Drink is a _superclass_ of Water.
@@ -36,6 +36,7 @@ public class Drink extends Object {
 	Drink c2 = new Coffee();
 	c1.drink();
 	c2.drink();
+	System.exit(0);
 	
 	// Water implements the Squirtable interface.  Squirtable
 	// just adds the .squirt() method.  Recall that implementing an
