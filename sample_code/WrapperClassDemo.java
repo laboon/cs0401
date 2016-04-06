@@ -33,7 +33,7 @@ public class WrapperClassDemo {
 
 	System.out.println("intX = " + intX + ", longX = " + longX
 			   + ", byteX = " + byteX);
-	
+
 	// Now we can use "primitives" in our ArrayLists!
 	
 	ArrayList<Integer> integerList = new ArrayList<Integer>();
@@ -45,7 +45,6 @@ public class WrapperClassDemo {
 	for (Integer num : integerList) {
 	    System.out.println(num.intValue() * 2);
 	}
-
 	// We can do all sorts of other things, as well.
 
 	System.out.println("integerList in different bases:");
@@ -57,7 +56,7 @@ public class WrapperClassDemo {
 			       + " / Hexadecimal (16): " + Integer.toHexString(intNum)
 			       + " / Octal (8): " + Integer.toOctalString(intNum));
 	}
-	
+
 	System.out.println("Read in Strings as ints");
 
 	String someValue = "713";

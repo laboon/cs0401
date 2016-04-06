@@ -2,7 +2,6 @@ public class AutoboxDemo {
 
     public static void main(String[] args) {
 
-
 	// Create two Integer wrappers around ints 7 and 5
 	Integer a = new Integer(7);
 	Integer b = new Integer(5);
