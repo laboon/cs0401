@@ -10,7 +10,7 @@ public class SuperDemo {
 	A a = new A();
 	B b = new B();
 	C c = new C();
-	
+
 	// Call printSomething on each.  Note that each will call the
 	// printSomething method for that particular object's class!
 	// However, by using super, B first calls A and asks it to do
@@ -31,8 +31,6 @@ public class SuperDemo {
 	System.out.println("\nD");
 	d.printSomething();
 
-	System.exit(0);
-
 	// If you have an A reference to C, it still calls C's methods.
 	// However, it CANNOT call methods which A does not have!  Even
 	// though .shake exists, the reference does not know that it's
@@ -46,6 +44,10 @@ public class SuperDemo {
 	a2.printSomething();
 	// Will not compile! 
 	// a2.shake();
+
+	// Also will not compile!!
+	// C c2 = new A();
+	
     }
 }
 
@@ -55,6 +57,10 @@ class A {
 
     public A() {
 	System.out.println("\nTHIS IS AN A");
+    }
+
+    public void getOffMyLawn() {
+	System.out.println("Get off my lawn!");
     }
     
     public void printSomething() {
@@ -69,10 +75,19 @@ class B extends A {
 	System.out.println("B is a subclass of ^");
     }
 
+    public void getOffMyLawn() {
+	System.out.println("grrr...");
+    }
+    
     
     public void printSomething() {
+	// for (int j=0; j < 10; j++) {
+	//     super.getOffMyLawn();
+	// }
 	super.printSomething();
 	System.out.println("Something Else!");
+	// System.out.println("ONE MORE TIME!!");
+	// 
     }
 }
 
@@ -105,7 +120,6 @@ class D extends C {
 
     
     public void printSomething() {
-	super.printSomething();
 	System.out.println("I do my own thing!");
     }
 

@@ -31,7 +31,7 @@ public class InstanceOfDemo {
 	System.out.println("Is _a2_ a Cockatiel? " + (a2 instanceof Cockatiel)); // false
 
 	System.out.println();
-
+	
 	// We can check for objects whose classes are midway through the
 	// hierarchy.  For example, b is both a Bird (subclass) and Animal
 	// (superclass).  However, it is not a Cockatiel (more specific subclass).
@@ -53,6 +53,7 @@ public class InstanceOfDemo {
 	System.out.println("Is _c_ a Bird? " + (c instanceof Bird)); // true
 	System.out.println("Is _c_ a Cockatiel? " + (c instanceof Cockatiel)); // true
 
+	
 	// Make an ArrayList with animals a, b, and c
 	ArrayList animals =  new ArrayList();
 	animals.add(a);
@@ -70,7 +71,7 @@ public class InstanceOfDemo {
 
 	    // Explicitly cast as Cockatiel
 	    // WILL CAUSE A RUN-TIME FAILURE =(
-	    ((Cockatiel) animal).chirp();
+	    // ((Cockatiel) animal).chirp();
 	    
 	    // Explicitly cast ONLY if it of the correct class!
 	    // Otherwise, run-time errors could occur if we get
