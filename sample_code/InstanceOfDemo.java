@@ -19,7 +19,7 @@ public class InstanceOfDemo {
 	System.out.println("Is _a_ a Bird? " + (a instanceof Bird)); // false
 
 	System.out.println();
-
+	
 	// Note that instanceof checks the OBJECT, not the REFERENCE!  Even if
 	// we have an Animal reference to a bird, we can determine that behind
 	// the scenes, it's a reference to a Bird, not a generic Animal.
@@ -31,7 +31,7 @@ public class InstanceOfDemo {
 	System.out.println("Is _a2_ a Cockatiel? " + (a2 instanceof Cockatiel)); // false
 
 	System.out.println();
-	
+
 	// We can check for objects whose classes are midway through the
 	// hierarchy.  For example, b is both a Bird (subclass) and Animal
 	// (superclass).  However, it is not a Cockatiel (more specific subclass).
@@ -114,6 +114,5 @@ class Cockatiel extends Bird {
     public void chirp() {
 	System.out.println("Chirp chirp!");
     }
-    
-    
+        
 }

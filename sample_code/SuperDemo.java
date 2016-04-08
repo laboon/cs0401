@@ -10,7 +10,7 @@ public class SuperDemo {
 	A a = new A();
 	B b = new B();
 	C c = new C();
-
+	
 	// Call printSomething on each.  Note that each will call the
 	// printSomething method for that particular object's class!
 	// However, by using super, B first calls A and asks it to do
@@ -47,18 +47,28 @@ public class SuperDemo {
 
 	// Also will not compile!!
 	// C c2 = new A();
+
+	// Calling super with arguments
+
+	B lala = new B();
+	int meow = lala.foo(6);
+	System.out.println("meow is: " + meow);
 	
     }
 }
 
 // A <- B <- C <- D
 
-class A {
+class A extends Object {
 
     public A() {
 	System.out.println("\nTHIS IS AN A");
     }
 
+    public int foo(int f) {
+	return f + 1;
+    }
+    
     public void getOffMyLawn() {
 	System.out.println("Get off my lawn!");
     }
@@ -75,19 +85,21 @@ class B extends A {
 	System.out.println("B is a subclass of ^");
     }
 
+    public int foo(int f) {
+	int x = super.foo(f);
+	x++;
+	super.printSomething();
+	return x;
+    }
+    
     public void getOffMyLawn() {
 	System.out.println("grrr...");
     }
     
     
     public void printSomething() {
-	// for (int j=0; j < 10; j++) {
-	//     super.getOffMyLawn();
-	// }
 	super.printSomething();
 	System.out.println("Something Else!");
-	// System.out.println("ONE MORE TIME!!");
-	// 
     }
 }
 
