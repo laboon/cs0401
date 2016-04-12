@@ -26,8 +26,6 @@ public class ExceptionDemo {
 	    System.out.println("Thread, Interrupted.");
 	}
 	System.out.println("...");
-	   
-
 	// If you want to "catch" an exception (not throw
 	// it up to be handled by whoever called this method,
 	// you can wrap it in a try..catch block.
@@ -44,10 +42,11 @@ public class ExceptionDemo {
 	
 	try {
 	    c = a / b;
+	    // Lots of code...
 	} catch (ArithmeticException aex) {
 	    System.out.println(aex.toString());
 	}
-		
+	
 	// Note that having something in a try block does not mean
 	// that an exception will or can occur!  Nothing is stopping
 	// you from doing this.
@@ -134,10 +133,10 @@ public class ExceptionDemo {
 	    c = 12 / 0;
 	} catch (ArithmeticException aex) {
 	    System.out.println("You can't divide 12 / 0!  Watch:");
-	    // // try {
+	    // try {
 	    // c = 12 / 0;
-	    // // } catch (Exception ex) {
-	    // // }
+	    // } catch (Exception ex) {
+	    // }
 	} 
 	
 	// Sometimes you want to do something at the END of a try block,
@@ -224,6 +223,9 @@ public class ExceptionDemo {
 	b++;
 	return b;
     }
-    
+
+    class LaboonException extends Exception {
+	
+    }
 
 }
