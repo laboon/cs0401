@@ -2,7 +2,7 @@ package com.dog;
 
 import com.cat.CatFood;
 
-// import com.human.Whiskers;
+import com.human.Whiskers;
 
 public class Dog {
 
@@ -11,8 +11,8 @@ public class Dog {
     CatFood c = new CatFood();
     
     public Dog() {
-	w.snuffle();
-	// w.stubble();
+	// w.snuffle();
+	w.stubble();
 	c.eat();
     }
 

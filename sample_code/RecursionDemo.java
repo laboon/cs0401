@@ -2,8 +2,49 @@ import java.util.Scanner;
 
 public class RecursionDemo {
 
-    // A recursive method is one that calls itself.  Perhaps the simplest
-    // example of a recursive method is calculating the triangular numbers,
+    // A recursive method is one that calls itself.
+    // Here is a toy recursive method.
+    // Could this be done more easily with a loop
+    // (iterative execution)?  Yup!  In Java, iterative
+    // execution is MUCH faster than doing things recursively.
+
+    // Why might this be?  Well, every time you call a method,
+    // you are making an entirely new stack frame (remember
+    // from class, like constructing a whole new "Narnia"
+    // world).  This is computationally expensive.  Recursive
+    // methods make many new stack frames.
+
+    // ANY recursive method can be converted to an iterative
+    // method, or vice-versa.  They are two sides of the same
+    // coin.
+
+    // Why would you want to do things recursively, then?
+    // 1. It's often a much more elegant solution
+    // 2. It's often much simpler & easier to understand
+    // 3. Performance is not always the #1 priority
+    // 4. Other languages (especially ones with tail-call
+    //    optimization) do not have this issue!  Recursive
+    //    solutions are as fast as iterative solutions.
+    //    For example, Haskell doesn't even HAVE a concept
+    //    of loops - you have to do recursion.
+    // 5. It's an important concept to learn!
+    
+    public static void recursivePrint(int n) {
+	if (n == 0) {
+	    // BASE CASE - execution stops here
+	    // NOTE no recursive call!
+	    System.out.println("0");
+	} else {
+	    // RECURSIVE CASE - execution continues
+	    // NOTE it has a recursive call!
+	    System.out.println(n);
+	    recursivePrint(n-1);
+	}
+    }
+
+    
+    //  Perhaps the simplest
+    // example of an actual recursive method is calculating the triangular numbers,
     // 1, 3, 6, 10, 15, 21...  These numbers simulate making a "triangle" of
     // different size:
     //   1       2         3        4          5
@@ -65,23 +106,12 @@ public class RecursionDemo {
 	    return num;
 	} else {
 	    // RECURSIVE CASE
-	    // System.out.println("Fib(" + num + ") = " +  fibonacci(num - 1) + " + " + fibonacci(num - 2));
+	    System.out.println("Fib(" + num + ") = " +  fibonacci(num - 1) + " + " + fibonacci(num - 2));
 	    return fibonacci(num - 1) + fibonacci(num - 2);
-	}
-    }
-
-    public static void recursivePrint(int n) {
-	if (n == 0) {
-	    System.out.println("0");
-	} else {
-	    System.out.print(n);
-	    recursivePrint(n-1);
 	}
     }
     
     public static void main(String[] args) {
-
-	recursivePrint(9);
 	
 	int num = -1;
 	
@@ -94,12 +124,16 @@ public class RecursionDemo {
 	    printErrorAndDie();
 	}
 
+	recursivePrint(num);
+
+	System.exit(0);
+	
 	long fib = fibonacci(num);
 
-	// int tri = triangle(num);
+	int tri = triangle(num);
 
 	System.out.println("Fib(" + num + ") = " + fib);
-	// System.out.println("Tri(" + num + ") = " + tri);
+	System.out.println("Tri(" + num + ") = " + tri);
     }
 
     // Print error message and end program

@@ -10,15 +10,18 @@ public class ExceptionDemo {
 	int c = 0;
 
 	try {
-	    c = 7; // a / b; // EXCEPTION OCCURS - LEAVE THE BLOCK
+	    c = 7; // 7a / b; // EXCEPTION OCCURS - LEAVE THE BLOCK
 	    System.out.println("Bill rocks!");
 	    System.out.println("WOOOO");
 	} catch (Exception ex) {
 	    System.out.println("You broke the universe!");
-	    return;
+	    // return;
+	    System.exit(0);
 	} finally {
-	    System.out.println("La la la!");
+	    System.out.println("FINALLY - La la la!");
 	}
+
+	System.out.println("After the block!");
 	
 	try {
 	    Thread.sleep(2);
@@ -26,6 +29,7 @@ public class ExceptionDemo {
 	    System.out.println("Thread, Interrupted.");
 	}
 	System.out.println("...");
+
 	// If you want to "catch" an exception (not throw
 	// it up to be handled by whoever called this method,
 	// you can wrap it in a try..catch block.
@@ -67,6 +71,7 @@ public class ExceptionDemo {
 	try {
 	    c = 17 / 0;
 	} catch (Exception ex) {
+	    System.out.println("Exception = ");
 	    System.out.println(ex.toString());
 	}
 
