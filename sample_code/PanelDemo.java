@@ -55,6 +55,8 @@ public class PanelDemo {
 	_addButton.addActionListener(aListener);
 	_subtractButton.addActionListener(aListener);
 	_quitButton.addActionListener(quitListener);
+
+	_addButton.setForegroundColor(Color.RED);
 	
 	_addButton.setHorizontalAlignment(SwingConstants.CENTER);
 	_subtractButton.setHorizontalAlignment(SwingConstants.CENTER);

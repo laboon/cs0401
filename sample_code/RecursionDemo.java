@@ -81,7 +81,7 @@ public class RecursionDemo {
 	    // Base case - no recursion
 	    // All recursive methods must have a base case!
 	    // Otherwise it will never exit the method, just constantly recurse.
-	    // Thread.dumpStack();
+	    Thread.dumpStack();
 	    return 1;
 	} else {
 	    // Recursive case - recursion takes place here
@@ -99,16 +99,31 @@ public class RecursionDemo {
     // is 1, then return 1.  Otherwise, return whatever the results of the
     // last two elements of the Fibonacci sequence are, by calling the Fibonacci
     // method again.
+
+    public static long numTimesCalled = 0;
     
     public static long fibonacci(long num) {
+	numTimesCalled++;
 	if (num <= 1) {
 	    // BASE CASE
 	    return num;
 	} else {
 	    // RECURSIVE CASE
-	    System.out.println("Fib(" + num + ") = " +  fibonacci(num - 1) + " + " + fibonacci(num - 2));
+	    // System.out.println("Fib(" + num + ") = " +  fibonacci(num - 1) + " + " + fibonacci(num - 2));
 	    return fibonacci(num - 1) + fibonacci(num - 2);
 	}
+    }
+
+
+    public boolean palindrome(String toCheck, int x) {
+	if (toCheck.charAt(x).equals(toCheck.charAt(toCheck.length - x))) {
+	    // Could be a palindrome if equals!
+	} else {
+	    return false;
+	}
+	    // otherwise definitely not
+	
+		
     }
     
     public static void main(String[] args) {
@@ -125,11 +140,9 @@ public class RecursionDemo {
 	}
 
 	recursivePrint(num);
-
-	System.exit(0);
 	
 	long fib = fibonacci(num);
-
+	System.out.println("Fibonacci called " + numTimesCalled);
 	int tri = triangle(num);
 
 	System.out.println("Fib(" + num + ") = " + fib);
