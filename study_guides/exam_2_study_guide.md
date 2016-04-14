@@ -1,5 +1,7 @@
 ## Exam 2 Review Guide
 
+The practice exam and review guides (the three links) are from Prof. Ramirez's course last semester.  However, they are broadly applicable to what we learned - our courses cover the exact same material.  The specific study guide for my course is below, but you may also find the material from Prof. Ramirez's course useful.
+
 Exam 2 Review Guide here: http://people.cs.pitt.edu/~ramirez/cs401/e2rev.htm
 
 Practice Exam 2: http://people.cs.pitt.edu/~ramirez/cs401/e2prac.htm
