@@ -8,7 +8,7 @@ Practice Exam 2: http://people.cs.pitt.edu/~ramirez/cs401/e2prac.htm
 
 Practice Exam 2 Solutions: http://people.cs.pitt.edu/~ramirez/cs401/e2prac-sol.htm
 
-This exam is _not_ cumulative, except that all programming is cumulative in that you need to understand, e.g., how variables work before you can worry about recursion.  The exam will be on everything from the class before Exam 1 (the midterm) - if you'll recall, I did not include ArrayLists on the first exam since we only covered them the day before.
+This exam is _not_ cumulative, except that all programming is cumulative in that you need to understand, e.g., how variables work before you can worry about recursion.  The exam will focus on everything from the class after Exam 1 (the midterm).
 
 Particular topics to review include the following.  Note that just because it is not on this list does not mean that it will not be on the test!  Everything that we have discussed in class is fair game.
 
@@ -85,6 +85,6 @@ Particular topics to review include the following.  Note that just because it is
   * Creating your own exceptions
 
 * Recursion
-  * Recursive equations in general (be able to write your own)
+  * Recursive methods (be able to write your own)
   * Recursive case vs base case
   * Benefits / Drawbacks of using recursion

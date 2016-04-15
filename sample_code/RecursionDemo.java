@@ -74,17 +74,39 @@ public class RecursionDemo {
     //
     // Recursive methods have a BASE CASE and one or more RECURSIVE CASES.
     // The base case does not recurse (call the same method); recursive cases do.
-    
+
+    public static int ct(int num, int max) {
+	if (num == max) {
+	    for (int j = 0; j < num; j++) {
+		System.out.print("*");
+	    }
+	    System.out.println();
+	    return num;
+	} else {
+	    // Recursive case - recursion takes place here
+	    for (int j = 0; j < num; j++) {
+		System.out.print("*");
+	    }
+	    System.out.println();
+	    return num + ct(num + 1, max);
+	}
+    }
+
     public static int triangle(int num) {
 
 	if (num == 1) {
 	    // Base case - no recursion
 	    // All recursive methods must have a base case!
 	    // Otherwise it will never exit the method, just constantly recurse.
-	    Thread.dumpStack();
+	    // Thread.dumpStack();
+	    System.out.println("*");
 	    return 1;
 	} else {
 	    // Recursive case - recursion takes place here
+	    for (int j = 0; j < num; j++) {
+		System.out.print("*");
+	    }
+	    System.out.println();
 	    return num + triangle(num - 1);
 	}
     }
@@ -109,22 +131,12 @@ public class RecursionDemo {
 	    return num;
 	} else {
 	    // RECURSIVE CASE
-	    // System.out.println("Fib(" + num + ") = " +  fibonacci(num - 1) + " + " + fibonacci(num - 2));
+	    System.out.println("Fib(" + num + ") = " +  fibonacci(num - 1) + " + " + fibonacci(num - 2));
 	    return fibonacci(num - 1) + fibonacci(num - 2);
 	}
     }
 
 
-    public boolean palindrome(String toCheck, int x) {
-	if (toCheck.charAt(x).equals(toCheck.charAt(toCheck.length - x))) {
-	    // Could be a palindrome if equals!
-	} else {
-	    return false;
-	}
-	    // otherwise definitely not
-	
-		
-    }
     
     public static void main(String[] args) {
 	
@@ -139,14 +151,19 @@ public class RecursionDemo {
 	    printErrorAndDie();
 	}
 
-	recursivePrint(num);
+	// recursivePrint(num);
+
+	// int tri = triangle(num);
+	
+	// System.out.println("Tri(" + num + ") = " + tri);
+
+	// int c = ct(0, num);
+	// System.out.println("Correctly Printed Tri(" + num + ") = " + c);
 	
 	long fib = fibonacci(num);
-	System.out.println("Fibonacci called " + numTimesCalled);
-	int tri = triangle(num);
-
 	System.out.println("Fib(" + num + ") = " + fib);
-	System.out.println("Tri(" + num + ") = " + tri);
+
+	System.out.println("Fibonacci called " + numTimesCalled);
     }
 
     // Print error message and end program
