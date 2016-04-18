@@ -4,6 +4,9 @@ public class AbstractDemo {
 	// Can't do this - abstract classes cannot be instantiated
 	// Dog d = new Dog();
 
+	// Can do this!
+	Dog chiliPepper = new GreatDane();
+	
 	// However, their subclasses can!
 	// They act just like normal classes
 	
@@ -25,6 +28,8 @@ public class AbstractDemo {
 
 abstract class Dog {
 
+    public int x = 0;
+    
     // Methods that are _abstract_ must be filled in by subclasses
     // before a subclass can be instantiated
 
@@ -60,8 +65,11 @@ class Chihuahua extends Dog {
 
 class GreatDane extends Dog {
 
+
+    
     public void bark() {
-	System.out.println("Woof woof!");
+	x++;
+	System.out.println("Woof woof! x = " + x);
     }
 
     public void eat() {
