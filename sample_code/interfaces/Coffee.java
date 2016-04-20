@@ -10,9 +10,9 @@ public class Coffee extends Drink implements Sippable, Squirtable {
 	System.out.println("Sipping COFFEE");
     }
 
-    public void noisySip() {
-	System.out.println("Sipping COFFEE, noise level = " + SIPPING_NOISE);
-    }
+    // public void noisySip() {
+    // 	System.out.println("Sipping COFFEE, noise level = " + SIPPING_NOISE);
+    // }
 
     public void squirt() {	
 	System.out.println("Squirting COFFEE (that's kind of disturbing)");

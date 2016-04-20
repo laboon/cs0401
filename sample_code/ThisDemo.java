@@ -1,8 +1,8 @@
 public class ThisDemo {
 
-    int quack = 5;
+    private int quack = 5;
 
-    int meow = 6;
+    private int meow = 6;
     
     public ThisDemo() {
 	int quack = 200;

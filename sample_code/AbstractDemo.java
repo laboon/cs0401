@@ -56,6 +56,7 @@ class Chihuahua extends Dog {
     	// This will cause a compiler error that abstract methods
     	// canot be accessed directly
     	// super.bark();
+	x++;
     	System.out.println("Yip yip!");
     }
     
@@ -64,8 +65,6 @@ class Chihuahua extends Dog {
 // Multiple subclasses are possible, just like regular classes
 
 class GreatDane extends Dog {
-
-
     
     public void bark() {
 	x++;
@@ -74,9 +73,12 @@ class GreatDane extends Dog {
 
     public void eat() {
 	super.eat();
-	System.out.println("YUM YUM!");
+	// System.out.println("YUM YUM!");
     }
 
+    public void meow() {
+	System.out.println("meow!");
+    }
     
 }
     

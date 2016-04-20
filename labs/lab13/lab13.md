@@ -73,8 +73,7 @@ You are interested in the time marked "real".  If you want to know about the oth
 On Windows machines, you should be able to use PowerShell to do this in a similar manner (although _caveat lector_, I do not own a Windows machine and have not tried this!)
 
 ```
-java FibonacciDemo.java
-Measure-Command {java FibonacciDemo 45}
+Measure-Command {java FibonacciDemo 45 -wait}
 ```
 
 Check how long the calculation takes with different implementations.  See how the results differ when calculating small values and large values.
