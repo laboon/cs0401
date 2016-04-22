@@ -93,7 +93,7 @@ Just as in life, there is rarely a "right" answer to a program.  Results can be 
 
 ## Grading Rubric
 
-0.5 points - Memoized Fibonacci
-0.5 points - Closed-form Fibonacci
-0.5 points - Lookup table Fibonacci
-0.5 points - Timed
+0.5 points - Memoized Fibonacci  
+0.5 points - Closed-form Fibonacci  
+0.5 points - Lookup table Fibonacci  
+0.5 points - Timed  
