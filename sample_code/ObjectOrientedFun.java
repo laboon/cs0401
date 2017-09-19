@@ -35,11 +35,11 @@ class Bread {
 	this.sourdough = sourdough;
     }
 
-    public Bread shallowCopy() {
-    }
+    // public Bread shallowCopy() {
+    // }
 
-    public Bread deepCopy() {
-    }
+    // public Bread deepCopy() {
+    // }
 		
 }
 

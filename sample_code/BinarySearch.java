@@ -8,7 +8,7 @@ public class BinarySearch {
 
     public static void printArrayWithLRM(int[] arr, int l, int r, int m) {
 	System.out.print("[ ");
-	for (int j=0; j < (arr.length - 1); j++) {
+	for (int j = 0; j < (arr.length - 1); j++) {
 	    System.out.print(arr[j] + " ");
 	}
 	if (arr.length > 0) {
@@ -16,7 +16,7 @@ public class BinarySearch {
 	}
 	System.out.println(" ]");
 	System.out.print("  ");
-	for(int j = 0; j < arr.length; j++) {
+	for (int j = 0; j < arr.length; j++) {
 	    if (j == r && j == l && j == m) {
 		System.out.print("LMR ");		
 	    } else if (j == l && j == m) {
@@ -37,7 +37,7 @@ public class BinarySearch {
     }
 
     
-    private static int arrToSearch[] = {100, 204, 320, 409, 597,
+    private static int[] arrToSearch = {100, 204, 320, 409, 597,
 				 550, 595, 701, 722, 723,
 				 811, 813, 824, 835, 840,
 				 900, 902, 904, 910, 999};
@@ -72,8 +72,7 @@ public class BinarySearch {
      *  @param int tgt Target to search for
      */
 
-    public static int binarySearch(int[] arr, int tgt)
-    {
+    public static int binarySearch(int[] arr, int tgt) {
 
 	int left = 0;
 	int right = arr.length - 1;
